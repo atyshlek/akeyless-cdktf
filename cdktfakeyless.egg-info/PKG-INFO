@@ -1,4 +1,0 @@
-Metadata-Version: 2.1
-Name: cdktfakeyless
-Version: 1.4.1
-Requires-Dist: cdktf>=0.14.3

@@ -1,0 +1,12 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "projectId": "8a4db1e4-6a14-4660-a064-ef20525d0e78",
+  "sendCrashReports": "false",
+  "terraformProviders": [
+    "akeyless-community/akeyless@~> 1.4"
+  ],
+  "terraformModules": [],
+  "codeMakerOutput": "imports",
+  "context": {}
+}
