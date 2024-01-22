@@ -73,8 +73,8 @@ akeyless/target_ssh/__init__.py
 akeyless/target_web/__init__.py
 akeyless/target_zerossl/__init__.py
 akeyless/tokenizer/__init__.py
-akeyless_cdktf.egg-info/PKG-INFO
-akeyless_cdktf.egg-info/SOURCES.txt
-akeyless_cdktf.egg-info/dependency_links.txt
-akeyless_cdktf.egg-info/requires.txt
-akeyless_cdktf.egg-info/top_level.txt
+cdktfakeyless.egg-info/PKG-INFO
+cdktfakeyless.egg-info/SOURCES.txt
+cdktfakeyless.egg-info/dependency_links.txt
+cdktfakeyless.egg-info/requires.txt
+cdktfakeyless.egg-info/top_level.txt
