@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_saml`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_saml`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_saml`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodSamlA(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodSaml.AuthMethodSamlA",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml akeyless_auth_method_saml}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml akeyless_auth_method_saml}.'''
 
     def __init__(
         self,
@@ -51,20 +51,20 @@ class AuthMethodSamlA(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml akeyless_auth_method_saml} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml akeyless_auth_method_saml} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
-        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-saml to enable SAML via Akeyless Console and http://127.0.0.1:* to enable SAML via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#id AuthMethodSamlA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
-        :param idp_metadata_xml_data: IDP metadata xml data for saml authentication. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
+        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-saml to enable SAML via Akeyless Console and http://127.0.0.1:* to enable SAML via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#id AuthMethodSamlA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
+        :param idp_metadata_xml_data: IDP metadata xml data for saml authentication. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -112,7 +112,7 @@ class AuthMethodSamlA(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodSamlA to import.
-        :param import_from_id: The id of the existing AuthMethodSamlA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodSamlA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodSamlA to import is found.
         '''
         if __debug__:
@@ -399,16 +399,16 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
-        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-saml to enable SAML via Akeyless Console and http://127.0.0.1:* to enable SAML via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#id AuthMethodSamlA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
-        :param idp_metadata_xml_data: IDP metadata xml data for saml authentication. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
+        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-saml to enable SAML via Akeyless Console and http://127.0.0.1:* to enable SAML via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#id AuthMethodSamlA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
+        :param idp_metadata_xml_data: IDP metadata xml data for saml authentication. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -534,7 +534,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#name AuthMethodSamlA#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -546,7 +546,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#unique_identifier AuthMethodSamlA#unique_identifier}
         '''
         result = self._values.get("unique_identifier")
         assert result is not None, "Required property 'unique_identifier' is missing"
@@ -556,7 +556,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_expires AuthMethodSamlA#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -565,7 +565,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#access_id AuthMethodSamlA#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -574,7 +574,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def allowed_redirect_uri(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-saml to enable SAML via Akeyless Console and  http://127.0.0.1:* to enable SAML via akeyless CLI).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#allowed_redirect_uri AuthMethodSamlA#allowed_redirect_uri}
         '''
         result = self._values.get("allowed_redirect_uri")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -583,7 +583,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#bound_ips AuthMethodSamlA#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -594,14 +594,14 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#force_sub_claims AuthMethodSamlA#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#id AuthMethodSamlA#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#id AuthMethodSamlA#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -613,7 +613,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def idp_metadata_url(self) -> typing.Optional[builtins.str]:
         '''IDP metadata url.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_url AuthMethodSamlA#idp_metadata_url}
         '''
         result = self._values.get("idp_metadata_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -622,7 +622,7 @@ class AuthMethodSamlAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def idp_metadata_xml_data(self) -> typing.Optional[builtins.str]:
         '''IDP metadata xml data for saml authentication.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_saml#idp_metadata_xml_data AuthMethodSamlA#idp_metadata_xml_data}
         '''
         result = self._values.get("idp_metadata_xml_data")
         return typing.cast(typing.Optional[builtins.str], result)

@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethod(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethod.AuthMethod",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method akeyless_auth_method}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method akeyless_auth_method}.'''
 
     def __init__(
         self,
@@ -50,19 +50,19 @@ class AuthMethod(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method akeyless_auth_method} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method akeyless_auth_method} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param path: The path where the Auth Method will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#path AuthMethod#path}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#access_expires AuthMethod#access_expires}
-        :param api_key: api_key block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#api_key AuthMethod#api_key}
-        :param aws_iam: aws_iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
-        :param azure_ad: azure_ad block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
-        :param gcp: gcp block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#gcp AuthMethod#gcp}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#id AuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param saml: saml block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#saml AuthMethod#saml}
+        :param path: The path where the Auth Method will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#path AuthMethod#path}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#access_expires AuthMethod#access_expires}
+        :param api_key: api_key block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#api_key AuthMethod#api_key}
+        :param aws_iam: aws_iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
+        :param azure_ad: azure_ad block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
+        :param gcp: gcp block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#gcp AuthMethod#gcp}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#id AuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param saml: saml block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#saml AuthMethod#saml}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -109,7 +109,7 @@ class AuthMethod(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethod to import.
-        :param import_from_id: The id of the existing AuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethod to import is found.
         '''
         if __debug__:
@@ -552,14 +552,14 @@ class AuthMethodAwsIam:
         sts_url: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_aws_account_id AuthMethod#bound_aws_account_id}
-        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_arn AuthMethod#bound_arn}
-        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
-        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_role_id AuthMethod#bound_role_id}
-        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_role_name AuthMethod#bound_role_name}
-        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_user_id AuthMethod#bound_user_id}
-        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_user_name AuthMethod#bound_user_name}
-        :param sts_url: STS URL (default: https://sts.amazonaws.com). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#sts_url AuthMethod#sts_url}
+        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_aws_account_id AuthMethod#bound_aws_account_id}
+        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_arn AuthMethod#bound_arn}
+        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
+        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_role_id AuthMethod#bound_role_id}
+        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_role_name AuthMethod#bound_role_name}
+        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_user_id AuthMethod#bound_user_id}
+        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_user_name AuthMethod#bound_user_name}
+        :param sts_url: STS URL (default: https://sts.amazonaws.com). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#sts_url AuthMethod#sts_url}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__de6152d37409e8f6a71100fc9efe37940c4f828613ad0935f3773e0ff56b058c)
@@ -593,7 +593,7 @@ class AuthMethodAwsIam:
     def bound_aws_account_id(self) -> typing.List[builtins.str]:
         '''A list of AWS account-IDs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_aws_account_id AuthMethod#bound_aws_account_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_aws_account_id AuthMethod#bound_aws_account_id}
         '''
         result = self._values.get("bound_aws_account_id")
         assert result is not None, "Required property 'bound_aws_account_id' is missing"
@@ -603,7 +603,7 @@ class AuthMethodAwsIam:
     def bound_arn(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full arns that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_arn AuthMethod#bound_arn}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_arn AuthMethod#bound_arn}
         '''
         result = self._values.get("bound_arn")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -612,7 +612,7 @@ class AuthMethodAwsIam:
     def bound_resource_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full resource ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
         '''
         result = self._values.get("bound_resource_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -621,7 +621,7 @@ class AuthMethodAwsIam:
     def bound_role_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full role ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_role_id AuthMethod#bound_role_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_role_id AuthMethod#bound_role_id}
         '''
         result = self._values.get("bound_role_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -630,7 +630,7 @@ class AuthMethodAwsIam:
     def bound_role_name(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full role-name that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_role_name AuthMethod#bound_role_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_role_name AuthMethod#bound_role_name}
         '''
         result = self._values.get("bound_role_name")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -639,7 +639,7 @@ class AuthMethodAwsIam:
     def bound_user_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full user ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_user_id AuthMethod#bound_user_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_user_id AuthMethod#bound_user_id}
         '''
         result = self._values.get("bound_user_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -648,7 +648,7 @@ class AuthMethodAwsIam:
     def bound_user_name(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full user-name that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_user_name AuthMethod#bound_user_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_user_name AuthMethod#bound_user_name}
         '''
         result = self._values.get("bound_user_name")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -657,7 +657,7 @@ class AuthMethodAwsIam:
     def sts_url(self) -> typing.Optional[builtins.str]:
         '''STS URL (default: https://sts.amazonaws.com).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#sts_url AuthMethod#sts_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#sts_url AuthMethod#sts_url}
         '''
         result = self._values.get("sts_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1008,18 +1008,18 @@ class AuthMethodAzureAd:
         jwks_uri: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param bound_tenant_id: The Azure tenant id that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_tenant_id AuthMethod#bound_tenant_id}
-        :param bound_group_id: A list of group ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_group_id AuthMethod#bound_group_id}
-        :param bound_providers: A list of resource providers that the access is restricted to (e.g, Microsoft.Compute, Microsoft.ManagedIdentity, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_providers AuthMethod#bound_providers}
-        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
-        :param bound_resource_names: A list of resource names that the access is restricted to (e.g, a virtual machine name, scale set name, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_names AuthMethod#bound_resource_names}
-        :param bound_resource_types: A list of resource types that the access is restricted to (e.g, virtualMachines, userAssignedIdentities, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_types AuthMethod#bound_resource_types}
-        :param bound_rg_id: A list of resource groups that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_rg_id AuthMethod#bound_rg_id}
-        :param bound_spid: A list of service principal IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_spid AuthMethod#bound_spid}
-        :param bound_sub_id: A list of subscription ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_sub_id AuthMethod#bound_sub_id}
-        :param custom_audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#custom_audience AuthMethod#custom_audience}
-        :param custom_issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#custom_issuer AuthMethod#custom_issuer}
-        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#jwks_uri AuthMethod#jwks_uri}
+        :param bound_tenant_id: The Azure tenant id that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_tenant_id AuthMethod#bound_tenant_id}
+        :param bound_group_id: A list of group ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_group_id AuthMethod#bound_group_id}
+        :param bound_providers: A list of resource providers that the access is restricted to (e.g, Microsoft.Compute, Microsoft.ManagedIdentity, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_providers AuthMethod#bound_providers}
+        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
+        :param bound_resource_names: A list of resource names that the access is restricted to (e.g, a virtual machine name, scale set name, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_names AuthMethod#bound_resource_names}
+        :param bound_resource_types: A list of resource types that the access is restricted to (e.g, virtualMachines, userAssignedIdentities, etc). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_types AuthMethod#bound_resource_types}
+        :param bound_rg_id: A list of resource groups that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_rg_id AuthMethod#bound_rg_id}
+        :param bound_spid: A list of service principal IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_spid AuthMethod#bound_spid}
+        :param bound_sub_id: A list of subscription ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_sub_id AuthMethod#bound_sub_id}
+        :param custom_audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#custom_audience AuthMethod#custom_audience}
+        :param custom_issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#custom_issuer AuthMethod#custom_issuer}
+        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#jwks_uri AuthMethod#jwks_uri}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__c34d71caa10a23b05ad45d73a5372e6601d76c4b1a543a5453db225d6d8fc2d9)
@@ -1065,7 +1065,7 @@ class AuthMethodAzureAd:
     def bound_tenant_id(self) -> builtins.str:
         '''The Azure tenant id that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_tenant_id AuthMethod#bound_tenant_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_tenant_id AuthMethod#bound_tenant_id}
         '''
         result = self._values.get("bound_tenant_id")
         assert result is not None, "Required property 'bound_tenant_id' is missing"
@@ -1075,7 +1075,7 @@ class AuthMethodAzureAd:
     def bound_group_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of group ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_group_id AuthMethod#bound_group_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_group_id AuthMethod#bound_group_id}
         '''
         result = self._values.get("bound_group_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1084,7 +1084,7 @@ class AuthMethodAzureAd:
     def bound_providers(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of resource providers that the access is restricted to (e.g, Microsoft.Compute, Microsoft.ManagedIdentity, etc).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_providers AuthMethod#bound_providers}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_providers AuthMethod#bound_providers}
         '''
         result = self._values.get("bound_providers")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1093,7 +1093,7 @@ class AuthMethodAzureAd:
     def bound_resource_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full resource ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_id AuthMethod#bound_resource_id}
         '''
         result = self._values.get("bound_resource_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1102,7 +1102,7 @@ class AuthMethodAzureAd:
     def bound_resource_names(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of resource names that the access is restricted to (e.g, a virtual machine name, scale set name, etc).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_names AuthMethod#bound_resource_names}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_names AuthMethod#bound_resource_names}
         '''
         result = self._values.get("bound_resource_names")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1111,7 +1111,7 @@ class AuthMethodAzureAd:
     def bound_resource_types(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of resource types that the access is restricted to (e.g, virtualMachines, userAssignedIdentities, etc).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_resource_types AuthMethod#bound_resource_types}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_resource_types AuthMethod#bound_resource_types}
         '''
         result = self._values.get("bound_resource_types")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1120,7 +1120,7 @@ class AuthMethodAzureAd:
     def bound_rg_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of resource groups that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_rg_id AuthMethod#bound_rg_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_rg_id AuthMethod#bound_rg_id}
         '''
         result = self._values.get("bound_rg_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1129,7 +1129,7 @@ class AuthMethodAzureAd:
     def bound_spid(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of service principal IDs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_spid AuthMethod#bound_spid}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_spid AuthMethod#bound_spid}
         '''
         result = self._values.get("bound_spid")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1138,7 +1138,7 @@ class AuthMethodAzureAd:
     def bound_sub_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of subscription ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_sub_id AuthMethod#bound_sub_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_sub_id AuthMethod#bound_sub_id}
         '''
         result = self._values.get("bound_sub_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1147,7 +1147,7 @@ class AuthMethodAzureAd:
     def custom_audience(self) -> typing.Optional[builtins.str]:
         '''The audience in the JWT.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#custom_audience AuthMethod#custom_audience}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#custom_audience AuthMethod#custom_audience}
         '''
         result = self._values.get("custom_audience")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1156,7 +1156,7 @@ class AuthMethodAzureAd:
     def custom_issuer(self) -> typing.Optional[builtins.str]:
         '''Issuer URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#custom_issuer AuthMethod#custom_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#custom_issuer AuthMethod#custom_issuer}
         '''
         result = self._values.get("custom_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1165,7 +1165,7 @@ class AuthMethodAzureAd:
     def jwks_uri(self) -> typing.Optional[builtins.str]:
         '''The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#jwks_uri AuthMethod#jwks_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#jwks_uri AuthMethod#jwks_uri}
         '''
         result = self._values.get("jwks_uri")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1615,15 +1615,15 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param path: The path where the Auth Method will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#path AuthMethod#path}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#access_expires AuthMethod#access_expires}
-        :param api_key: api_key block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#api_key AuthMethod#api_key}
-        :param aws_iam: aws_iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
-        :param azure_ad: azure_ad block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
-        :param gcp: gcp block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#gcp AuthMethod#gcp}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#id AuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param saml: saml block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#saml AuthMethod#saml}
+        :param path: The path where the Auth Method will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#path AuthMethod#path}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#access_expires AuthMethod#access_expires}
+        :param api_key: api_key block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#api_key AuthMethod#api_key}
+        :param aws_iam: aws_iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
+        :param azure_ad: azure_ad block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
+        :param gcp: gcp block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#gcp AuthMethod#gcp}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#id AuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param saml: saml block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#saml AuthMethod#saml}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -1747,7 +1747,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def path(self) -> builtins.str:
         '''The path where the Auth Method will be stored.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#path AuthMethod#path}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#path AuthMethod#path}
         '''
         result = self._values.get("path")
         assert result is not None, "Required property 'path' is missing"
@@ -1757,7 +1757,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#access_expires AuthMethod#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#access_expires AuthMethod#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -1768,7 +1768,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodApiKey]]]:
         '''api_key block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#api_key AuthMethod#api_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#api_key AuthMethod#api_key}
         '''
         result = self._values.get("api_key")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodApiKey]]], result)
@@ -1779,7 +1779,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodAwsIam]]]:
         '''aws_iam block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#aws_iam AuthMethod#aws_iam}
         '''
         result = self._values.get("aws_iam")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodAwsIam]]], result)
@@ -1790,7 +1790,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodAzureAd]]]:
         '''azure_ad block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#azure_ad AuthMethod#azure_ad}
         '''
         result = self._values.get("azure_ad")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AuthMethodAzureAd]]], result)
@@ -1799,7 +1799,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[builtins.str]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_ips AuthMethod#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1810,14 +1810,14 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcp"]]]:
         '''gcp block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#gcp AuthMethod#gcp}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#gcp AuthMethod#gcp}
         '''
         result = self._values.get("gcp")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcp"]]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#id AuthMethod#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#id AuthMethod#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1831,7 +1831,7 @@ class AuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodSaml"]]]:
         '''saml block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#saml AuthMethod#saml}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#saml AuthMethod#saml}
         '''
         result = self._values.get("saml")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodSaml"]]], result)
@@ -1868,10 +1868,10 @@ class AuthMethodGcp:
         iam: typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.Sequence[typing.Union["AuthMethodGcpIam", typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
         '''
-        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#service_account_creds_data AuthMethod#service_account_creds_data}
-        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#audience AuthMethod#audience}
-        :param gce: gce block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#gce AuthMethod#gce}
-        :param iam: iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#iam AuthMethod#iam}
+        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#service_account_creds_data AuthMethod#service_account_creds_data}
+        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#audience AuthMethod#audience}
+        :param gce: gce block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#gce AuthMethod#gce}
+        :param iam: iam block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#iam AuthMethod#iam}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__8079bed05e1c5aeab755ddaaf189ece7a449116b1b05d6c6af45075035ec5292)
@@ -1893,7 +1893,7 @@ class AuthMethodGcp:
     def service_account_creds_data(self) -> builtins.str:
         '''Service Account creds data, base64 encoded.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#service_account_creds_data AuthMethod#service_account_creds_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#service_account_creds_data AuthMethod#service_account_creds_data}
         '''
         result = self._values.get("service_account_creds_data")
         assert result is not None, "Required property 'service_account_creds_data' is missing"
@@ -1903,7 +1903,7 @@ class AuthMethodGcp:
     def audience(self) -> typing.Optional[builtins.str]:
         '''The audience to verify in the JWT received by the client.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#audience AuthMethod#audience}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#audience AuthMethod#audience}
         '''
         result = self._values.get("audience")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1914,7 +1914,7 @@ class AuthMethodGcp:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcpGce"]]]:
         '''gce block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#gce AuthMethod#gce}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#gce AuthMethod#gce}
         '''
         result = self._values.get("gce")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcpGce"]]], result)
@@ -1925,7 +1925,7 @@ class AuthMethodGcp:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcpIam"]]]:
         '''iam block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#iam AuthMethod#iam}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#iam AuthMethod#iam}
         '''
         result = self._values.get("iam")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AuthMethodGcpIam"]]], result)
@@ -1960,9 +1960,9 @@ class AuthMethodGcpGce:
         bound_zones: typing.Optional[typing.Sequence[builtins.str]] = None,
     ) -> None:
         '''
-        :param bound_labels: GCE only. A list of GCP labels formatted as "key:value" pairs that must be set on instances in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_labels AuthMethod#bound_labels}
-        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_regions AuthMethod#bound_regions}
-        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_zones AuthMethod#bound_zones}
+        :param bound_labels: GCE only. A list of GCP labels formatted as "key:value" pairs that must be set on instances in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_labels AuthMethod#bound_labels}
+        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_regions AuthMethod#bound_regions}
+        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_zones AuthMethod#bound_zones}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__0337a6d0f7b917a358b40af6adad1d433a12ae584f7559d9114c062d0601dbf1)
@@ -1983,7 +1983,7 @@ class AuthMethodGcpGce:
 
         A list of GCP labels formatted as "key:value" pairs that must be set on instances in order to authenticate
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_labels AuthMethod#bound_labels}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_labels AuthMethod#bound_labels}
         '''
         result = self._values.get("bound_labels")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1994,7 +1994,7 @@ class AuthMethodGcpGce:
 
         A list of regions. GCE instances must belong to any of the provided regions in order to authenticate
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_regions AuthMethod#bound_regions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_regions AuthMethod#bound_regions}
         '''
         result = self._values.get("bound_regions")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -2005,7 +2005,7 @@ class AuthMethodGcpGce:
 
         A list of zones. GCE instances must belong to any of the provided zones in order to authenticate
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_zones AuthMethod#bound_zones}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_zones AuthMethod#bound_zones}
         '''
         result = self._values.get("bound_zones")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -2231,7 +2231,7 @@ class AuthMethodGcpIam:
         bound_service_accounts: typing.Optional[typing.Sequence[builtins.str]] = None,
     ) -> None:
         '''
-        :param bound_service_accounts: IAM only. A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_service_accounts AuthMethod#bound_service_accounts}
+        :param bound_service_accounts: IAM only. A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_service_accounts AuthMethod#bound_service_accounts}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__7eac982127d5b3fa4e05b8757bff53563c0de6fb651fb4cb238343623fab2db7)
@@ -2246,7 +2246,7 @@ class AuthMethodGcpIam:
 
         A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#bound_service_accounts AuthMethod#bound_service_accounts}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#bound_service_accounts AuthMethod#bound_service_accounts}
         '''
         result = self._values.get("bound_service_accounts")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -2668,9 +2668,9 @@ class AuthMethodSaml:
         idp_metadata_xml_data: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#unique_identifier AuthMethod#unique_identifier}
-        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#idp_metadata_url AuthMethod#idp_metadata_url}
-        :param idp_metadata_xml_data: IDP metadata xml data. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#idp_metadata_xml_data AuthMethod#idp_metadata_xml_data}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#unique_identifier AuthMethod#unique_identifier}
+        :param idp_metadata_url: IDP metadata url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#idp_metadata_url AuthMethod#idp_metadata_url}
+        :param idp_metadata_xml_data: IDP metadata xml data. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#idp_metadata_xml_data AuthMethod#idp_metadata_xml_data}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__566cd0ef52010112e3a9f6c842afc3c2fc2ce4546205bdfe6dcbe495b8321eef)
@@ -2689,7 +2689,7 @@ class AuthMethodSaml:
     def unique_identifier(self) -> builtins.str:
         '''A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#unique_identifier AuthMethod#unique_identifier}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#unique_identifier AuthMethod#unique_identifier}
         '''
         result = self._values.get("unique_identifier")
         assert result is not None, "Required property 'unique_identifier' is missing"
@@ -2699,7 +2699,7 @@ class AuthMethodSaml:
     def idp_metadata_url(self) -> typing.Optional[builtins.str]:
         '''IDP metadata url.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#idp_metadata_url AuthMethod#idp_metadata_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#idp_metadata_url AuthMethod#idp_metadata_url}
         '''
         result = self._values.get("idp_metadata_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -2708,7 +2708,7 @@ class AuthMethodSaml:
     def idp_metadata_xml_data(self) -> typing.Optional[builtins.str]:
         '''IDP metadata xml data.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/auth_method#idp_metadata_xml_data AuthMethod#idp_metadata_xml_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method#idp_metadata_xml_data AuthMethod#idp_metadata_xml_data}
         '''
         result = self._values.get("idp_metadata_xml_data")
         return typing.cast(typing.Optional[builtins.str], result)

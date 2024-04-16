@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_mongo`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_mongo`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo).
+Refer to the Terraform Registry for docs: [`akeyless_producer_mongo`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerMongo(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerMongo.ProducerMongo",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo akeyless_producer_mongo}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo akeyless_producer_mongo}.'''
 
     def __init__(
         self,
@@ -63,32 +63,32 @@ class ProducerMongo(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo akeyless_producer_mongo} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo akeyless_producer_mongo} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#name ProducerMongo#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#id ProducerMongo#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param mongodb_atlas_api_private_key: MongoDB Atlas private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
-        :param mongodb_atlas_api_public_key: MongoDB Atlas public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
-        :param mongodb_atlas_project_id: MongoDB Atlas project ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
-        :param mongodb_default_auth_db: MongoDB server default authentication database. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
-        :param mongodb_host_port: host:port (e.g. my.mongo.db:27017). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
-        :param mongodb_name: MongoDB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
-        :param mongodb_password: MongoDB server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
-        :param mongodb_roles: MongoDB roles (e.g. MongoDB:[{role:readWrite, db: sales}], MongoDB Atlas:[{roleName : readWrite, databaseName: sales}]). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
-        :param mongodb_server_uri: MongoDB server URI (e.g. mongodb://user:password@my.mongo.db:27017/admin?replicaSet=mySet). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
-        :param mongodb_uri_options: MongoDB server URI options (e.g. replicaSet=mySet&authSource=authDB). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
-        :param mongodb_username: MongoDB server username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#tags ProducerMongo#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
-        :param user_ttl: User TTL (e.g. 60s, 60m, 60h). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#name ProducerMongo#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#id ProducerMongo#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param mongodb_atlas_api_private_key: MongoDB Atlas private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
+        :param mongodb_atlas_api_public_key: MongoDB Atlas public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
+        :param mongodb_atlas_project_id: MongoDB Atlas project ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
+        :param mongodb_default_auth_db: MongoDB server default authentication database. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
+        :param mongodb_host_port: host:port (e.g. my.mongo.db:27017). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
+        :param mongodb_name: MongoDB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
+        :param mongodb_password: MongoDB server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
+        :param mongodb_roles: MongoDB roles (e.g. MongoDB:[{role:readWrite, db: sales}], MongoDB Atlas:[{roleName : readWrite, databaseName: sales}]). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
+        :param mongodb_server_uri: MongoDB server URI (e.g. mongodb://user:password@my.mongo.db:27017/admin?replicaSet=mySet). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
+        :param mongodb_uri_options: MongoDB server URI options (e.g. replicaSet=mySet&authSource=authDB). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
+        :param mongodb_username: MongoDB server username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#tags ProducerMongo#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
+        :param user_ttl: User TTL (e.g. 60s, 60m, 60h). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -148,7 +148,7 @@ class ProducerMongo(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerMongo to import.
-        :param import_from_id: The id of the existing ProducerMongo that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerMongo that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerMongo to import is found.
         '''
         if __debug__:
@@ -715,28 +715,28 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#name ProducerMongo#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#id ProducerMongo#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param mongodb_atlas_api_private_key: MongoDB Atlas private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
-        :param mongodb_atlas_api_public_key: MongoDB Atlas public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
-        :param mongodb_atlas_project_id: MongoDB Atlas project ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
-        :param mongodb_default_auth_db: MongoDB server default authentication database. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
-        :param mongodb_host_port: host:port (e.g. my.mongo.db:27017). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
-        :param mongodb_name: MongoDB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
-        :param mongodb_password: MongoDB server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
-        :param mongodb_roles: MongoDB roles (e.g. MongoDB:[{role:readWrite, db: sales}], MongoDB Atlas:[{roleName : readWrite, databaseName: sales}]). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
-        :param mongodb_server_uri: MongoDB server URI (e.g. mongodb://user:password@my.mongo.db:27017/admin?replicaSet=mySet). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
-        :param mongodb_uri_options: MongoDB server URI options (e.g. replicaSet=mySet&authSource=authDB). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
-        :param mongodb_username: MongoDB server username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#tags ProducerMongo#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
-        :param user_ttl: User TTL (e.g. 60s, 60m, 60h). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#name ProducerMongo#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#id ProducerMongo#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param mongodb_atlas_api_private_key: MongoDB Atlas private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
+        :param mongodb_atlas_api_public_key: MongoDB Atlas public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
+        :param mongodb_atlas_project_id: MongoDB Atlas project ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
+        :param mongodb_default_auth_db: MongoDB server default authentication database. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
+        :param mongodb_host_port: host:port (e.g. my.mongo.db:27017). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
+        :param mongodb_name: MongoDB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
+        :param mongodb_password: MongoDB server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
+        :param mongodb_roles: MongoDB roles (e.g. MongoDB:[{role:readWrite, db: sales}], MongoDB Atlas:[{roleName : readWrite, databaseName: sales}]). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
+        :param mongodb_server_uri: MongoDB server URI (e.g. mongodb://user:password@my.mongo.db:27017/admin?replicaSet=mySet). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
+        :param mongodb_uri_options: MongoDB server URI options (e.g. replicaSet=mySet&authSource=authDB). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
+        :param mongodb_username: MongoDB server username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#tags ProducerMongo#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
+        :param user_ttl: User TTL (e.g. 60s, 60m, 60h). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -899,7 +899,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#name ProducerMongo#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#name ProducerMongo#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -907,7 +907,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#id ProducerMongo#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#id ProducerMongo#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +919,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_atlas_api_private_key(self) -> typing.Optional[builtins.str]:
         '''MongoDB Atlas private key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_private_key ProducerMongo#mongodb_atlas_api_private_key}
         '''
         result = self._values.get("mongodb_atlas_api_private_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -928,7 +928,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_atlas_api_public_key(self) -> typing.Optional[builtins.str]:
         '''MongoDB Atlas public key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_api_public_key ProducerMongo#mongodb_atlas_api_public_key}
         '''
         result = self._values.get("mongodb_atlas_api_public_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -937,7 +937,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_atlas_project_id(self) -> typing.Optional[builtins.str]:
         '''MongoDB Atlas project ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_atlas_project_id ProducerMongo#mongodb_atlas_project_id}
         '''
         result = self._values.get("mongodb_atlas_project_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -946,7 +946,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_default_auth_db(self) -> typing.Optional[builtins.str]:
         '''MongoDB server default authentication database.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_default_auth_db ProducerMongo#mongodb_default_auth_db}
         '''
         result = self._values.get("mongodb_default_auth_db")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -955,7 +955,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_host_port(self) -> typing.Optional[builtins.str]:
         '''host:port (e.g. my.mongo.db:27017).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_host_port ProducerMongo#mongodb_host_port}
         '''
         result = self._values.get("mongodb_host_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -964,7 +964,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_name(self) -> typing.Optional[builtins.str]:
         '''MongoDB name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_name ProducerMongo#mongodb_name}
         '''
         result = self._values.get("mongodb_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -973,7 +973,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_password(self) -> typing.Optional[builtins.str]:
         '''MongoDB server password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_password ProducerMongo#mongodb_password}
         '''
         result = self._values.get("mongodb_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -982,7 +982,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_roles(self) -> typing.Optional[builtins.str]:
         '''MongoDB roles (e.g. MongoDB:[{role:readWrite, db: sales}], MongoDB Atlas:[{roleName : readWrite, databaseName: sales}]).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_roles ProducerMongo#mongodb_roles}
         '''
         result = self._values.get("mongodb_roles")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -991,7 +991,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_server_uri(self) -> typing.Optional[builtins.str]:
         '''MongoDB server URI (e.g. mongodb://user:password@my.mongo.db:27017/admin?replicaSet=mySet).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_server_uri ProducerMongo#mongodb_server_uri}
         '''
         result = self._values.get("mongodb_server_uri")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1000,7 +1000,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_uri_options(self) -> typing.Optional[builtins.str]:
         '''MongoDB server URI options (e.g. replicaSet=mySet&authSource=authDB).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_uri_options ProducerMongo#mongodb_uri_options}
         '''
         result = self._values.get("mongodb_uri_options")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1009,7 +1009,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mongodb_username(self) -> typing.Optional[builtins.str]:
         '''MongoDB server username.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#mongodb_username ProducerMongo#mongodb_username}
         '''
         result = self._values.get("mongodb_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1018,7 +1018,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#producer_encryption_key_name ProducerMongo#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1027,7 +1027,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_bastion_issuer ProducerMongo#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1036,7 +1036,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_name(self) -> typing.Optional[builtins.str]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_db_name ProducerMongo#secure_access_db_name}
         '''
         result = self._values.get("secure_access_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1045,7 +1045,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_enable ProducerMongo#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1054,7 +1054,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_host(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Target DB servers for connections., For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_host ProducerMongo#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1065,7 +1065,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#secure_access_web ProducerMongo#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1076,7 +1076,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#tags ProducerMongo#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#tags ProducerMongo#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1085,7 +1085,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#target_name ProducerMongo#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1094,7 +1094,7 @@ class ProducerMongoConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL (e.g. 60s, 60m, 60h).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mongo#user_ttl ProducerMongo#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

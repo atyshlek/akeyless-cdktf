@@ -1,7 +1,7 @@
 '''
 # `akeyless_role`
 
-Refer to the Terraform Registry for docs: [`akeyless_role`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role).
+Refer to the Terraform Registry for docs: [`akeyless_role`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class Role(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.role.Role",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role akeyless_role}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role akeyless_role}.'''
 
     def __init__(
         self,
@@ -51,20 +51,20 @@ class Role(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role akeyless_role} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role akeyless_role} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Role name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#name Role#name}
-        :param analytics_access: Allow this role to view analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#analytics_access Role#analytics_access}
-        :param assoc_auth_method: assoc_auth_method block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
-        :param audit_access: Allow this role to view audit logs. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view audit logs produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#audit_access Role#audit_access}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#comment Role#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#description Role#description}
-        :param gw_analytics_access: Allow this role to view gw analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#id Role#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param rules: rules block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#rules Role#rules}
-        :param sra_reports_access: Allow this role to view SRA Clusters. Currently only 'none', 'own' and 'all' values are supported. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#sra_reports_access Role#sra_reports_access}
+        :param name: Role name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#name Role#name}
+        :param analytics_access: Allow this role to view analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#analytics_access Role#analytics_access}
+        :param assoc_auth_method: assoc_auth_method block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
+        :param audit_access: Allow this role to view audit logs. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view audit logs produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#audit_access Role#audit_access}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#comment Role#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#description Role#description}
+        :param gw_analytics_access: Allow this role to view gw analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#id Role#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param rules: rules block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#rules Role#rules}
+        :param sra_reports_access: Allow this role to view SRA Clusters. Currently only 'none', 'own' and 'all' values are supported. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#sra_reports_access Role#sra_reports_access}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -112,7 +112,7 @@ class Role(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the Role to import.
-        :param import_from_id: The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the Role to import is found.
         '''
         if __debug__:
@@ -377,9 +377,9 @@ class RoleAssocAuthMethod:
         sub_claims: typing.Optional[typing.Mapping[builtins.str, builtins.str]] = None,
     ) -> None:
         '''
-        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#am_name Role#am_name}
-        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#case_sensitive Role#case_sensitive}
-        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#sub_claims Role#sub_claims}
+        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#am_name Role#am_name}
+        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#case_sensitive Role#case_sensitive}
+        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#sub_claims Role#sub_claims}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__dbd5f8f2e3958da7c7749cff8e25e1ef5ce1269a3cdf6f7b83d1ad53ddd253cb)
@@ -398,7 +398,7 @@ class RoleAssocAuthMethod:
     def am_name(self) -> builtins.str:
         '''The auth method to associate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#am_name Role#am_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#am_name Role#am_name}
         '''
         result = self._values.get("am_name")
         assert result is not None, "Required property 'am_name' is missing"
@@ -408,7 +408,7 @@ class RoleAssocAuthMethod:
     def case_sensitive(self) -> typing.Optional[builtins.str]:
         '''Treat sub claims as case-sensitive.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#case_sensitive Role#case_sensitive}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#case_sensitive Role#case_sensitive}
         '''
         result = self._values.get("case_sensitive")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -417,7 +417,7 @@ class RoleAssocAuthMethod:
     def sub_claims(self) -> typing.Optional[typing.Mapping[builtins.str, builtins.str]]:
         '''key/val of sub claims, e.g group=admins,developers.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#sub_claims Role#sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#sub_claims Role#sub_claims}
         '''
         result = self._values.get("sub_claims")
         return typing.cast(typing.Optional[typing.Mapping[builtins.str, builtins.str]], result)
@@ -692,16 +692,16 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Role name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#name Role#name}
-        :param analytics_access: Allow this role to view analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#analytics_access Role#analytics_access}
-        :param assoc_auth_method: assoc_auth_method block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
-        :param audit_access: Allow this role to view audit logs. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view audit logs produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#audit_access Role#audit_access}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#comment Role#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#description Role#description}
-        :param gw_analytics_access: Allow this role to view gw analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#id Role#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param rules: rules block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#rules Role#rules}
-        :param sra_reports_access: Allow this role to view SRA Clusters. Currently only 'none', 'own' and 'all' values are supported. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#sra_reports_access Role#sra_reports_access}
+        :param name: Role name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#name Role#name}
+        :param analytics_access: Allow this role to view analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#analytics_access Role#analytics_access}
+        :param assoc_auth_method: assoc_auth_method block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
+        :param audit_access: Allow this role to view audit logs. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view audit logs produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#audit_access Role#audit_access}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#comment Role#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#description Role#description}
+        :param gw_analytics_access: Allow this role to view gw analytics. Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#id Role#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param rules: rules block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#rules Role#rules}
+        :param sra_reports_access: Allow this role to view SRA Clusters. Currently only 'none', 'own' and 'all' values are supported. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#sra_reports_access Role#sra_reports_access}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -828,7 +828,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Role name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#name Role#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#name Role#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -840,7 +840,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#analytics_access Role#analytics_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#analytics_access Role#analytics_access}
         '''
         result = self._values.get("analytics_access")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -851,7 +851,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[RoleAssocAuthMethod]]]:
         '''assoc_auth_method block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#assoc_auth_method Role#assoc_auth_method}
         '''
         result = self._values.get("assoc_auth_method")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[RoleAssocAuthMethod]]], result)
@@ -862,14 +862,14 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view audit logs produced by the same auth methods.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#audit_access Role#audit_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#audit_access Role#audit_access}
         '''
         result = self._values.get("audit_access")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#comment Role#comment}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#comment Role#comment}.'''
         result = self._values.get("comment")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -877,7 +877,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#description Role#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#description Role#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -888,14 +888,14 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Currently only 'none', 'own' and 'all' values are supported, allowing associated auth methods to view reports produced by the same auth methods.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#gw_analytics_access Role#gw_analytics_access}
         '''
         result = self._values.get("gw_analytics_access")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#id Role#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#id Role#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -909,7 +909,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["RoleRules"]]]:
         '''rules block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#rules Role#rules}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#rules Role#rules}
         '''
         result = self._values.get("rules")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["RoleRules"]]], result)
@@ -918,7 +918,7 @@ class RoleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def sra_reports_access(self) -> typing.Optional[builtins.str]:
         '''Allow this role to view SRA Clusters. Currently only 'none', 'own' and 'all' values are supported.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#sra_reports_access Role#sra_reports_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#sra_reports_access Role#sra_reports_access}
         '''
         result = self._values.get("sra_reports_access")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -949,9 +949,9 @@ class RoleRules:
         rule_type: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param capability: List of the approved/denied capabilities in the path options: [read, create, update, delete, list, deny]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#capability Role#capability}
-        :param path: The path the rule refers to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#path Role#path}
-        :param rule_type: item-rule, target-rule, role-rule, auth-method-rule. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#rule_type Role#rule_type}
+        :param capability: List of the approved/denied capabilities in the path options: [read, create, update, delete, list, deny]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#capability Role#capability}
+        :param path: The path the rule refers to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#path Role#path}
+        :param rule_type: item-rule, target-rule, role-rule, auth-method-rule. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#rule_type Role#rule_type}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__c7d4db09967d84d8cfd4e8be826b5100a5e1d34191a97e3b485894441daa8e5c)
@@ -969,7 +969,7 @@ class RoleRules:
     def capability(self) -> typing.List[builtins.str]:
         '''List of the approved/denied capabilities in the path options: [read, create, update, delete, list, deny].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#capability Role#capability}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#capability Role#capability}
         '''
         result = self._values.get("capability")
         assert result is not None, "Required property 'capability' is missing"
@@ -979,7 +979,7 @@ class RoleRules:
     def path(self) -> builtins.str:
         '''The path the rule refers to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#path Role#path}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#path Role#path}
         '''
         result = self._values.get("path")
         assert result is not None, "Required property 'path' is missing"
@@ -989,7 +989,7 @@ class RoleRules:
     def rule_type(self) -> typing.Optional[builtins.str]:
         '''item-rule, target-rule, role-rule, auth-method-rule.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/role#rule_type Role#rule_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/role#rule_type Role#rule_type}
         '''
         result = self._values.get("rule_type")
         return typing.cast(typing.Optional[builtins.str], result)

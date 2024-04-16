@@ -1,3 +1,4 @@
+README
 setup.py
 akeyless_cdktf.egg-info/PKG-INFO
 akeyless_cdktf.egg-info/SOURCES.txt

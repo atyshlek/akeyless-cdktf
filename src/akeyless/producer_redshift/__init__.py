@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_redshift`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_redshift`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift).
+Refer to the Terraform Registry for docs: [`akeyless_producer_redshift`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerRedshift(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerRedshift.ProducerRedshift",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift akeyless_producer_redshift}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift akeyless_producer_redshift}.'''
 
     def __init__(
         self,
@@ -57,26 +57,26 @@ class ProducerRedshift(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift akeyless_producer_redshift} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift akeyless_producer_redshift} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#name ProducerRedshift#name}
-        :param creation_statements: Redshift Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#id ProducerRedshift#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
-        :param redshift_db_name: Redshift DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
-        :param redshift_host: Redshift host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
-        :param redshift_password: Redshift password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
-        :param redshift_port: Redshift port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
-        :param redshift_username: redshiftL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#tags ProducerRedshift#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#name ProducerRedshift#name}
+        :param creation_statements: Redshift Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#id ProducerRedshift#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
+        :param redshift_db_name: Redshift DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
+        :param redshift_host: Redshift host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
+        :param redshift_password: Redshift password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
+        :param redshift_port: Redshift port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
+        :param redshift_username: redshiftL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#tags ProducerRedshift#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -130,7 +130,7 @@ class ProducerRedshift(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerRedshift to import.
-        :param import_from_id: The id of the existing ProducerRedshift that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerRedshift that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerRedshift to import is found.
         '''
         if __debug__:
@@ -559,22 +559,22 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#name ProducerRedshift#name}
-        :param creation_statements: Redshift Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#id ProducerRedshift#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
-        :param redshift_db_name: Redshift DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
-        :param redshift_host: Redshift host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
-        :param redshift_password: Redshift password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
-        :param redshift_port: Redshift port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
-        :param redshift_username: redshiftL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#tags ProducerRedshift#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#name ProducerRedshift#name}
+        :param creation_statements: Redshift Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#id ProducerRedshift#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
+        :param redshift_db_name: Redshift DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
+        :param redshift_host: Redshift host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
+        :param redshift_password: Redshift password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
+        :param redshift_port: Redshift port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
+        :param redshift_username: redshiftL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#tags ProducerRedshift#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -719,7 +719,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#name ProducerRedshift#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#name ProducerRedshift#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -729,14 +729,14 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def creation_statements(self) -> typing.Optional[builtins.str]:
         '''Redshift Creation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#creation_statements ProducerRedshift#creation_statements}
         '''
         result = self._values.get("creation_statements")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#id ProducerRedshift#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#id ProducerRedshift#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#producer_encryption_key ProducerRedshift#producer_encryption_key}
         '''
         result = self._values.get("producer_encryption_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -757,7 +757,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def redshift_db_name(self) -> typing.Optional[builtins.str]:
         '''Redshift DB name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_db_name ProducerRedshift#redshift_db_name}
         '''
         result = self._values.get("redshift_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -766,7 +766,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def redshift_host(self) -> typing.Optional[builtins.str]:
         '''Redshift host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_host ProducerRedshift#redshift_host}
         '''
         result = self._values.get("redshift_host")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -775,7 +775,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def redshift_password(self) -> typing.Optional[builtins.str]:
         '''Redshift password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_password ProducerRedshift#redshift_password}
         '''
         result = self._values.get("redshift_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -784,7 +784,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def redshift_port(self) -> typing.Optional[builtins.str]:
         '''Redshift port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_port ProducerRedshift#redshift_port}
         '''
         result = self._values.get("redshift_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -793,7 +793,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def redshift_username(self) -> typing.Optional[builtins.str]:
         '''redshiftL user.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#redshift_username ProducerRedshift#redshift_username}
         '''
         result = self._values.get("redshift_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -802,7 +802,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_name(self) -> typing.Optional[builtins.str]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_db_name ProducerRedshift#secure_access_db_name}
         '''
         result = self._values.get("secure_access_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -811,7 +811,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_enable ProducerRedshift#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -820,7 +820,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_host(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Target DB servers for connections., For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_host ProducerRedshift#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -831,7 +831,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#secure_access_web ProducerRedshift#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -842,7 +842,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#tags ProducerRedshift#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#tags ProducerRedshift#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -851,7 +851,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#target_name ProducerRedshift#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -860,7 +860,7 @@ class ProducerRedshiftConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_redshift#user_ttl ProducerRedshift#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

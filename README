@@ -1,0 +1,13 @@
+Steps:
+- Generate latest provider
+
+  > cdktf provider add akeyless-community/akeyless
+
+- Check latest python build
+  
+  > python3 -m pip install --upgrade build
+
+- Build
+  
+  > python3 -m build
+

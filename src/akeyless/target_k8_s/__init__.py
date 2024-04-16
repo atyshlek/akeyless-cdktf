@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_k8s`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s).
+Refer to the Terraform Registry for docs: [`akeyless_target_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetK8S(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetK8S.TargetK8S",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s akeyless_target_k8s}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s akeyless_target_k8s}.'''
 
     def __init__(
         self,
@@ -49,18 +49,18 @@ class TargetK8S(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s akeyless_target_k8s} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s akeyless_target_k8s} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
-        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
-        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#name TargetK8S#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#comment TargetK8S#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#description TargetK8S#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#id TargetK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#key TargetK8S#key}
+        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
+        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
+        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#name TargetK8S#name}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#comment TargetK8S#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#description TargetK8S#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#id TargetK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#key TargetK8S#key}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -106,7 +106,7 @@ class TargetK8S(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetK8S to import.
-        :param import_from_id: The id of the existing TargetK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetK8S to import is found.
         '''
         if __debug__:
@@ -332,14 +332,14 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
-        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
-        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#name TargetK8S#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#comment TargetK8S#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#description TargetK8S#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#id TargetK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#key TargetK8S#key}
+        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
+        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
+        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#name TargetK8S#name}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#comment TargetK8S#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#description TargetK8S#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#id TargetK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#key TargetK8S#key}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -457,7 +457,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_ca_cert(self) -> builtins.str:
         '''K8S Cluster certificate. Base 64 encoded certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_ca_cert TargetK8S#k8s_cluster_ca_cert}
         '''
         result = self._values.get("k8_s_cluster_ca_cert")
         assert result is not None, "Required property 'k8_s_cluster_ca_cert' is missing"
@@ -467,7 +467,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_endpoint(self) -> builtins.str:
         '''K8S Cluster endpoint. https:// , <DNS / IP> of the cluster.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_endpoint TargetK8S#k8s_cluster_endpoint}
         '''
         result = self._values.get("k8_s_cluster_endpoint")
         assert result is not None, "Required property 'k8_s_cluster_endpoint' is missing"
@@ -477,7 +477,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_token(self) -> builtins.str:
         '''K8S Cluster authentication token.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#k8s_cluster_token TargetK8S#k8s_cluster_token}
         '''
         result = self._values.get("k8_s_cluster_token")
         assert result is not None, "Required property 'k8_s_cluster_token' is missing"
@@ -487,7 +487,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#name TargetK8S#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#name TargetK8S#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -495,7 +495,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#comment TargetK8S#comment}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#comment TargetK8S#comment}.'''
         result = self._values.get("comment")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -503,14 +503,14 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#description TargetK8S#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#description TargetK8S#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#id TargetK8S#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#id TargetK8S#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -524,7 +524,7 @@ class TargetK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_k8s#key TargetK8S#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_k8s#key TargetK8S#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)

@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_aws`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_aws`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws).
+Refer to the Terraform Registry for docs: [`akeyless_producer_aws`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerAws(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerAws.ProducerAws",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws akeyless_producer_aws}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws akeyless_producer_aws}.'''
 
     def __init__(
         self,
@@ -64,33 +64,33 @@ class ProducerAws(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws akeyless_producer_aws} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws akeyless_producer_aws} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#name ProducerAws#name}
-        :param access_mode: The types of credentials to retrieve from AWS. Options:[iam_user,assume_role]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
-        :param aws_access_key_id: Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
-        :param aws_access_secret_key: Access Secret Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
-        :param aws_role_arns: AWS Role ARNs to be use in the Assume Role operation. Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
-        :param aws_user_console_access: Enable AWS User console access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
-        :param aws_user_groups: UserGroup name(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
-        :param aws_user_policies: Policy ARN(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
-        :param aws_user_programmatic_access: Enable AWS User programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#id ProducerAws#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
-        :param region: Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#region ProducerAws#region}
-        :param secure_access_aws_account_id: The aws account id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
-        :param secure_access_aws_native_cli: The aws native cli. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
-        :param secure_access_aws_region: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
-        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#tags ProducerAws#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#target_name ProducerAws#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#name ProducerAws#name}
+        :param access_mode: The types of credentials to retrieve from AWS. Options:[iam_user,assume_role]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
+        :param aws_access_key_id: Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
+        :param aws_access_secret_key: Access Secret Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
+        :param aws_role_arns: AWS Role ARNs to be use in the Assume Role operation. Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
+        :param aws_user_console_access: Enable AWS User console access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
+        :param aws_user_groups: UserGroup name(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
+        :param aws_user_policies: Policy ARN(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
+        :param aws_user_programmatic_access: Enable AWS User programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#id ProducerAws#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
+        :param region: Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#region ProducerAws#region}
+        :param secure_access_aws_account_id: The aws account id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
+        :param secure_access_aws_native_cli: The aws native cli. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
+        :param secure_access_aws_region: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
+        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#tags ProducerAws#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#target_name ProducerAws#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -151,7 +151,7 @@ class ProducerAws(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerAws to import.
-        :param import_from_id: The id of the existing ProducerAws that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerAws that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerAws to import is found.
         '''
         if __debug__:
@@ -769,29 +769,29 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#name ProducerAws#name}
-        :param access_mode: The types of credentials to retrieve from AWS. Options:[iam_user,assume_role]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
-        :param aws_access_key_id: Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
-        :param aws_access_secret_key: Access Secret Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
-        :param aws_role_arns: AWS Role ARNs to be use in the Assume Role operation. Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
-        :param aws_user_console_access: Enable AWS User console access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
-        :param aws_user_groups: UserGroup name(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
-        :param aws_user_policies: Policy ARN(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
-        :param aws_user_programmatic_access: Enable AWS User programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#id ProducerAws#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
-        :param region: Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#region ProducerAws#region}
-        :param secure_access_aws_account_id: The aws account id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
-        :param secure_access_aws_native_cli: The aws native cli. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
-        :param secure_access_aws_region: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
-        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#tags ProducerAws#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#target_name ProducerAws#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#name ProducerAws#name}
+        :param access_mode: The types of credentials to retrieve from AWS. Options:[iam_user,assume_role]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
+        :param aws_access_key_id: Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
+        :param aws_access_secret_key: Access Secret Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
+        :param aws_role_arns: AWS Role ARNs to be use in the Assume Role operation. Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
+        :param aws_user_console_access: Enable AWS User console access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
+        :param aws_user_groups: UserGroup name(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
+        :param aws_user_policies: Policy ARN(s). Multiple values should be separated by comma. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
+        :param aws_user_programmatic_access: Enable AWS User programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#id ProducerAws#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
+        :param region: Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#region ProducerAws#region}
+        :param secure_access_aws_account_id: The aws account id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
+        :param secure_access_aws_native_cli: The aws native cli. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
+        :param secure_access_aws_region: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
+        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#tags ProducerAws#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#target_name ProducerAws#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -957,7 +957,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#name ProducerAws#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#name ProducerAws#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -967,7 +967,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_mode(self) -> typing.Optional[builtins.str]:
         '''The types of credentials to retrieve from AWS. Options:[iam_user,assume_role].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#access_mode ProducerAws#access_mode}
         '''
         result = self._values.get("access_mode")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -976,7 +976,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def aws_access_key_id(self) -> typing.Optional[builtins.str]:
         '''Access Key ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_key_id ProducerAws#aws_access_key_id}
         '''
         result = self._values.get("aws_access_key_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -985,7 +985,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def aws_access_secret_key(self) -> typing.Optional[builtins.str]:
         '''Access Secret Key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_access_secret_key ProducerAws#aws_access_secret_key}
         '''
         result = self._values.get("aws_access_secret_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -994,7 +994,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def aws_role_arns(self) -> typing.Optional[builtins.str]:
         '''AWS Role ARNs to be use in the Assume Role operation. Multiple values should be separated by comma.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_role_arns ProducerAws#aws_role_arns}
         '''
         result = self._values.get("aws_role_arns")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1005,7 +1005,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable AWS User console access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_console_access ProducerAws#aws_user_console_access}
         '''
         result = self._values.get("aws_user_console_access")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1014,7 +1014,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def aws_user_groups(self) -> typing.Optional[builtins.str]:
         '''UserGroup name(s). Multiple values should be separated by comma.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_groups ProducerAws#aws_user_groups}
         '''
         result = self._values.get("aws_user_groups")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1023,7 +1023,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def aws_user_policies(self) -> typing.Optional[builtins.str]:
         '''Policy ARN(s). Multiple values should be separated by comma.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_policies ProducerAws#aws_user_policies}
         '''
         result = self._values.get("aws_user_policies")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1034,14 +1034,14 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable AWS User programmatic access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#aws_user_programmatic_access ProducerAws#aws_user_programmatic_access}
         '''
         result = self._values.get("aws_user_programmatic_access")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#id ProducerAws#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#id ProducerAws#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#producer_encryption_key_name ProducerAws#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1062,7 +1062,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def region(self) -> typing.Optional[builtins.str]:
         '''Region.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#region ProducerAws#region}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#region ProducerAws#region}
         '''
         result = self._values.get("region")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1071,7 +1071,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_aws_account_id(self) -> typing.Optional[builtins.str]:
         '''The aws account id.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_account_id ProducerAws#secure_access_aws_account_id}
         '''
         result = self._values.get("secure_access_aws_account_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1082,14 +1082,14 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''The aws native cli.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_native_cli ProducerAws#secure_access_aws_native_cli}
         '''
         result = self._values.get("secure_access_aws_native_cli")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def secure_access_aws_region(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_aws_region ProducerAws#secure_access_aws_region}.'''
         result = self._values.get("secure_access_aws_region")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -1097,7 +1097,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_bastion_issuer ProducerAws#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1106,14 +1106,14 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_enable ProducerAws#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def secure_access_url(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_url ProducerAws#secure_access_url}.'''
         result = self._values.get("secure_access_url")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -1123,7 +1123,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web ProducerAws#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1134,7 +1134,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Secure browser via Akeyless Web Access Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#secure_access_web_browsing ProducerAws#secure_access_web_browsing}
         '''
         result = self._values.get("secure_access_web_browsing")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1145,7 +1145,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#tags ProducerAws#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#tags ProducerAws#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1154,7 +1154,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#target_name ProducerAws#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#target_name ProducerAws#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1163,7 +1163,7 @@ class ProducerAwsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_aws#user_ttl ProducerAws#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

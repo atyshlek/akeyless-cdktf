@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_azure`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_azure`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure).
+Refer to the Terraform Registry for docs: [`akeyless_producer_azure`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerAzure(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerAzure.ProducerAzure",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure akeyless_producer_azure}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure akeyless_producer_azure}.'''
 
     def __init__(
         self,
@@ -60,29 +60,29 @@ class ProducerAzure(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure akeyless_producer_azure} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure akeyless_producer_azure} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#name ProducerAzure#name}
-        :param app_obj_id: Azure App Object ID (required if selected programmatic access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
-        :param azure_client_id: Azure Client ID (Application ID). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
-        :param azure_client_secret: Azure AD Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
-        :param azure_tenant_id: Azure Tenant ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#id ProducerAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
-        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#tags ProducerAzure#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#target_name ProducerAzure#target_name}
-        :param user_group_obj_id: Azure AD User Group Object ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
-        :param user_portal_access: Enable Azure AD user portal access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
-        :param user_principal_name: Azure AD User Principal Name (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
-        :param user_programmatic_access: Enable Azure AD user programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
-        :param user_role_template_id: Azure AD User Role Template ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#name ProducerAzure#name}
+        :param app_obj_id: Azure App Object ID (required if selected programmatic access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
+        :param azure_client_id: Azure Client ID (Application ID). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
+        :param azure_client_secret: Azure AD Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
+        :param azure_tenant_id: Azure Tenant ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#id ProducerAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
+        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#tags ProducerAzure#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#target_name ProducerAzure#target_name}
+        :param user_group_obj_id: Azure AD User Group Object ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
+        :param user_portal_access: Enable Azure AD user portal access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
+        :param user_principal_name: Azure AD User Principal Name (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
+        :param user_programmatic_access: Enable Azure AD user programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
+        :param user_role_template_id: Azure AD User Role Template ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -139,7 +139,7 @@ class ProducerAzure(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerAzure to import.
-        :param import_from_id: The id of the existing ProducerAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerAzure to import is found.
         '''
         if __debug__:
@@ -658,25 +658,25 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#name ProducerAzure#name}
-        :param app_obj_id: Azure App Object ID (required if selected programmatic access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
-        :param azure_client_id: Azure Client ID (Application ID). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
-        :param azure_client_secret: Azure AD Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
-        :param azure_tenant_id: Azure Tenant ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#id ProducerAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
-        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#tags ProducerAzure#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#target_name ProducerAzure#target_name}
-        :param user_group_obj_id: Azure AD User Group Object ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
-        :param user_portal_access: Enable Azure AD user portal access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
-        :param user_principal_name: Azure AD User Principal Name (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
-        :param user_programmatic_access: Enable Azure AD user programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
-        :param user_role_template_id: Azure AD User Role Template ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#name ProducerAzure#name}
+        :param app_obj_id: Azure App Object ID (required if selected programmatic access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
+        :param azure_client_id: Azure Client ID (Application ID). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
+        :param azure_client_secret: Azure AD Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
+        :param azure_tenant_id: Azure Tenant ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#id ProducerAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
+        :param secure_access_url: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#tags ProducerAzure#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#target_name ProducerAzure#target_name}
+        :param user_group_obj_id: Azure AD User Group Object ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
+        :param user_portal_access: Enable Azure AD user portal access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
+        :param user_principal_name: Azure AD User Principal Name (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
+        :param user_programmatic_access: Enable Azure AD user programmatic access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
+        :param user_role_template_id: Azure AD User Role Template ID (required if selected Portal access). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -830,7 +830,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#name ProducerAzure#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#name ProducerAzure#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -840,7 +840,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def app_obj_id(self) -> typing.Optional[builtins.str]:
         '''Azure App Object ID (required if selected programmatic access).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#app_obj_id ProducerAzure#app_obj_id}
         '''
         result = self._values.get("app_obj_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -849,7 +849,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def azure_client_id(self) -> typing.Optional[builtins.str]:
         '''Azure Client ID (Application ID).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_id ProducerAzure#azure_client_id}
         '''
         result = self._values.get("azure_client_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -858,7 +858,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def azure_client_secret(self) -> typing.Optional[builtins.str]:
         '''Azure AD Client Secret.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_client_secret ProducerAzure#azure_client_secret}
         '''
         result = self._values.get("azure_client_secret")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -867,14 +867,14 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def azure_tenant_id(self) -> typing.Optional[builtins.str]:
         '''Azure Tenant ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#azure_tenant_id ProducerAzure#azure_tenant_id}
         '''
         result = self._values.get("azure_tenant_id")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#id ProducerAzure#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#id ProducerAzure#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -886,7 +886,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#producer_encryption_key_name ProducerAzure#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -895,14 +895,14 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_enable ProducerAzure#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def secure_access_url(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_url ProducerAzure#secure_access_url}.'''
         result = self._values.get("secure_access_url")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -912,7 +912,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web ProducerAzure#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -923,7 +923,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Secure browser via Akeyless Web Access Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#secure_access_web_browsing ProducerAzure#secure_access_web_browsing}
         '''
         result = self._values.get("secure_access_web_browsing")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -934,7 +934,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#tags ProducerAzure#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#tags ProducerAzure#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -943,7 +943,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#target_name ProducerAzure#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#target_name ProducerAzure#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -952,7 +952,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_group_obj_id(self) -> typing.Optional[builtins.str]:
         '''Azure AD User Group Object ID (required if selected Portal access).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_group_obj_id ProducerAzure#user_group_obj_id}
         '''
         result = self._values.get("user_group_obj_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -963,7 +963,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Azure AD user portal access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_portal_access ProducerAzure#user_portal_access}
         '''
         result = self._values.get("user_portal_access")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -972,7 +972,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_principal_name(self) -> typing.Optional[builtins.str]:
         '''Azure AD User Principal Name (required if selected Portal access).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_principal_name ProducerAzure#user_principal_name}
         '''
         result = self._values.get("user_principal_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -983,7 +983,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Azure AD user programmatic access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_programmatic_access ProducerAzure#user_programmatic_access}
         '''
         result = self._values.get("user_programmatic_access")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -992,7 +992,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_role_template_id(self) -> typing.Optional[builtins.str]:
         '''Azure AD User Role Template ID (required if selected Portal access).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_role_template_id ProducerAzure#user_role_template_id}
         '''
         result = self._values.get("user_role_template_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1001,7 +1001,7 @@ class ProducerAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_azure#user_ttl ProducerAzure#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

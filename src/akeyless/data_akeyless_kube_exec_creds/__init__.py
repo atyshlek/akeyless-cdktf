@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_kube_exec_creds`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_kube_exec_creds`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds).
+Refer to the Terraform Registry for docs: [`data_akeyless_kube_exec_creds`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessKubeExecCreds(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessKubeExecCreds.DataAkeylessKubeExecCreds",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds akeyless_kube_exec_creds}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds akeyless_kube_exec_creds}.'''
 
     def __init__(
         self,
@@ -47,16 +47,16 @@ class DataAkeylessKubeExecCreds(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds akeyless_kube_exec_creds} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds akeyless_kube_exec_creds} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
-        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
-        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_data_base64: pki key file contents encoded using Base64. If this option is used, the certificate will be printed to stdout. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
-        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
+        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
+        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
+        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_data_base64: pki key file contents encoded using Base64. If this option is used, the certificate will be printed to stdout. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
+        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -100,7 +100,7 @@ class DataAkeylessKubeExecCreds(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessKubeExecCreds to import.
-        :param import_from_id: The id of the existing DataAkeylessKubeExecCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessKubeExecCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessKubeExecCreds to import is found.
         '''
         if __debug__:
@@ -317,12 +317,12 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
-        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
-        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_data_base64: pki key file contents encoded using Base64. If this option is used, the certificate will be printed to stdout. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
-        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
+        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
+        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
+        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_data_base64: pki key file contents encoded using Base64. If this option is used, the certificate will be printed to stdout. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
+        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -437,7 +437,7 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cert_issuer_name(self) -> builtins.str:
         '''The name of the PKI certificate issuer.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#cert_issuer_name DataAkeylessKubeExecCreds#cert_issuer_name}
         '''
         result = self._values.get("cert_issuer_name")
         assert result is not None, "Required property 'cert_issuer_name' is missing"
@@ -447,7 +447,7 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def alt_names(self) -> typing.Optional[builtins.str]:
         '''The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#alt_names DataAkeylessKubeExecCreds#alt_names}
         '''
         result = self._values.get("alt_names")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -456,14 +456,14 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def common_name(self) -> typing.Optional[builtins.str]:
         '''The common name to be included in the PKI certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#common_name DataAkeylessKubeExecCreds#common_name}
         '''
         result = self._values.get("common_name")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#id DataAkeylessKubeExecCreds#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -475,7 +475,7 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def key_data_base64(self) -> typing.Optional[builtins.str]:
         '''pki key file contents encoded using Base64. If this option is used, the certificate will be printed to stdout.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#key_data_base64 DataAkeylessKubeExecCreds#key_data_base64}
         '''
         result = self._values.get("key_data_base64")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -484,7 +484,7 @@ class DataAkeylessKubeExecCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def uri_sans(self) -> typing.Optional[builtins.str]:
         '''The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/kube_exec_creds#uri_sans DataAkeylessKubeExecCreds#uri_sans}
         '''
         result = self._values.get("uri_sans")
         return typing.cast(typing.Optional[builtins.str], result)

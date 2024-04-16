@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_artifactory`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_artifactory`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory).
+Refer to the Terraform Registry for docs: [`akeyless_target_artifactory`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetArtifactory(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetArtifactory.TargetArtifactory",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory akeyless_target_artifactory}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory akeyless_target_artifactory}.'''
 
     def __init__(
         self,
@@ -49,18 +49,18 @@ class TargetArtifactory(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory akeyless_target_artifactory} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory akeyless_target_artifactory} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param artifactory_admin_name: Admin name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
-        :param artifactory_admin_pwd: Admin API Key/Password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
-        :param base_url: Artifactory REST URL, must end with artifactory postfix. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#name TargetArtifactory#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#comment TargetArtifactory#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#description TargetArtifactory#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#id TargetArtifactory#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#key TargetArtifactory#key}
+        :param artifactory_admin_name: Admin name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
+        :param artifactory_admin_pwd: Admin API Key/Password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
+        :param base_url: Artifactory REST URL, must end with artifactory postfix. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#name TargetArtifactory#name}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#comment TargetArtifactory#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#description TargetArtifactory#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#id TargetArtifactory#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#key TargetArtifactory#key}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -106,7 +106,7 @@ class TargetArtifactory(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetArtifactory to import.
-        :param import_from_id: The id of the existing TargetArtifactory that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetArtifactory that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetArtifactory to import is found.
         '''
         if __debug__:
@@ -332,14 +332,14 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param artifactory_admin_name: Admin name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
-        :param artifactory_admin_pwd: Admin API Key/Password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
-        :param base_url: Artifactory REST URL, must end with artifactory postfix. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#name TargetArtifactory#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#comment TargetArtifactory#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#description TargetArtifactory#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#id TargetArtifactory#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#key TargetArtifactory#key}
+        :param artifactory_admin_name: Admin name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
+        :param artifactory_admin_pwd: Admin API Key/Password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
+        :param base_url: Artifactory REST URL, must end with artifactory postfix. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#name TargetArtifactory#name}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#comment TargetArtifactory#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#description TargetArtifactory#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#id TargetArtifactory#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#key TargetArtifactory#key}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -457,7 +457,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def artifactory_admin_name(self) -> builtins.str:
         '''Admin name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_name TargetArtifactory#artifactory_admin_name}
         '''
         result = self._values.get("artifactory_admin_name")
         assert result is not None, "Required property 'artifactory_admin_name' is missing"
@@ -467,7 +467,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def artifactory_admin_pwd(self) -> builtins.str:
         '''Admin API Key/Password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#artifactory_admin_pwd TargetArtifactory#artifactory_admin_pwd}
         '''
         result = self._values.get("artifactory_admin_pwd")
         assert result is not None, "Required property 'artifactory_admin_pwd' is missing"
@@ -477,7 +477,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def base_url(self) -> builtins.str:
         '''Artifactory REST URL, must end with artifactory postfix.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#base_url TargetArtifactory#base_url}
         '''
         result = self._values.get("base_url")
         assert result is not None, "Required property 'base_url' is missing"
@@ -487,7 +487,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#name TargetArtifactory#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#name TargetArtifactory#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -495,7 +495,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#comment TargetArtifactory#comment}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#comment TargetArtifactory#comment}.'''
         result = self._values.get("comment")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -503,14 +503,14 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#description TargetArtifactory#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#description TargetArtifactory#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#id TargetArtifactory#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#id TargetArtifactory#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -522,7 +522,7 @@ class TargetArtifactoryConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def key(self) -> typing.Optional[builtins.str]:
         '''The name of a key that used to encrypt the target secret value (if empty, the account default protectionKey key will be used).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_artifactory#key TargetArtifactory#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_artifactory#key TargetArtifactory#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)

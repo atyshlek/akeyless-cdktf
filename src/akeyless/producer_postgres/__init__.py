@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_postgres`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_postgres`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres).
+Refer to the Terraform Registry for docs: [`akeyless_producer_postgres`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerPostgres(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerPostgres.ProducerPostgres",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres akeyless_producer_postgres}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres akeyless_producer_postgres}.'''
 
     def __init__(
         self,
@@ -59,28 +59,28 @@ class ProducerPostgres(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres akeyless_producer_postgres} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres akeyless_producer_postgres} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#name ProducerPostgres#name}
-        :param creation_statements: PostgreSQL Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#id ProducerPostgres#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param postgresql_db_name: PostgreSQL DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
-        :param postgresql_host: PostgreSQL host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
-        :param postgresql_password: PostgreSQL password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
-        :param postgresql_port: PostgreSQL port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
-        :param postgresql_username: PostgreSQL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
-        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
-        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#tags ProducerPostgres#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#name ProducerPostgres#name}
+        :param creation_statements: PostgreSQL Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#id ProducerPostgres#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param postgresql_db_name: PostgreSQL DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
+        :param postgresql_host: PostgreSQL host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
+        :param postgresql_password: PostgreSQL password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
+        :param postgresql_port: PostgreSQL port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
+        :param postgresql_username: PostgreSQL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
+        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
+        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#tags ProducerPostgres#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -136,7 +136,7 @@ class ProducerPostgres(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerPostgres to import.
-        :param import_from_id: The id of the existing ProducerPostgres that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerPostgres that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerPostgres to import is found.
         '''
         if __debug__:
@@ -611,24 +611,24 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#name ProducerPostgres#name}
-        :param creation_statements: PostgreSQL Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#id ProducerPostgres#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param postgresql_db_name: PostgreSQL DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
-        :param postgresql_host: PostgreSQL host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
-        :param postgresql_password: PostgreSQL password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
-        :param postgresql_port: PostgreSQL port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
-        :param postgresql_username: PostgreSQL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
-        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
-        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#tags ProducerPostgres#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#name ProducerPostgres#name}
+        :param creation_statements: PostgreSQL Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#id ProducerPostgres#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param postgresql_db_name: PostgreSQL DB name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
+        :param postgresql_host: PostgreSQL host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
+        :param postgresql_password: PostgreSQL password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
+        :param postgresql_port: PostgreSQL port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
+        :param postgresql_username: PostgreSQL user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
+        :param producer_encryption_key: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
+        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#tags ProducerPostgres#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -779,7 +779,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#name ProducerPostgres#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#name ProducerPostgres#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -789,14 +789,14 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def creation_statements(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL Creation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#creation_statements ProducerPostgres#creation_statements}
         '''
         result = self._values.get("creation_statements")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#id ProducerPostgres#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#id ProducerPostgres#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -808,7 +808,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postgresql_db_name(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL DB name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_db_name ProducerPostgres#postgresql_db_name}
         '''
         result = self._values.get("postgresql_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -817,7 +817,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postgresql_host(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_host ProducerPostgres#postgresql_host}
         '''
         result = self._values.get("postgresql_host")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -826,7 +826,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postgresql_password(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_password ProducerPostgres#postgresql_password}
         '''
         result = self._values.get("postgresql_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -835,7 +835,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postgresql_port(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_port ProducerPostgres#postgresql_port}
         '''
         result = self._values.get("postgresql_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -844,7 +844,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postgresql_username(self) -> typing.Optional[builtins.str]:
         '''PostgreSQL user.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#postgresql_username ProducerPostgres#postgresql_username}
         '''
         result = self._values.get("postgresql_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -853,7 +853,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#producer_encryption_key ProducerPostgres#producer_encryption_key}
         '''
         result = self._values.get("producer_encryption_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -862,7 +862,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_bastion_issuer ProducerPostgres#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -871,7 +871,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_name(self) -> typing.Optional[builtins.str]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_name ProducerPostgres#secure_access_db_name}
         '''
         result = self._values.get("secure_access_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -880,7 +880,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_schema(self) -> typing.Optional[builtins.str]:
         '''The db schema.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_db_schema ProducerPostgres#secure_access_db_schema}
         '''
         result = self._values.get("secure_access_db_schema")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -889,7 +889,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_enable ProducerPostgres#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -898,7 +898,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_host(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Target DB servers for connections., For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_host ProducerPostgres#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -909,7 +909,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#secure_access_web ProducerPostgres#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -920,7 +920,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#tags ProducerPostgres#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#tags ProducerPostgres#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -929,7 +929,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#target_name ProducerPostgres#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -938,7 +938,7 @@ class ProducerPostgresConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_postgres#user_ttl ProducerPostgres#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

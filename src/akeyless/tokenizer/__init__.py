@@ -1,7 +1,7 @@
 '''
 # `akeyless_tokenizer`
 
-Refer to the Terraform Registry for docs: [`akeyless_tokenizer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer).
+Refer to the Terraform Registry for docs: [`akeyless_tokenizer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class Tokenizer(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.tokenizer.Tokenizer",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer akeyless_tokenizer}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer akeyless_tokenizer}.'''
 
     def __init__(
         self,
@@ -55,24 +55,24 @@ class Tokenizer(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer akeyless_tokenizer} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer akeyless_tokenizer} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Tokenizer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#name Tokenizer#name}
-        :param template_type: Which template type this tokenizer is used for [SSN,CreditCard,USPhoneNumber,Custom]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#template_type Tokenizer#template_type}
-        :param alphabet: Alphabet to use in custom vaultless tokenization, such as '0123456789' for credit cards. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
-        :param decoding_template: The Decoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#description Tokenizer#description}
-        :param encoding_template: The Encoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
-        :param encryption_key_name: AES key name to use in vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#id Tokenizer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: A metadata about the tokenizer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#metadata Tokenizer#metadata}
-        :param pattern: Pattern to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#pattern Tokenizer#pattern}
-        :param tag: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tag Tokenizer#tag}
-        :param tokenizer_type: Tokenizer type(vaultless). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
-        :param tweak_type: The tweak type to use in vaultless tokenization [Supplied, Generated, Internal, Masking]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
+        :param name: Tokenizer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#name Tokenizer#name}
+        :param template_type: Which template type this tokenizer is used for [SSN,CreditCard,USPhoneNumber,Custom]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#template_type Tokenizer#template_type}
+        :param alphabet: Alphabet to use in custom vaultless tokenization, such as '0123456789' for credit cards. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
+        :param decoding_template: The Decoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#description Tokenizer#description}
+        :param encoding_template: The Encoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
+        :param encryption_key_name: AES key name to use in vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#id Tokenizer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: A metadata about the tokenizer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#metadata Tokenizer#metadata}
+        :param pattern: Pattern to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#pattern Tokenizer#pattern}
+        :param tag: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tag Tokenizer#tag}
+        :param tokenizer_type: Tokenizer type(vaultless). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
+        :param tweak_type: The tweak type to use in vaultless tokenization [Supplied, Generated, Internal, Masking]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -124,7 +124,7 @@ class Tokenizer(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the Tokenizer to import.
-        :param import_from_id: The id of the existing Tokenizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing Tokenizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the Tokenizer to import is found.
         '''
         if __debug__:
@@ -501,20 +501,20 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Tokenizer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#name Tokenizer#name}
-        :param template_type: Which template type this tokenizer is used for [SSN,CreditCard,USPhoneNumber,Custom]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#template_type Tokenizer#template_type}
-        :param alphabet: Alphabet to use in custom vaultless tokenization, such as '0123456789' for credit cards. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
-        :param decoding_template: The Decoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#description Tokenizer#description}
-        :param encoding_template: The Encoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
-        :param encryption_key_name: AES key name to use in vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#id Tokenizer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: A metadata about the tokenizer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#metadata Tokenizer#metadata}
-        :param pattern: Pattern to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#pattern Tokenizer#pattern}
-        :param tag: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tag Tokenizer#tag}
-        :param tokenizer_type: Tokenizer type(vaultless). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
-        :param tweak_type: The tweak type to use in vaultless tokenization [Supplied, Generated, Internal, Masking]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
+        :param name: Tokenizer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#name Tokenizer#name}
+        :param template_type: Which template type this tokenizer is used for [SSN,CreditCard,USPhoneNumber,Custom]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#template_type Tokenizer#template_type}
+        :param alphabet: Alphabet to use in custom vaultless tokenization, such as '0123456789' for credit cards. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
+        :param decoding_template: The Decoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#description Tokenizer#description}
+        :param encoding_template: The Encoding output template to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
+        :param encryption_key_name: AES key name to use in vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#id Tokenizer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: A metadata about the tokenizer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#metadata Tokenizer#metadata}
+        :param pattern: Pattern to use in custom vaultless tokenization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#pattern Tokenizer#pattern}
+        :param tag: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tag Tokenizer#tag}
+        :param tokenizer_type: Tokenizer type(vaultless). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
+        :param tweak_type: The tweak type to use in vaultless tokenization [Supplied, Generated, Internal, Masking]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -652,7 +652,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Tokenizer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#name Tokenizer#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#name Tokenizer#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -662,7 +662,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def template_type(self) -> builtins.str:
         '''Which template type this tokenizer is used for [SSN,CreditCard,USPhoneNumber,Custom].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#template_type Tokenizer#template_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#template_type Tokenizer#template_type}
         '''
         result = self._values.get("template_type")
         assert result is not None, "Required property 'template_type' is missing"
@@ -672,7 +672,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def alphabet(self) -> typing.Optional[builtins.str]:
         '''Alphabet to use in custom vaultless tokenization, such as '0123456789' for credit cards.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#alphabet Tokenizer#alphabet}
         '''
         result = self._values.get("alphabet")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -681,7 +681,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def decoding_template(self) -> typing.Optional[builtins.str]:
         '''The Decoding output template to use in custom vaultless tokenization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#decoding_template Tokenizer#decoding_template}
         '''
         result = self._values.get("decoding_template")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -690,7 +690,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def delete_protection(self) -> typing.Optional[builtins.str]:
         '''Protection from accidental deletion of this item, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#delete_protection Tokenizer#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -699,7 +699,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#description Tokenizer#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#description Tokenizer#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -708,7 +708,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def encoding_template(self) -> typing.Optional[builtins.str]:
         '''The Encoding output template to use in custom vaultless tokenization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encoding_template Tokenizer#encoding_template}
         '''
         result = self._values.get("encoding_template")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -717,14 +717,14 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''AES key name to use in vaultless tokenization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#encryption_key_name Tokenizer#encryption_key_name}
         '''
         result = self._values.get("encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#id Tokenizer#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#id Tokenizer#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -736,7 +736,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def metadata(self) -> typing.Optional[builtins.str]:
         '''A metadata about the tokenizer.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#metadata Tokenizer#metadata}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#metadata Tokenizer#metadata}
         '''
         result = self._values.get("metadata")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -745,7 +745,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def pattern(self) -> typing.Optional[builtins.str]:
         '''Pattern to use in custom vaultless tokenization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#pattern Tokenizer#pattern}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#pattern Tokenizer#pattern}
         '''
         result = self._values.get("pattern")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -756,7 +756,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tag Tokenizer#tag}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tag Tokenizer#tag}
         '''
         result = self._values.get("tag")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -765,7 +765,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tokenizer_type(self) -> typing.Optional[builtins.str]:
         '''Tokenizer type(vaultless).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tokenizer_type Tokenizer#tokenizer_type}
         '''
         result = self._values.get("tokenizer_type")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -774,7 +774,7 @@ class TokenizerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tweak_type(self) -> typing.Optional[builtins.str]:
         '''The tweak type to use in vaultless tokenization [Supplied, Generated, Internal, Masking].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/tokenizer#tweak_type Tokenizer#tweak_type}
         '''
         result = self._values.get("tweak_type")
         return typing.cast(typing.Optional[builtins.str], result)

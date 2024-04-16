@@ -1,7 +1,7 @@
 '''
 # `akeyless_dfc_key`
 
-Refer to the Terraform Registry for docs: [`akeyless_dfc_key`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key).
+Refer to the Terraform Registry for docs: [`akeyless_dfc_key`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DfcKey(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dfcKey.DfcKey",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key akeyless_dfc_key}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key akeyless_dfc_key}.'''
 
     def __init__(
         self,
@@ -58,27 +58,27 @@ class DfcKey(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key akeyless_dfc_key} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key akeyless_dfc_key} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param alg: DFCKey type; options: [AES128GCM, AES256GCM, AES128SIV, AES256SIV, AES128CBC, AES256CBC, RSA1024, RSA2048, RSA3072, RSA4096]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#alg DfcKey#alg}
-        :param name: DFCKey name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#name DfcKey#name}
-        :param cert_data_base64: PEM Certificate in a Base64 format. Used for updating RSA keys' certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
-        :param certificate_common_name: Common name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
-        :param certificate_country: Country name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
-        :param certificate_locality: Locality for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
-        :param certificate_organization: Organization name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
-        :param certificate_province: Province name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
-        :param certificate_ttl: TTL in days for the generated certificate. Required only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
-        :param customer_frg_id: The customer fragment ID that will be used to create the DFC key (if empty, the key will be created independently of a customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#description DfcKey#description}
-        :param generate_self_signed_certificate: Whether to generate a self signed certificate with the key. If set, certificate-ttl must be provided. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#id DfcKey#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#metadata DfcKey#metadata}.
-        :param split_level: The number of fragments that the item will be split into (not includes customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#split_level DfcKey#split_level}
-        :param tags: List of the tags attached to this DFC key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#tags DfcKey#tags}
+        :param alg: DFCKey type; options: [AES128GCM, AES256GCM, AES128SIV, AES256SIV, AES128CBC, AES256CBC, RSA1024, RSA2048, RSA3072, RSA4096]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#alg DfcKey#alg}
+        :param name: DFCKey name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#name DfcKey#name}
+        :param cert_data_base64: PEM Certificate in a Base64 format. Used for updating RSA keys' certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
+        :param certificate_common_name: Common name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
+        :param certificate_country: Country name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
+        :param certificate_locality: Locality for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
+        :param certificate_organization: Organization name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
+        :param certificate_province: Province name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
+        :param certificate_ttl: TTL in days for the generated certificate. Required only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
+        :param customer_frg_id: The customer fragment ID that will be used to create the DFC key (if empty, the key will be created independently of a customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#description DfcKey#description}
+        :param generate_self_signed_certificate: Whether to generate a self signed certificate with the key. If set, certificate-ttl must be provided. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#id DfcKey#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#metadata DfcKey#metadata}.
+        :param split_level: The number of fragments that the item will be split into (not includes customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#split_level DfcKey#split_level}
+        :param tags: List of the tags attached to this DFC key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#tags DfcKey#tags}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -133,7 +133,7 @@ class DfcKey(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DfcKey to import.
-        :param import_from_id: The id of the existing DfcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DfcKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DfcKey to import is found.
         '''
         if __debug__:
@@ -588,23 +588,23 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param alg: DFCKey type; options: [AES128GCM, AES256GCM, AES128SIV, AES256SIV, AES128CBC, AES256CBC, RSA1024, RSA2048, RSA3072, RSA4096]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#alg DfcKey#alg}
-        :param name: DFCKey name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#name DfcKey#name}
-        :param cert_data_base64: PEM Certificate in a Base64 format. Used for updating RSA keys' certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
-        :param certificate_common_name: Common name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
-        :param certificate_country: Country name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
-        :param certificate_locality: Locality for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
-        :param certificate_organization: Organization name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
-        :param certificate_province: Province name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
-        :param certificate_ttl: TTL in days for the generated certificate. Required only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
-        :param customer_frg_id: The customer fragment ID that will be used to create the DFC key (if empty, the key will be created independently of a customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#description DfcKey#description}
-        :param generate_self_signed_certificate: Whether to generate a self signed certificate with the key. If set, certificate-ttl must be provided. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#id DfcKey#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#metadata DfcKey#metadata}.
-        :param split_level: The number of fragments that the item will be split into (not includes customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#split_level DfcKey#split_level}
-        :param tags: List of the tags attached to this DFC key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#tags DfcKey#tags}
+        :param alg: DFCKey type; options: [AES128GCM, AES256GCM, AES128SIV, AES256SIV, AES128CBC, AES256CBC, RSA1024, RSA2048, RSA3072, RSA4096]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#alg DfcKey#alg}
+        :param name: DFCKey name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#name DfcKey#name}
+        :param cert_data_base64: PEM Certificate in a Base64 format. Used for updating RSA keys' certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
+        :param certificate_common_name: Common name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
+        :param certificate_country: Country name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
+        :param certificate_locality: Locality for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
+        :param certificate_organization: Organization name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
+        :param certificate_province: Province name for the generated certificate. Relevant only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
+        :param certificate_ttl: TTL in days for the generated certificate. Required only for generate-self-signed-certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
+        :param customer_frg_id: The customer fragment ID that will be used to create the DFC key (if empty, the key will be created independently of a customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#description DfcKey#description}
+        :param generate_self_signed_certificate: Whether to generate a self signed certificate with the key. If set, certificate-ttl must be provided. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#id DfcKey#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#metadata DfcKey#metadata}.
+        :param split_level: The number of fragments that the item will be split into (not includes customer fragment). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#split_level DfcKey#split_level}
+        :param tags: List of the tags attached to this DFC key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#tags DfcKey#tags}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -751,7 +751,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def alg(self) -> builtins.str:
         '''DFCKey type; options: [AES128GCM, AES256GCM, AES128SIV, AES256SIV, AES128CBC, AES256CBC, RSA1024, RSA2048, RSA3072, RSA4096].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#alg DfcKey#alg}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#alg DfcKey#alg}
         '''
         result = self._values.get("alg")
         assert result is not None, "Required property 'alg' is missing"
@@ -761,7 +761,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''DFCKey name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#name DfcKey#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#name DfcKey#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -771,7 +771,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cert_data_base64(self) -> typing.Optional[builtins.str]:
         '''PEM Certificate in a Base64 format. Used for updating RSA keys' certificates.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#cert_data_base64 DfcKey#cert_data_base64}
         '''
         result = self._values.get("cert_data_base64")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -780,7 +780,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_common_name(self) -> typing.Optional[builtins.str]:
         '''Common name for the generated certificate. Relevant only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_common_name DfcKey#certificate_common_name}
         '''
         result = self._values.get("certificate_common_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -789,7 +789,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_country(self) -> typing.Optional[builtins.str]:
         '''Country name for the generated certificate. Relevant only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_country DfcKey#certificate_country}
         '''
         result = self._values.get("certificate_country")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -798,7 +798,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_locality(self) -> typing.Optional[builtins.str]:
         '''Locality for the generated certificate. Relevant only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_locality DfcKey#certificate_locality}
         '''
         result = self._values.get("certificate_locality")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -807,7 +807,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_organization(self) -> typing.Optional[builtins.str]:
         '''Organization name for the generated certificate. Relevant only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_organization DfcKey#certificate_organization}
         '''
         result = self._values.get("certificate_organization")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -816,7 +816,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_province(self) -> typing.Optional[builtins.str]:
         '''Province name for the generated certificate. Relevant only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_province DfcKey#certificate_province}
         '''
         result = self._values.get("certificate_province")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -825,7 +825,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def certificate_ttl(self) -> typing.Optional[jsii.Number]:
         '''TTL in days for the generated certificate. Required only for generate-self-signed-certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#certificate_ttl DfcKey#certificate_ttl}
         '''
         result = self._values.get("certificate_ttl")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -834,7 +834,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def customer_frg_id(self) -> typing.Optional[builtins.str]:
         '''The customer fragment ID that will be used to create the DFC key (if empty, the key will be created independently of a customer fragment).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#customer_frg_id DfcKey#customer_frg_id}
         '''
         result = self._values.get("customer_frg_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -845,7 +845,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Protection from accidental deletion of this item, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#delete_protection DfcKey#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -854,7 +854,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#description DfcKey#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#description DfcKey#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -865,14 +865,14 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Whether to generate a self signed certificate with the key. If set, certificate-ttl must be provided.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#generate_self_signed_certificate DfcKey#generate_self_signed_certificate}
         '''
         result = self._values.get("generate_self_signed_certificate")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#id DfcKey#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#id DfcKey#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -882,7 +882,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def metadata(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#metadata DfcKey#metadata}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#metadata DfcKey#metadata}.'''
         result = self._values.get("metadata")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -890,7 +890,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def split_level(self) -> typing.Optional[jsii.Number]:
         '''The number of fragments that the item will be split into (not includes customer fragment).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#split_level DfcKey#split_level}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#split_level DfcKey#split_level}
         '''
         result = self._values.get("split_level")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -899,7 +899,7 @@ class DfcKeyConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tags(self) -> typing.Optional[typing.List[builtins.str]]:
         '''List of the tags attached to this DFC key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/dfc_key#tags DfcKey#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/dfc_key#tags DfcKey#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)

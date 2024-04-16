@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_custom`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_custom`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom).
+Refer to the Terraform Registry for docs: [`akeyless_producer_custom`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerCustom(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerCustom.ProducerCustom",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom akeyless_producer_custom}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom akeyless_producer_custom}.'''
 
     def __init__(
         self,
@@ -53,22 +53,22 @@ class ProducerCustom(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom akeyless_producer_custom} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom akeyless_producer_custom} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param create_sync_url: URL of an endpoint that implements /sync/create method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#name ProducerCustom#name}
-        :param revoke_sync_url: URL of an endpoint that implements /sync/revoke method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
-        :param admin_rotation_interval_days: Rotation period in days. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
-        :param enable_admin_rotation: Enable automatic admin credentials rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#id ProducerCustom#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param payload: Secret payload to be sent with each create/revoke webhook request. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#payload ProducerCustom#payload}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
-        :param rotate_sync_url: URL of an endpoint that implements /sync/rotate method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#tags ProducerCustom#tags}
-        :param timeout_sec: Maximum allowed time in seconds for the webhook to return the results. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
+        :param create_sync_url: URL of an endpoint that implements /sync/create method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#name ProducerCustom#name}
+        :param revoke_sync_url: URL of an endpoint that implements /sync/revoke method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
+        :param admin_rotation_interval_days: Rotation period in days. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
+        :param enable_admin_rotation: Enable automatic admin credentials rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#id ProducerCustom#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param payload: Secret payload to be sent with each create/revoke webhook request. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#payload ProducerCustom#payload}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
+        :param rotate_sync_url: URL of an endpoint that implements /sync/rotate method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#tags ProducerCustom#tags}
+        :param timeout_sec: Maximum allowed time in seconds for the webhook to return the results. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -118,7 +118,7 @@ class ProducerCustom(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerCustom to import.
-        :param import_from_id: The id of the existing ProducerCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerCustom that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerCustom to import is found.
         '''
         if __debug__:
@@ -447,18 +447,18 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param create_sync_url: URL of an endpoint that implements /sync/create method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#name ProducerCustom#name}
-        :param revoke_sync_url: URL of an endpoint that implements /sync/revoke method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
-        :param admin_rotation_interval_days: Rotation period in days. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
-        :param enable_admin_rotation: Enable automatic admin credentials rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#id ProducerCustom#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param payload: Secret payload to be sent with each create/revoke webhook request. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#payload ProducerCustom#payload}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
-        :param rotate_sync_url: URL of an endpoint that implements /sync/rotate method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#tags ProducerCustom#tags}
-        :param timeout_sec: Maximum allowed time in seconds for the webhook to return the results. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
+        :param create_sync_url: URL of an endpoint that implements /sync/create method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#name ProducerCustom#name}
+        :param revoke_sync_url: URL of an endpoint that implements /sync/revoke method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
+        :param admin_rotation_interval_days: Rotation period in days. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
+        :param enable_admin_rotation: Enable automatic admin credentials rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#id ProducerCustom#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param payload: Secret payload to be sent with each create/revoke webhook request. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#payload ProducerCustom#payload}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
+        :param rotate_sync_url: URL of an endpoint that implements /sync/rotate method. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#tags ProducerCustom#tags}
+        :param timeout_sec: Maximum allowed time in seconds for the webhook to return the results. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -589,7 +589,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def create_sync_url(self) -> builtins.str:
         '''URL of an endpoint that implements /sync/create method.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#create_sync_url ProducerCustom#create_sync_url}
         '''
         result = self._values.get("create_sync_url")
         assert result is not None, "Required property 'create_sync_url' is missing"
@@ -599,7 +599,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#name ProducerCustom#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#name ProducerCustom#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -609,7 +609,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def revoke_sync_url(self) -> builtins.str:
         '''URL of an endpoint that implements /sync/revoke method.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#revoke_sync_url ProducerCustom#revoke_sync_url}
         '''
         result = self._values.get("revoke_sync_url")
         assert result is not None, "Required property 'revoke_sync_url' is missing"
@@ -619,7 +619,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def admin_rotation_interval_days(self) -> typing.Optional[jsii.Number]:
         '''Rotation period in days.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#admin_rotation_interval_days ProducerCustom#admin_rotation_interval_days}
         '''
         result = self._values.get("admin_rotation_interval_days")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -630,14 +630,14 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable automatic admin credentials rotation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#enable_admin_rotation ProducerCustom#enable_admin_rotation}
         '''
         result = self._values.get("enable_admin_rotation")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#id ProducerCustom#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#id ProducerCustom#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -649,7 +649,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def payload(self) -> typing.Optional[builtins.str]:
         '''Secret payload to be sent with each create/revoke webhook request.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#payload ProducerCustom#payload}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#payload ProducerCustom#payload}
         '''
         result = self._values.get("payload")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -658,7 +658,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#producer_encryption_key_name ProducerCustom#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -667,7 +667,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotate_sync_url(self) -> typing.Optional[builtins.str]:
         '''URL of an endpoint that implements /sync/rotate method.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#rotate_sync_url ProducerCustom#rotate_sync_url}
         '''
         result = self._values.get("rotate_sync_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -678,7 +678,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#tags ProducerCustom#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#tags ProducerCustom#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -687,7 +687,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def timeout_sec(self) -> typing.Optional[jsii.Number]:
         '''Maximum allowed time in seconds for the webhook to return the results.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#timeout_sec ProducerCustom#timeout_sec}
         '''
         result = self._values.get("timeout_sec")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -696,7 +696,7 @@ class ProducerCustomConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_custom#user_ttl ProducerCustom#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

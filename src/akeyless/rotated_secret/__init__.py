@@ -1,7 +1,7 @@
 '''
 # `akeyless_rotated_secret`
 
-Refer to the Terraform Registry for docs: [`akeyless_rotated_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret).
+Refer to the Terraform Registry for docs: [`akeyless_rotated_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class RotatedSecret(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.rotatedSecret.RotatedSecret",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret akeyless_rotated_secret}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret akeyless_rotated_secret}.'''
 
     def __init__(
         self,
@@ -61,30 +61,30 @@ class RotatedSecret(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret akeyless_rotated_secret} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret akeyless_rotated_secret} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#name RotatedSecret#name}
-        :param rotator_type: The rotator type password/target/api-key/ldap/custom. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
-        :param target_name: The target name to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
-        :param api_id: API ID to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
-        :param api_key: API key to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
-        :param authentication_credentials: The credentials to connect with use-user-creds/use-target-creds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
-        :param auto_rotate: Whether to automatically rotate every --rotation-interval days, or disable existing automatic rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
-        :param custom_payload: Secret payload to be sent with rotation request (relevant only for rotator-type=custom). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#description RotatedSecret#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#id RotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#key RotatedSecret#key}
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.
-        :param rotated_password: rotated-username password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
-        :param rotated_username: username to be rotated, if selected use-self-creds at rotator-creds-type, this username will try to rotate it's own password, if use-target-creds is selected, target credentials will be use to rotate the rotated-password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
-        :param rotation_hour: The Hour of the rotation in UTC. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
-        :param rotation_interval: The number of days to wait between every automatic rotation (1-365),custom rotator interval will be set in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
-        :param rotator_custom_cmd: Custom rotation command (relevant only for ssh target). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#tags RotatedSecret#tags}
-        :param user_attribute: LDAP User Attribute. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
-        :param user_dn: Base DN to Perform User Search. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
+        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#name RotatedSecret#name}
+        :param rotator_type: The rotator type password/target/api-key/ldap/custom. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
+        :param target_name: The target name to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
+        :param api_id: API ID to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
+        :param api_key: API key to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
+        :param authentication_credentials: The credentials to connect with use-user-creds/use-target-creds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
+        :param auto_rotate: Whether to automatically rotate every --rotation-interval days, or disable existing automatic rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
+        :param custom_payload: Secret payload to be sent with rotation request (relevant only for rotator-type=custom). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#description RotatedSecret#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#id RotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#key RotatedSecret#key}
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.
+        :param rotated_password: rotated-username password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
+        :param rotated_username: username to be rotated, if selected use-self-creds at rotator-creds-type, this username will try to rotate it's own password, if use-target-creds is selected, target credentials will be use to rotate the rotated-password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
+        :param rotation_hour: The Hour of the rotation in UTC. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
+        :param rotation_interval: The number of days to wait between every automatic rotation (1-365),custom rotator interval will be set in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
+        :param rotator_custom_cmd: Custom rotation command (relevant only for ssh target). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#tags RotatedSecret#tags}
+        :param user_attribute: LDAP User Attribute. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
+        :param user_dn: Base DN to Perform User Search. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -142,7 +142,7 @@ class RotatedSecret(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the RotatedSecret to import.
-        :param import_from_id: The id of the existing RotatedSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing RotatedSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the RotatedSecret to import is found.
         '''
         if __debug__:
@@ -648,26 +648,26 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#name RotatedSecret#name}
-        :param rotator_type: The rotator type password/target/api-key/ldap/custom. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
-        :param target_name: The target name to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
-        :param api_id: API ID to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
-        :param api_key: API key to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
-        :param authentication_credentials: The credentials to connect with use-user-creds/use-target-creds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
-        :param auto_rotate: Whether to automatically rotate every --rotation-interval days, or disable existing automatic rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
-        :param custom_payload: Secret payload to be sent with rotation request (relevant only for rotator-type=custom). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#description RotatedSecret#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#id RotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#key RotatedSecret#key}
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.
-        :param rotated_password: rotated-username password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
-        :param rotated_username: username to be rotated, if selected use-self-creds at rotator-creds-type, this username will try to rotate it's own password, if use-target-creds is selected, target credentials will be use to rotate the rotated-password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
-        :param rotation_hour: The Hour of the rotation in UTC. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
-        :param rotation_interval: The number of days to wait between every automatic rotation (1-365),custom rotator interval will be set in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
-        :param rotator_custom_cmd: Custom rotation command (relevant only for ssh target). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#tags RotatedSecret#tags}
-        :param user_attribute: LDAP User Attribute. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
-        :param user_dn: Base DN to Perform User Search. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
+        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#name RotatedSecret#name}
+        :param rotator_type: The rotator type password/target/api-key/ldap/custom. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
+        :param target_name: The target name to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
+        :param api_id: API ID to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
+        :param api_key: API key to rotate (relevant only for rotator-type=api-key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
+        :param authentication_credentials: The credentials to connect with use-user-creds/use-target-creds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
+        :param auto_rotate: Whether to automatically rotate every --rotation-interval days, or disable existing automatic rotation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
+        :param custom_payload: Secret payload to be sent with rotation request (relevant only for rotator-type=custom). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#description RotatedSecret#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#id RotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#key RotatedSecret#key}
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.
+        :param rotated_password: rotated-username password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
+        :param rotated_username: username to be rotated, if selected use-self-creds at rotator-creds-type, this username will try to rotate it's own password, if use-target-creds is selected, target credentials will be use to rotate the rotated-password (relevant only for rotator-type=password). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
+        :param rotation_hour: The Hour of the rotation in UTC. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
+        :param rotation_interval: The number of days to wait between every automatic rotation (1-365),custom rotator interval will be set in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
+        :param rotator_custom_cmd: Custom rotation command (relevant only for ssh target). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#tags RotatedSecret#tags}
+        :param user_attribute: LDAP User Attribute. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
+        :param user_dn: Base DN to Perform User Search. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -822,7 +822,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Secret name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#name RotatedSecret#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#name RotatedSecret#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -832,7 +832,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotator_type(self) -> builtins.str:
         '''The rotator type password/target/api-key/ldap/custom.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_type RotatedSecret#rotator_type}
         '''
         result = self._values.get("rotator_type")
         assert result is not None, "Required property 'rotator_type' is missing"
@@ -842,7 +842,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> builtins.str:
         '''The target name to associate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#target_name RotatedSecret#target_name}
         '''
         result = self._values.get("target_name")
         assert result is not None, "Required property 'target_name' is missing"
@@ -852,7 +852,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def api_id(self) -> typing.Optional[builtins.str]:
         '''API ID to rotate (relevant only for rotator-type=api-key).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_id RotatedSecret#api_id}
         '''
         result = self._values.get("api_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -861,7 +861,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def api_key(self) -> typing.Optional[builtins.str]:
         '''API key to rotate (relevant only for rotator-type=api-key).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#api_key RotatedSecret#api_key}
         '''
         result = self._values.get("api_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -870,7 +870,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def authentication_credentials(self) -> typing.Optional[builtins.str]:
         '''The credentials to connect with use-user-creds/use-target-creds.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#authentication_credentials RotatedSecret#authentication_credentials}
         '''
         result = self._values.get("authentication_credentials")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -879,7 +879,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def auto_rotate(self) -> typing.Optional[builtins.str]:
         '''Whether to automatically rotate every --rotation-interval days, or disable existing automatic rotation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#auto_rotate RotatedSecret#auto_rotate}
         '''
         result = self._values.get("auto_rotate")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -888,7 +888,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def custom_payload(self) -> typing.Optional[builtins.str]:
         '''Secret payload to be sent with rotation request (relevant only for rotator-type=custom).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#custom_payload RotatedSecret#custom_payload}
         '''
         result = self._values.get("custom_payload")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -897,14 +897,14 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#description RotatedSecret#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#description RotatedSecret#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#id RotatedSecret#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#id RotatedSecret#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -916,14 +916,14 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def key(self) -> typing.Optional[builtins.str]:
         '''The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#key RotatedSecret#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#key RotatedSecret#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def metadata(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#metadata RotatedSecret#metadata}.'''
         result = self._values.get("metadata")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -931,7 +931,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotated_password(self) -> typing.Optional[builtins.str]:
         '''rotated-username password (relevant only for rotator-type=password).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_password RotatedSecret#rotated_password}
         '''
         result = self._values.get("rotated_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -940,7 +940,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotated_username(self) -> typing.Optional[builtins.str]:
         '''username to be rotated, if selected use-self-creds at rotator-creds-type, this username will try to rotate it's own password, if use-target-creds is selected, target credentials will be use to rotate the rotated-password (relevant only for rotator-type=password).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotated_username RotatedSecret#rotated_username}
         '''
         result = self._values.get("rotated_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -949,7 +949,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotation_hour(self) -> typing.Optional[jsii.Number]:
         '''The Hour of the rotation in UTC.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_hour RotatedSecret#rotation_hour}
         '''
         result = self._values.get("rotation_hour")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -958,7 +958,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotation_interval(self) -> typing.Optional[builtins.str]:
         '''The number of days to wait between every automatic rotation (1-365),custom rotator interval will be set in minutes.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotation_interval RotatedSecret#rotation_interval}
         '''
         result = self._values.get("rotation_interval")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -967,7 +967,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rotator_custom_cmd(self) -> typing.Optional[builtins.str]:
         '''Custom rotation command (relevant only for ssh target).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#rotator_custom_cmd RotatedSecret#rotator_custom_cmd}
         '''
         result = self._values.get("rotator_custom_cmd")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -978,7 +978,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#tags RotatedSecret#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#tags RotatedSecret#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -987,7 +987,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_attribute(self) -> typing.Optional[builtins.str]:
         '''LDAP User Attribute.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_attribute RotatedSecret#user_attribute}
         '''
         result = self._values.get("user_attribute")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -996,7 +996,7 @@ class RotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_dn(self) -> typing.Optional[builtins.str]:
         '''Base DN to Perform User Search.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/rotated_secret#user_dn RotatedSecret#user_dn}
         '''
         result = self._values.get("user_dn")
         return typing.cast(typing.Optional[builtins.str], result)

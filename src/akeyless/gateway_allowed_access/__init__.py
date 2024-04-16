@@ -1,7 +1,7 @@
 '''
 # `akeyless_gateway_allowed_access`
 
-Refer to the Terraform Registry for docs: [`akeyless_gateway_allowed_access`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access).
+Refer to the Terraform Registry for docs: [`akeyless_gateway_allowed_access`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class GatewayAllowedAccess(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.gatewayAllowedAccess.GatewayAllowedAccess",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access akeyless_gateway_allowed_access}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access akeyless_gateway_allowed_access}.'''
 
     def __init__(
         self,
@@ -47,16 +47,16 @@ class GatewayAllowedAccess(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access akeyless_gateway_allowed_access} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access akeyless_gateway_allowed_access} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param access_id: The access id to be attached to this allowed access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
-        :param name: Allowed access name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
-        :param description: Allowed access description. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param permissions: Comma-seperated list of permissions for this allowed access. Available permissions: [defaults,targets,classic_keys,automatic_migration,ldap_auth,dynamic_secret,k8s_auth,log_forwarding,zero_knowledge_encryption,rotated_secret,caching,event_forwarding,admin,kmip,general]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
-        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
+        :param access_id: The access id to be attached to this allowed access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
+        :param name: Allowed access name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
+        :param description: Allowed access description. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param permissions: Comma-seperated list of permissions for this allowed access. Available permissions: [defaults,targets,classic_keys,automatic_migration,ldap_auth,dynamic_secret,k8s_auth,log_forwarding,zero_knowledge_encryption,rotated_secret,caching,event_forwarding,admin,kmip,general]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
+        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -100,7 +100,7 @@ class GatewayAllowedAccess(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the GatewayAllowedAccess to import.
-        :param import_from_id: The id of the existing GatewayAllowedAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing GatewayAllowedAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the GatewayAllowedAccess to import is found.
         '''
         if __debug__:
@@ -290,12 +290,12 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param access_id: The access id to be attached to this allowed access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
-        :param name: Allowed access name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
-        :param description: Allowed access description. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param permissions: Comma-seperated list of permissions for this allowed access. Available permissions: [defaults,targets,classic_keys,automatic_migration,ldap_auth,dynamic_secret,k8s_auth,log_forwarding,zero_knowledge_encryption,rotated_secret,caching,event_forwarding,admin,kmip,general]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
-        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
+        :param access_id: The access id to be attached to this allowed access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
+        :param name: Allowed access name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
+        :param description: Allowed access description. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param permissions: Comma-seperated list of permissions for this allowed access. Available permissions: [defaults,targets,classic_keys,automatic_migration,ldap_auth,dynamic_secret,k8s_auth,log_forwarding,zero_knowledge_encryption,rotated_secret,caching,event_forwarding,admin,kmip,general]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
+        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -409,7 +409,7 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> builtins.str:
         '''The access id to be attached to this allowed access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#access_id GatewayAllowedAccess#access_id}
         '''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
@@ -419,7 +419,7 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Allowed access name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#name GatewayAllowedAccess#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -429,14 +429,14 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Allowed access description.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#description GatewayAllowedAccess#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#id GatewayAllowedAccess#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -448,7 +448,7 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def permissions(self) -> typing.Optional[builtins.str]:
         '''Comma-seperated list of permissions for this allowed access. Available permissions: [defaults,targets,classic_keys,automatic_migration,ldap_auth,dynamic_secret,k8s_auth,log_forwarding,zero_knowledge_encryption,rotated_secret,caching,event_forwarding,admin,kmip,general].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#permissions GatewayAllowedAccess#permissions}
         '''
         result = self._values.get("permissions")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -457,7 +457,7 @@ class GatewayAllowedAccessConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def sub_claims(self) -> typing.Optional[typing.Mapping[builtins.str, builtins.str]]:
         '''key/val of sub claims, e.g group=admins,developers.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/gateway_allowed_access#sub_claims GatewayAllowedAccess#sub_claims}
         '''
         result = self._values.get("sub_claims")
         return typing.cast(typing.Optional[typing.Mapping[builtins.str, builtins.str]], result)

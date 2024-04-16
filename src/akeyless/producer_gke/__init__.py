@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_gke`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_gke`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke).
+Refer to the Terraform Registry for docs: [`akeyless_producer_gke`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerGke(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerGke.ProducerGke",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke akeyless_producer_gke}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke akeyless_producer_gke}.'''
 
     def __init__(
         self,
@@ -57,26 +57,26 @@ class ProducerGke(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke akeyless_producer_gke} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke akeyless_producer_gke} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#name ProducerGke#name}
-        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
-        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
-        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
-        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
-        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#id ProducerGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#tags ProducerGke#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#target_name ProducerGke#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#name ProducerGke#name}
+        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
+        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
+        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
+        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
+        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#id ProducerGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#tags ProducerGke#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#target_name ProducerGke#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -130,7 +130,7 @@ class ProducerGke(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerGke to import.
-        :param import_from_id: The id of the existing ProducerGke that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerGke that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerGke to import is found.
         '''
         if __debug__:
@@ -566,22 +566,22 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#name ProducerGke#name}
-        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
-        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
-        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
-        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
-        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#id ProducerGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#tags ProducerGke#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#target_name ProducerGke#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#name ProducerGke#name}
+        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
+        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
+        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
+        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
+        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#id ProducerGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#tags ProducerGke#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#target_name ProducerGke#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -726,7 +726,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#name ProducerGke#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#name ProducerGke#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -736,7 +736,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_account_key(self) -> typing.Optional[builtins.str]:
         '''GKE service account key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_account_key ProducerGke#gke_account_key}
         '''
         result = self._values.get("gke_account_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -745,7 +745,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_cert(self) -> typing.Optional[builtins.str]:
         '''GKE Base-64 encoded cluster certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_cert ProducerGke#gke_cluster_cert}
         '''
         result = self._values.get("gke_cluster_cert")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -754,7 +754,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_endpoint ProducerGke#gke_cluster_endpoint}
         '''
         result = self._values.get("gke_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -763,7 +763,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_name(self) -> typing.Optional[builtins.str]:
         '''GKE cluster name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_cluster_name ProducerGke#gke_cluster_name}
         '''
         result = self._values.get("gke_cluster_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -772,14 +772,14 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_service_account_email(self) -> typing.Optional[builtins.str]:
         '''GKE service account email.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#gke_service_account_email ProducerGke#gke_service_account_email}
         '''
         result = self._values.get("gke_service_account_email")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#id ProducerGke#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#id ProducerGke#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -791,7 +791,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#producer_encryption_key_name ProducerGke#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -802,7 +802,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Port forwarding while using CLI access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_allow_port_forwading ProducerGke#secure_access_allow_port_forwading}
         '''
         result = self._values.get("secure_access_allow_port_forwading")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -811,7 +811,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_bastion_issuer ProducerGke#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -820,7 +820,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''The K8s cluster endpoint URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_cluster_endpoint ProducerGke#secure_access_cluster_endpoint}
         '''
         result = self._values.get("secure_access_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -829,7 +829,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_enable ProducerGke#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -840,7 +840,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#secure_access_web ProducerGke#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -851,7 +851,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#tags ProducerGke#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#tags ProducerGke#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -860,7 +860,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#target_name ProducerGke#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#target_name ProducerGke#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -869,7 +869,7 @@ class ProducerGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gke#user_ttl ProducerGke#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

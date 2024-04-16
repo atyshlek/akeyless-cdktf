@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_gcp`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp).
+Refer to the Terraform Registry for docs: [`akeyless_producer_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerGcp(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerGcp.ProducerGcp",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp akeyless_producer_gcp}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp akeyless_producer_gcp}.'''
 
     def __init__(
         self,
@@ -55,24 +55,24 @@ class ProducerGcp(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp akeyless_producer_gcp} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp akeyless_producer_gcp} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#name ProducerGcp#name}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
-        :param gcp_cred_type: Credentials type, options are [token, key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
-        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
-        :param gcp_key_algo: Service account key algorithm, e.g. KEY_ALG_RSA_1024. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
-        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
-        :param gcp_token_scopes: Access token scopes list, e.g. scope1,scope2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#id ProducerGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
-        :param role_binding: Role binding definitions in json format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
-        :param service_account_type: The type of the gcp dynamic secret. Options[fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#tags ProducerGcp#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
-        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#name ProducerGcp#name}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
+        :param gcp_cred_type: Credentials type, options are [token, key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
+        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
+        :param gcp_key_algo: Service account key algorithm, e.g. KEY_ALG_RSA_1024. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
+        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
+        :param gcp_token_scopes: Access token scopes list, e.g. scope1,scope2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#id ProducerGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
+        :param role_binding: Role binding definitions in json format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
+        :param service_account_type: The type of the gcp dynamic secret. Options[fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#tags ProducerGcp#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
+        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -124,7 +124,7 @@ class ProducerGcp(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerGcp to import.
-        :param import_from_id: The id of the existing ProducerGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerGcp to import is found.
         '''
         if __debug__:
@@ -500,20 +500,20 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#name ProducerGcp#name}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
-        :param gcp_cred_type: Credentials type, options are [token, key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
-        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
-        :param gcp_key_algo: Service account key algorithm, e.g. KEY_ALG_RSA_1024. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
-        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
-        :param gcp_token_scopes: Access token scopes list, e.g. scope1,scope2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#id ProducerGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
-        :param role_binding: Role binding definitions in json format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
-        :param service_account_type: The type of the gcp dynamic secret. Options[fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#tags ProducerGcp#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
-        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#name ProducerGcp#name}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
+        :param gcp_cred_type: Credentials type, options are [token, key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
+        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
+        :param gcp_key_algo: Service account key algorithm, e.g. KEY_ALG_RSA_1024. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
+        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
+        :param gcp_token_scopes: Access token scopes list, e.g. scope1,scope2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#id ProducerGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
+        :param role_binding: Role binding definitions in json format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
+        :param service_account_type: The type of the gcp dynamic secret. Options[fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#tags ProducerGcp#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
+        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -652,7 +652,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#name ProducerGcp#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#name ProducerGcp#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -662,7 +662,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def delete_protection(self) -> typing.Optional[builtins.str]:
         '''Protection from accidental deletion of this item, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#delete_protection ProducerGcp#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -671,7 +671,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_cred_type(self) -> typing.Optional[builtins.str]:
         '''Credentials type, options are [token, key].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_cred_type ProducerGcp#gcp_cred_type}
         '''
         result = self._values.get("gcp_cred_type")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -680,7 +680,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_key(self) -> typing.Optional[builtins.str]:
         '''Base64-encoded service account private key text.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key ProducerGcp#gcp_key}
         '''
         result = self._values.get("gcp_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -689,7 +689,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_key_algo(self) -> typing.Optional[builtins.str]:
         '''Service account key algorithm, e.g. KEY_ALG_RSA_1024.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_key_algo ProducerGcp#gcp_key_algo}
         '''
         result = self._values.get("gcp_key_algo")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -698,7 +698,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_sa_email(self) -> typing.Optional[builtins.str]:
         '''GCP service account email.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_sa_email ProducerGcp#gcp_sa_email}
         '''
         result = self._values.get("gcp_sa_email")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -707,14 +707,14 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_token_scopes(self) -> typing.Optional[builtins.str]:
         '''Access token scopes list, e.g. scope1,scope2.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#gcp_token_scopes ProducerGcp#gcp_token_scopes}
         '''
         result = self._values.get("gcp_token_scopes")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#id ProducerGcp#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#id ProducerGcp#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Dynamic producer encryption key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#producer_encryption_key_name ProducerGcp#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -735,7 +735,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def role_binding(self) -> typing.Optional[builtins.str]:
         '''Role binding definitions in json format.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#role_binding ProducerGcp#role_binding}
         '''
         result = self._values.get("role_binding")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -744,7 +744,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def service_account_type(self) -> typing.Optional[builtins.str]:
         '''The type of the gcp dynamic secret. Options[fixed, dynamic].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#service_account_type ProducerGcp#service_account_type}
         '''
         result = self._values.get("service_account_type")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -755,7 +755,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#tags ProducerGcp#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#tags ProducerGcp#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -764,7 +764,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#target_name ProducerGcp#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -773,7 +773,7 @@ class ProducerGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL (<=60m for access token).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_gcp#user_ttl ProducerGcp#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

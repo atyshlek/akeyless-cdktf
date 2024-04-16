@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_rabbit`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_rabbit`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit).
+Refer to the Terraform Registry for docs: [`akeyless_target_rabbit`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetRabbit(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetRabbit.TargetRabbit",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit akeyless_target_rabbit}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit akeyless_target_rabbit}.'''
 
     def __init__(
         self,
@@ -49,18 +49,18 @@ class TargetRabbit(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit akeyless_target_rabbit} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit akeyless_target_rabbit} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#name TargetRabbit#name}
-        :param rabbitmq_server_uri: RabbitMQ server URI. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
-        :param rabbitmq_server_user: RabbitMQ server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#comment TargetRabbit#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#description TargetRabbit#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#id TargetRabbit#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#key TargetRabbit#key}
-        :param rabbitmq_server_password: RabbitMQ server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#name TargetRabbit#name}
+        :param rabbitmq_server_uri: RabbitMQ server URI. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
+        :param rabbitmq_server_user: RabbitMQ server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#comment TargetRabbit#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#description TargetRabbit#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#id TargetRabbit#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#key TargetRabbit#key}
+        :param rabbitmq_server_password: RabbitMQ server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -106,7 +106,7 @@ class TargetRabbit(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetRabbit to import.
-        :param import_from_id: The id of the existing TargetRabbit that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetRabbit that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetRabbit to import is found.
         '''
         if __debug__:
@@ -336,14 +336,14 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#name TargetRabbit#name}
-        :param rabbitmq_server_uri: RabbitMQ server URI. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
-        :param rabbitmq_server_user: RabbitMQ server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#comment TargetRabbit#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#description TargetRabbit#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#id TargetRabbit#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#key TargetRabbit#key}
-        :param rabbitmq_server_password: RabbitMQ server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#name TargetRabbit#name}
+        :param rabbitmq_server_uri: RabbitMQ server URI. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
+        :param rabbitmq_server_user: RabbitMQ server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
+        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#comment TargetRabbit#comment}.
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#description TargetRabbit#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#id TargetRabbit#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#key TargetRabbit#key}
+        :param rabbitmq_server_password: RabbitMQ server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -462,7 +462,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#name TargetRabbit#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#name TargetRabbit#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -472,7 +472,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rabbitmq_server_uri(self) -> builtins.str:
         '''RabbitMQ server URI.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_uri TargetRabbit#rabbitmq_server_uri}
         '''
         result = self._values.get("rabbitmq_server_uri")
         assert result is not None, "Required property 'rabbitmq_server_uri' is missing"
@@ -482,7 +482,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rabbitmq_server_user(self) -> builtins.str:
         '''RabbitMQ server user.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_user TargetRabbit#rabbitmq_server_user}
         '''
         result = self._values.get("rabbitmq_server_user")
         assert result is not None, "Required property 'rabbitmq_server_user' is missing"
@@ -490,7 +490,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#comment TargetRabbit#comment}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#comment TargetRabbit#comment}.'''
         result = self._values.get("comment")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -498,14 +498,14 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#description TargetRabbit#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#description TargetRabbit#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#id TargetRabbit#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#id TargetRabbit#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -519,7 +519,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#key TargetRabbit#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#key TargetRabbit#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -528,7 +528,7 @@ class TargetRabbitConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def rabbitmq_server_password(self) -> typing.Optional[builtins.str]:
         '''RabbitMQ server password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_rabbit#rabbitmq_server_password TargetRabbit#rabbitmq_server_password}
         '''
         result = self._values.get("rabbitmq_server_password")
         return typing.cast(typing.Optional[builtins.str], result)

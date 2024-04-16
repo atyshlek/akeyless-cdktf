@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_target_details`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_target_details`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details).
+Refer to the Terraform Registry for docs: [`data_akeyless_target_details`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessTargetDetails(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessTargetDetails.DataAkeylessTargetDetails",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details akeyless_target_details}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details akeyless_target_details}.'''
 
     def __init__(
         self,
@@ -45,14 +45,14 @@ class DataAkeylessTargetDetails(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details akeyless_target_details} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details akeyless_target_details} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param show_versions: Include all target versions in reply. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
-        :param target_version: Target version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param show_versions: Include all target versions in reply. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
+        :param target_version: Target version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -94,7 +94,7 @@ class DataAkeylessTargetDetails(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessTargetDetails to import.
-        :param import_from_id: The id of the existing DataAkeylessTargetDetails that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessTargetDetails that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessTargetDetails to import is found.
         '''
         if __debug__:
@@ -250,10 +250,10 @@ class DataAkeylessTargetDetailsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param show_versions: Include all target versions in reply. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
-        :param target_version: Target version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param show_versions: Include all target versions in reply. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
+        :param target_version: Target version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -362,7 +362,7 @@ class DataAkeylessTargetDetailsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#name DataAkeylessTargetDetails#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -370,7 +370,7 @@ class DataAkeylessTargetDetailsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#id DataAkeylessTargetDetails#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -384,7 +384,7 @@ class DataAkeylessTargetDetailsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Include all target versions in reply.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#show_versions DataAkeylessTargetDetails#show_versions}
         '''
         result = self._values.get("show_versions")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -393,7 +393,7 @@ class DataAkeylessTargetDetailsConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_version(self) -> typing.Optional[jsii.Number]:
         '''Target version.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/target_details#target_version DataAkeylessTargetDetails#target_version}
         '''
         result = self._values.get("target_version")
         return typing.cast(typing.Optional[jsii.Number], result)

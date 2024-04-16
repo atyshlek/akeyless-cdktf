@@ -1,7 +1,7 @@
 '''
 # `akeyless_static_secret`
 
-Refer to the Terraform Registry for docs: [`akeyless_static_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret).
+Refer to the Terraform Registry for docs: [`akeyless_static_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class StaticSecret(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.staticSecret.StaticSecret",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret akeyless_static_secret}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret akeyless_static_secret}.'''
 
     def __init__(
         self,
@@ -57,26 +57,26 @@ class StaticSecret(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret akeyless_static_secret} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret akeyless_static_secret} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param path: The path where the secret will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#path StaticSecret#path}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#description StaticSecret#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#id StaticSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#metadata StaticSecret#metadata}.
-        :param multiline_value: The provided value is a multiline value (separated by ' '). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
-        :param protection_key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#protection_key StaticSecret#protection_key}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
-        :param secure_access_host: Target servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
-        :param secure_access_ssh_creds: Static-Secret values contains SSH Credentials, either Private Key or Password [password/private-key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
-        :param secure_access_ssh_user: Override the SSH username as indicated in SSH Certificate Issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
-        :param secure_access_url: Destination URL to inject secrets. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#tags StaticSecret#tags}
-        :param value: The secret content. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#value StaticSecret#value}
+        :param path: The path where the secret will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#path StaticSecret#path}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#description StaticSecret#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#id StaticSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#metadata StaticSecret#metadata}.
+        :param multiline_value: The provided value is a multiline value (separated by ' '). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
+        :param protection_key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#protection_key StaticSecret#protection_key}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
+        :param secure_access_host: Target servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
+        :param secure_access_ssh_creds: Static-Secret values contains SSH Credentials, either Private Key or Password [password/private-key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
+        :param secure_access_ssh_user: Override the SSH username as indicated in SSH Certificate Issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
+        :param secure_access_url: Destination URL to inject secrets. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#tags StaticSecret#tags}
+        :param value: The secret content. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#value StaticSecret#value}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -130,7 +130,7 @@ class StaticSecret(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the StaticSecret to import.
-        :param import_from_id: The id of the existing StaticSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing StaticSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the StaticSecret to import is found.
         '''
         if __debug__:
@@ -578,22 +578,22 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param path: The path where the secret will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#path StaticSecret#path}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#description StaticSecret#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#id StaticSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#metadata StaticSecret#metadata}.
-        :param multiline_value: The provided value is a multiline value (separated by ' '). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
-        :param protection_key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#protection_key StaticSecret#protection_key}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
-        :param secure_access_host: Target servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
-        :param secure_access_ssh_creds: Static-Secret values contains SSH Credentials, either Private Key or Password [password/private-key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
-        :param secure_access_ssh_user: Override the SSH username as indicated in SSH Certificate Issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
-        :param secure_access_url: Destination URL to inject secrets. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#tags StaticSecret#tags}
-        :param value: The secret content. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#value StaticSecret#value}
+        :param path: The path where the secret will be stored. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#path StaticSecret#path}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#description StaticSecret#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#id StaticSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param metadata: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#metadata StaticSecret#metadata}.
+        :param multiline_value: The provided value is a multiline value (separated by ' '). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
+        :param protection_key: The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#protection_key StaticSecret#protection_key}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
+        :param secure_access_host: Target servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
+        :param secure_access_ssh_creds: Static-Secret values contains SSH Credentials, either Private Key or Password [password/private-key]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
+        :param secure_access_ssh_user: Override the SSH username as indicated in SSH Certificate Issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
+        :param secure_access_url: Destination URL to inject secrets. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#tags StaticSecret#tags}
+        :param value: The secret content. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#value StaticSecret#value}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -738,7 +738,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def path(self) -> builtins.str:
         '''The path where the secret will be stored.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#path StaticSecret#path}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#path StaticSecret#path}
         '''
         result = self._values.get("path")
         assert result is not None, "Required property 'path' is missing"
@@ -748,14 +748,14 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#description StaticSecret#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#description StaticSecret#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#id StaticSecret#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#id StaticSecret#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -765,7 +765,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def metadata(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#metadata StaticSecret#metadata}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#metadata StaticSecret#metadata}.'''
         result = self._values.get("metadata")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -775,7 +775,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''The provided value is a multiline value (separated by ' ').
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#multiline_value StaticSecret#multiline_value}
         '''
         result = self._values.get("multiline_value")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -784,7 +784,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def protection_key(self) -> typing.Optional[builtins.str]:
         '''The name of a key that is used to encrypt the secret value (if empty, the account default protectionKey key will be used).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#protection_key StaticSecret#protection_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#protection_key StaticSecret#protection_key}
         '''
         result = self._values.get("protection_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -793,7 +793,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_bastion_issuer StaticSecret#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -802,7 +802,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_enable StaticSecret#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -811,7 +811,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_host(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Target servers for connections., For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_host StaticSecret#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -820,7 +820,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_ssh_creds(self) -> typing.Optional[builtins.str]:
         '''Static-Secret values contains SSH Credentials, either Private Key or Password [password/private-key].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_creds StaticSecret#secure_access_ssh_creds}
         '''
         result = self._values.get("secure_access_ssh_creds")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -829,7 +829,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_ssh_user(self) -> typing.Optional[builtins.str]:
         '''Override the SSH username as indicated in SSH Certificate Issuer.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_ssh_user StaticSecret#secure_access_ssh_user}
         '''
         result = self._values.get("secure_access_ssh_user")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -838,7 +838,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_url(self) -> typing.Optional[builtins.str]:
         '''Destination URL to inject secrets.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_url StaticSecret#secure_access_url}
         '''
         result = self._values.get("secure_access_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -849,7 +849,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web StaticSecret#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -860,7 +860,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Secure browser via Akeyless Web Access Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#secure_access_web_browsing StaticSecret#secure_access_web_browsing}
         '''
         result = self._values.get("secure_access_web_browsing")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -871,7 +871,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#tags StaticSecret#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#tags StaticSecret#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -880,7 +880,7 @@ class StaticSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def value(self) -> typing.Optional[builtins.str]:
         '''The secret content.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/static_secret#value StaticSecret#value}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/static_secret#value StaticSecret#value}
         '''
         result = self._values.get("value")
         return typing.cast(typing.Optional[builtins.str], result)

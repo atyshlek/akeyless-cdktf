@@ -1,7 +1,7 @@
 '''
 # `akeyless_associate_role_auth_method`
 
-Refer to the Terraform Registry for docs: [`akeyless_associate_role_auth_method`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method).
+Refer to the Terraform Registry for docs: [`akeyless_associate_role_auth_method`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AssociateRoleAuthMethod(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.associateRoleAuthMethod.AssociateRoleAuthMethod",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method akeyless_associate_role_auth_method}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method akeyless_associate_role_auth_method}.'''
 
     def __init__(
         self,
@@ -46,15 +46,15 @@ class AssociateRoleAuthMethod(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method akeyless_associate_role_auth_method} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method akeyless_associate_role_auth_method} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
-        :param role_name: The role to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
-        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
+        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
+        :param role_name: The role to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
+        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -97,7 +97,7 @@ class AssociateRoleAuthMethod(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AssociateRoleAuthMethod to import.
-        :param import_from_id: The id of the existing AssociateRoleAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AssociateRoleAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AssociateRoleAuthMethod to import is found.
         '''
         if __debug__:
@@ -264,11 +264,11 @@ class AssociateRoleAuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
-        :param role_name: The role to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
-        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
+        :param am_name: The auth method to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
+        :param role_name: The role to associate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
+        :param case_sensitive: Treat sub claims as case-sensitive. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param sub_claims: key/val of sub claims, e.g group=admins,developers. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -379,7 +379,7 @@ class AssociateRoleAuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def am_name(self) -> builtins.str:
         '''The auth method to associate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#am_name AssociateRoleAuthMethod#am_name}
         '''
         result = self._values.get("am_name")
         assert result is not None, "Required property 'am_name' is missing"
@@ -389,7 +389,7 @@ class AssociateRoleAuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def role_name(self) -> builtins.str:
         '''The role to associate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#role_name AssociateRoleAuthMethod#role_name}
         '''
         result = self._values.get("role_name")
         assert result is not None, "Required property 'role_name' is missing"
@@ -399,14 +399,14 @@ class AssociateRoleAuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def case_sensitive(self) -> typing.Optional[builtins.str]:
         '''Treat sub claims as case-sensitive.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#case_sensitive AssociateRoleAuthMethod#case_sensitive}
         '''
         result = self._values.get("case_sensitive")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#id AssociateRoleAuthMethod#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -418,7 +418,7 @@ class AssociateRoleAuthMethodConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def sub_claims(self) -> typing.Optional[typing.Mapping[builtins.str, builtins.str]]:
         '''key/val of sub claims, e.g group=admins,developers.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/associate_role_auth_method#sub_claims AssociateRoleAuthMethod#sub_claims}
         '''
         result = self._values.get("sub_claims")
         return typing.cast(typing.Optional[typing.Mapping[builtins.str, builtins.str]], result)

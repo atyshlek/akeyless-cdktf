@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_pki_certificate`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_pki_certificate`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate).
+Refer to the Terraform Registry for docs: [`data_akeyless_pki_certificate`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessPkiCertificate(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessPkiCertificate.DataAkeylessPkiCertificate",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate akeyless_pki_certificate}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate akeyless_pki_certificate}.'''
 
     def __init__(
         self,
@@ -50,19 +50,19 @@ class DataAkeylessPkiCertificate(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate akeyless_pki_certificate} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate akeyless_pki_certificate} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
-        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
-        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
-        :param csr_data_base64: Certificate Signing Request contents encoded in base64 to generate the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
-        :param extended_key_usage: A comma-separated list of extended key usage requests which will be used for certificate issuance. Supported values: 'clientauth', 'serverauth'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_data_base64: pki key file contents encoded using Base64. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
-        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
-        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
+        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
+        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
+        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
+        :param csr_data_base64: Certificate Signing Request contents encoded in base64 to generate the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
+        :param extended_key_usage: A comma-separated list of extended key usage requests which will be used for certificate issuance. Supported values: 'clientauth', 'serverauth'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_data_base64: pki key file contents encoded using Base64. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
+        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
+        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -109,7 +109,7 @@ class DataAkeylessPkiCertificate(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessPkiCertificate to import.
-        :param import_from_id: The id of the existing DataAkeylessPkiCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessPkiCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessPkiCertificate to import is found.
         '''
         if __debug__:
@@ -390,15 +390,15 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
-        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
-        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
-        :param csr_data_base64: Certificate Signing Request contents encoded in base64 to generate the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
-        :param extended_key_usage: A comma-separated list of extended key usage requests which will be used for certificate issuance. Supported values: 'clientauth', 'serverauth'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_data_base64: pki key file contents encoded using Base64. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
-        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
-        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
+        :param cert_issuer_name: The name of the PKI certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
+        :param alt_names: The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
+        :param common_name: The common name to be included in the PKI certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
+        :param csr_data_base64: Certificate Signing Request contents encoded in base64 to generate the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
+        :param extended_key_usage: A comma-separated list of extended key usage requests which will be used for certificate issuance. Supported values: 'clientauth', 'serverauth'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_data_base64: pki key file contents encoded using Base64. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
+        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
+        :param uri_sans: The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -522,7 +522,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cert_issuer_name(self) -> builtins.str:
         '''The name of the PKI certificate issuer.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#cert_issuer_name DataAkeylessPkiCertificate#cert_issuer_name}
         '''
         result = self._values.get("cert_issuer_name")
         assert result is not None, "Required property 'cert_issuer_name' is missing"
@@ -532,7 +532,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def alt_names(self) -> typing.Optional[builtins.str]:
         '''The Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#alt_names DataAkeylessPkiCertificate#alt_names}
         '''
         result = self._values.get("alt_names")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -541,7 +541,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def common_name(self) -> typing.Optional[builtins.str]:
         '''The common name to be included in the PKI certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#common_name DataAkeylessPkiCertificate#common_name}
         '''
         result = self._values.get("common_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -550,7 +550,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def csr_data_base64(self) -> typing.Optional[builtins.str]:
         '''Certificate Signing Request contents encoded in base64 to generate the certificate with.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#csr_data_base64 DataAkeylessPkiCertificate#csr_data_base64}
         '''
         result = self._values.get("csr_data_base64")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -559,14 +559,14 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def extended_key_usage(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of extended key usage requests which will be used for certificate issuance. Supported values: 'clientauth', 'serverauth'.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#extended_key_usage DataAkeylessPkiCertificate#extended_key_usage}
         '''
         result = self._values.get("extended_key_usage")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#id DataAkeylessPkiCertificate#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -578,7 +578,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def key_data_base64(self) -> typing.Optional[builtins.str]:
         '''pki key file contents encoded using Base64.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#key_data_base64 DataAkeylessPkiCertificate#key_data_base64}
         '''
         result = self._values.get("key_data_base64")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -587,7 +587,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ttl(self) -> typing.Optional[jsii.Number]:
         '''Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#ttl DataAkeylessPkiCertificate#ttl}
         '''
         result = self._values.get("ttl")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -596,7 +596,7 @@ class DataAkeylessPkiCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def uri_sans(self) -> typing.Optional[builtins.str]:
         '''The URI Subject Alternative Names to be included in the PKI certificate (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/pki_certificate#uri_sans DataAkeylessPkiCertificate#uri_sans}
         '''
         result = self._values.get("uri_sans")
         return typing.cast(typing.Optional[builtins.str], result)

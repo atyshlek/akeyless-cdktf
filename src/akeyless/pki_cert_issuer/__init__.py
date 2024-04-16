@@ -1,7 +1,7 @@
 '''
 # `akeyless_pki_cert_issuer`
 
-Refer to the Terraform Registry for docs: [`akeyless_pki_cert_issuer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer).
+Refer to the Terraform Registry for docs: [`akeyless_pki_cert_issuer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class PkiCertIssuer(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.pkiCertIssuer.PkiCertIssuer",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer akeyless_pki_cert_issuer}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer akeyless_pki_cert_issuer}.'''
 
     def __init__(
         self,
@@ -71,40 +71,40 @@ class PkiCertIssuer(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer akeyless_pki_cert_issuer} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer akeyless_pki_cert_issuer} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: PKI certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
-        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
-        :param ttl: The maximum requested Time To Live for issued certificates, in seconds. In case of Public CA, this is based on the CA target's supported maximum TTLs Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
-        :param allow_any_name: If set, clients can request certificates for any CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
-        :param allowed_domains: A list of the allowed domains that clients can request to be included in the certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
-        :param allowed_uri_sans: A list of the allowed URIs that clients can request to be included in the certificate as part of the URI Subject Alternative Names (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
-        :param allow_subdomains: If set, clients can request certificates for subdomains and wildcard subdomains of the allowed domains. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
-        :param ca_target: The name of an existing CA target to attach this PKI Certificate Issuer to, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
-        :param client_flag: If set, certificates will be flagged for client auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
-        :param code_signing_flag: If set, certificates will be flagged for code signing use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
-        :param country: A comma-separated list of countries that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
-        :param destination_path: A path in Akeyless which to save generated certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
-        :param expiration_event_in: How many days before the expiration of the certificate would you like to be notified. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
-        :param gw_cluster_url: The GW cluster URL to issue the certificate from, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_usage: A comma-separated string or list of key usages. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
-        :param locality: A comma-separated list of localities that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
-        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
-        :param not_enforce_hostnames: If set, any names are allowed for CN and SANs in the certificate and not only a valid host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
-        :param not_require_cn: If set, clients can request certificates without a CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
-        :param organizational_units: A comma-separated list of organizational units (OU) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
-        :param organizations: A comma-separated list of organizations (O) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
-        :param postal_code: A comma-separated list of postal codes that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
-        :param protect_certificates: Whether to protect generated certificates from deletion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
-        :param province: A comma-separated list of provinces that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
-        :param server_flag: If set, certificates will be flagged for server auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
-        :param street_address: A comma-separated list of street addresses that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
-        :param tags: List of the tags attached to this key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
+        :param name: PKI certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
+        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
+        :param ttl: The maximum requested Time To Live for issued certificates, in seconds. In case of Public CA, this is based on the CA target's supported maximum TTLs Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
+        :param allow_any_name: If set, clients can request certificates for any CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
+        :param allowed_domains: A list of the allowed domains that clients can request to be included in the certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
+        :param allowed_uri_sans: A list of the allowed URIs that clients can request to be included in the certificate as part of the URI Subject Alternative Names (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
+        :param allow_subdomains: If set, clients can request certificates for subdomains and wildcard subdomains of the allowed domains. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
+        :param ca_target: The name of an existing CA target to attach this PKI Certificate Issuer to, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
+        :param client_flag: If set, certificates will be flagged for client auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
+        :param code_signing_flag: If set, certificates will be flagged for code signing use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
+        :param country: A comma-separated list of countries that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
+        :param destination_path: A path in Akeyless which to save generated certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
+        :param expiration_event_in: How many days before the expiration of the certificate would you like to be notified. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
+        :param gw_cluster_url: The GW cluster URL to issue the certificate from, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_usage: A comma-separated string or list of key usages. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
+        :param locality: A comma-separated list of localities that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
+        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
+        :param not_enforce_hostnames: If set, any names are allowed for CN and SANs in the certificate and not only a valid host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
+        :param not_require_cn: If set, clients can request certificates without a CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
+        :param organizational_units: A comma-separated list of organizational units (OU) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
+        :param organizations: A comma-separated list of organizations (O) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
+        :param postal_code: A comma-separated list of postal codes that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
+        :param protect_certificates: Whether to protect generated certificates from deletion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
+        :param province: A comma-separated list of provinces that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
+        :param server_flag: If set, certificates will be flagged for server auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
+        :param street_address: A comma-separated list of street addresses that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
+        :param tags: List of the tags attached to this key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -172,7 +172,7 @@ class PkiCertIssuer(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the PkiCertIssuer to import.
-        :param import_from_id: The id of the existing PkiCertIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing PkiCertIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the PkiCertIssuer to import is found.
         '''
         if __debug__:
@@ -967,36 +967,36 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: PKI certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
-        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
-        :param ttl: The maximum requested Time To Live for issued certificates, in seconds. In case of Public CA, this is based on the CA target's supported maximum TTLs Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
-        :param allow_any_name: If set, clients can request certificates for any CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
-        :param allowed_domains: A list of the allowed domains that clients can request to be included in the certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
-        :param allowed_uri_sans: A list of the allowed URIs that clients can request to be included in the certificate as part of the URI Subject Alternative Names (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
-        :param allow_subdomains: If set, clients can request certificates for subdomains and wildcard subdomains of the allowed domains. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
-        :param ca_target: The name of an existing CA target to attach this PKI Certificate Issuer to, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
-        :param client_flag: If set, certificates will be flagged for client auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
-        :param code_signing_flag: If set, certificates will be flagged for code signing use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
-        :param country: A comma-separated list of countries that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
-        :param destination_path: A path in Akeyless which to save generated certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
-        :param expiration_event_in: How many days before the expiration of the certificate would you like to be notified. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
-        :param gw_cluster_url: The GW cluster URL to issue the certificate from, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key_usage: A comma-separated string or list of key usages. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
-        :param locality: A comma-separated list of localities that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
-        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
-        :param not_enforce_hostnames: If set, any names are allowed for CN and SANs in the certificate and not only a valid host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
-        :param not_require_cn: If set, clients can request certificates without a CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
-        :param organizational_units: A comma-separated list of organizational units (OU) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
-        :param organizations: A comma-separated list of organizations (O) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
-        :param postal_code: A comma-separated list of postal codes that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
-        :param protect_certificates: Whether to protect generated certificates from deletion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
-        :param province: A comma-separated list of provinces that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
-        :param server_flag: If set, certificates will be flagged for server auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
-        :param street_address: A comma-separated list of street addresses that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
-        :param tags: List of the tags attached to this key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
+        :param name: PKI certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
+        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
+        :param ttl: The maximum requested Time To Live for issued certificates, in seconds. In case of Public CA, this is based on the CA target's supported maximum TTLs Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
+        :param allow_any_name: If set, clients can request certificates for any CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
+        :param allowed_domains: A list of the allowed domains that clients can request to be included in the certificate (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
+        :param allowed_uri_sans: A list of the allowed URIs that clients can request to be included in the certificate as part of the URI Subject Alternative Names (in a comma-delimited list). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
+        :param allow_subdomains: If set, clients can request certificates for subdomains and wildcard subdomains of the allowed domains. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
+        :param ca_target: The name of an existing CA target to attach this PKI Certificate Issuer to, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
+        :param client_flag: If set, certificates will be flagged for client auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
+        :param code_signing_flag: If set, certificates will be flagged for code signing use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
+        :param country: A comma-separated list of countries that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
+        :param destination_path: A path in Akeyless which to save generated certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
+        :param expiration_event_in: How many days before the expiration of the certificate would you like to be notified. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
+        :param gw_cluster_url: The GW cluster URL to issue the certificate from, required in Public CA mode. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key_usage: A comma-separated string or list of key usages. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
+        :param locality: A comma-separated list of localities that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
+        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
+        :param not_enforce_hostnames: If set, any names are allowed for CN and SANs in the certificate and not only a valid host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
+        :param not_require_cn: If set, clients can request certificates without a CN. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
+        :param organizational_units: A comma-separated list of organizational units (OU) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
+        :param organizations: A comma-separated list of organizations (O) that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
+        :param postal_code: A comma-separated list of postal codes that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
+        :param protect_certificates: Whether to protect generated certificates from deletion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
+        :param province: A comma-separated list of provinces that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
+        :param server_flag: If set, certificates will be flagged for server auth use. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
+        :param street_address: A comma-separated list of street addresses that will be set in the issued certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
+        :param tags: List of the tags attached to this key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -1181,7 +1181,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''PKI certificate issuer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#name PkiCertIssuer#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -1191,7 +1191,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def signer_key_name(self) -> builtins.str:
         '''A key to sign the certificate with.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#signer_key_name PkiCertIssuer#signer_key_name}
         '''
         result = self._values.get("signer_key_name")
         assert result is not None, "Required property 'signer_key_name' is missing"
@@ -1203,7 +1203,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         In case of Public CA, this is based on the CA target's supported maximum TTLs
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ttl PkiCertIssuer#ttl}
         '''
         result = self._values.get("ttl")
         assert result is not None, "Required property 'ttl' is missing"
@@ -1215,7 +1215,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, clients can request certificates for any CN.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_any_name PkiCertIssuer#allow_any_name}
         '''
         result = self._values.get("allow_any_name")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1224,7 +1224,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def allowed_domains(self) -> typing.Optional[builtins.str]:
         '''A list of the allowed domains that clients can request to be included in the certificate (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_domains PkiCertIssuer#allowed_domains}
         '''
         result = self._values.get("allowed_domains")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1233,7 +1233,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def allowed_uri_sans(self) -> typing.Optional[builtins.str]:
         '''A list of the allowed URIs that clients can request to be included in the certificate as part of the URI Subject Alternative Names (in a comma-delimited list).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allowed_uri_sans PkiCertIssuer#allowed_uri_sans}
         '''
         result = self._values.get("allowed_uri_sans")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1244,7 +1244,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, clients can request certificates for subdomains and wildcard subdomains of the allowed domains.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#allow_subdomains PkiCertIssuer#allow_subdomains}
         '''
         result = self._values.get("allow_subdomains")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1253,7 +1253,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ca_target(self) -> typing.Optional[builtins.str]:
         '''The name of an existing CA target to attach this PKI Certificate Issuer to, required in Public CA mode.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#ca_target PkiCertIssuer#ca_target}
         '''
         result = self._values.get("ca_target")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1264,7 +1264,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, certificates will be flagged for client auth use.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#client_flag PkiCertIssuer#client_flag}
         '''
         result = self._values.get("client_flag")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1275,7 +1275,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, certificates will be flagged for code signing use.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#code_signing_flag PkiCertIssuer#code_signing_flag}
         '''
         result = self._values.get("code_signing_flag")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1284,7 +1284,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def country(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of countries that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#country PkiCertIssuer#country}
         '''
         result = self._values.get("country")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1295,7 +1295,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Protection from accidental deletion of this item, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#delete_protection PkiCertIssuer#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1304,7 +1304,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#description PkiCertIssuer#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1313,7 +1313,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def destination_path(self) -> typing.Optional[builtins.str]:
         '''A path in Akeyless which to save generated certificates.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#destination_path PkiCertIssuer#destination_path}
         '''
         result = self._values.get("destination_path")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1322,7 +1322,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def expiration_event_in(self) -> typing.Optional[typing.List[builtins.str]]:
         '''How many days before the expiration of the certificate would you like to be notified.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#expiration_event_in PkiCertIssuer#expiration_event_in}
         '''
         result = self._values.get("expiration_event_in")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1331,14 +1331,14 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gw_cluster_url(self) -> typing.Optional[builtins.str]:
         '''The GW cluster URL to issue the certificate from, required in Public CA mode.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#gw_cluster_url PkiCertIssuer#gw_cluster_url}
         '''
         result = self._values.get("gw_cluster_url")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#id PkiCertIssuer#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1350,7 +1350,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def key_usage(self) -> typing.Optional[builtins.str]:
         '''A comma-separated string or list of key usages.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#key_usage PkiCertIssuer#key_usage}
         '''
         result = self._values.get("key_usage")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1359,7 +1359,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def locality(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of localities that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#locality PkiCertIssuer#locality}
         '''
         result = self._values.get("locality")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1368,7 +1368,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def metadata(self) -> typing.Optional[builtins.str]:
         '''[Deprecated: Use description instead].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#metadata PkiCertIssuer#metadata}
         '''
         result = self._values.get("metadata")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1379,7 +1379,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, any names are allowed for CN and SANs in the certificate and not only a valid host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_enforce_hostnames PkiCertIssuer#not_enforce_hostnames}
         '''
         result = self._values.get("not_enforce_hostnames")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1390,7 +1390,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, clients can request certificates without a CN.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#not_require_cn PkiCertIssuer#not_require_cn}
         '''
         result = self._values.get("not_require_cn")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1399,7 +1399,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def organizational_units(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of organizational units (OU) that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizational_units PkiCertIssuer#organizational_units}
         '''
         result = self._values.get("organizational_units")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1408,7 +1408,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def organizations(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of organizations (O) that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#organizations PkiCertIssuer#organizations}
         '''
         result = self._values.get("organizations")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1417,7 +1417,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def postal_code(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of postal codes that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#postal_code PkiCertIssuer#postal_code}
         '''
         result = self._values.get("postal_code")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1428,7 +1428,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Whether to protect generated certificates from deletion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#protect_certificates PkiCertIssuer#protect_certificates}
         '''
         result = self._values.get("protect_certificates")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1437,7 +1437,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def province(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of provinces that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#province PkiCertIssuer#province}
         '''
         result = self._values.get("province")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1448,7 +1448,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''If set, certificates will be flagged for server auth use.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#server_flag PkiCertIssuer#server_flag}
         '''
         result = self._values.get("server_flag")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1457,7 +1457,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def street_address(self) -> typing.Optional[builtins.str]:
         '''A comma-separated list of street addresses that will be set in the issued certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#street_address PkiCertIssuer#street_address}
         '''
         result = self._values.get("street_address")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1466,7 +1466,7 @@ class PkiCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tags(self) -> typing.Optional[typing.List[builtins.str]]:
         '''List of the tags attached to this key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.1/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/pki_cert_issuer#tags PkiCertIssuer#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
