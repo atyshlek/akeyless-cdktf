@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_gcp`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodGcpA(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodGcp.AuthMethodGcpA",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp akeyless_auth_method_gcp}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp akeyless_auth_method_gcp}.'''
 
     def __init__(
         self,
@@ -46,6 +46,7 @@ class AuthMethodGcpA(
         bound_zones: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         service_account_creds_data: typing.Optional[builtins.str] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
         count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -55,24 +56,25 @@ class AuthMethodGcpA(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp akeyless_auth_method_gcp} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp akeyless_auth_method_gcp} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
-        :param type: The type of the GCP Auth Method (iam/gce). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
-        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
-        :param bound_labels: GCE only. A list of GCP labels formatted as key:value pairs that must be set on instances in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
-        :param bound_projects: A list of GCP project IDs. Clients must belong to any of the provided projects in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
-        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
-        :param bound_service_accounts: A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
-        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
+        :param type: The type of the GCP Auth Method (iam/gce). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
+        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
+        :param bound_labels: GCE only. A list of GCP labels formatted as key:value pairs that must be set on instances in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
+        :param bound_projects: A list of GCP project IDs. Clients must belong to any of the provided projects in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
+        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
+        :param bound_service_accounts: A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
+        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#jwt_ttl AuthMethodGcpA#jwt_ttl}
+        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -99,6 +101,7 @@ class AuthMethodGcpA(
             bound_zones=bound_zones,
             force_sub_claims=force_sub_claims,
             id=id,
+            jwt_ttl=jwt_ttl,
             service_account_creds_data=service_account_creds_data,
             connection=connection,
             count=count,
@@ -124,7 +127,7 @@ class AuthMethodGcpA(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodGcpA to import.
-        :param import_from_id: The id of the existing AuthMethodGcpA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodGcpA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodGcpA to import is found.
         '''
         if __debug__:
@@ -178,6 +181,10 @@ class AuthMethodGcpA(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="resetServiceAccountCredsData")
     def reset_service_account_creds_data(self) -> None:
@@ -254,6 +261,11 @@ class AuthMethodGcpA(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -408,6 +420,18 @@ class AuthMethodGcpA(
         jsii.set(self, "id", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__58a617287f284efcd925ef31013707b17afcfd40fc36517350d30e3d32cf23cb)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -468,6 +492,7 @@ class AuthMethodGcpA(
         "bound_zones": "boundZones",
         "force_sub_claims": "forceSubClaims",
         "id": "id",
+        "jwt_ttl": "jwtTtl",
         "service_account_creds_data": "serviceAccountCredsData",
     },
 )
@@ -495,6 +520,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         bound_zones: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         service_account_creds_data: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
@@ -505,20 +531,21 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
-        :param type: The type of the GCP Auth Method (iam/gce). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
-        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
-        :param bound_labels: GCE only. A list of GCP labels formatted as key:value pairs that must be set on instances in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
-        :param bound_projects: A list of GCP project IDs. Clients must belong to any of the provided projects in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
-        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
-        :param bound_service_accounts: A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
-        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
+        :param type: The type of the GCP Auth Method (iam/gce). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
+        :param audience: The audience to verify in the JWT received by the client. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
+        :param bound_labels: GCE only. A list of GCP labels formatted as key:value pairs that must be set on instances in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
+        :param bound_projects: A list of GCP project IDs. Clients must belong to any of the provided projects in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
+        :param bound_regions: GCE only. A list of regions. GCE instances must belong to any of the provided regions in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
+        :param bound_service_accounts: A list of Service Accounts. Clients must belong to any of the provided service accounts in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
+        :param bound_zones: GCE only. A list of zones. GCE instances must belong to any of the provided zones in order to authenticate. For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#jwt_ttl AuthMethodGcpA#jwt_ttl}
+        :param service_account_creds_data: Service Account creds data, base64 encoded. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -544,6 +571,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument bound_zones", value=bound_zones, expected_type=type_hints["bound_zones"])
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
             check_type(argname="argument service_account_creds_data", value=service_account_creds_data, expected_type=type_hints["service_account_creds_data"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
             "name": name,
@@ -585,6 +613,8 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["force_sub_claims"] = force_sub_claims
         if id is not None:
             self._values["id"] = id
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
         if service_account_creds_data is not None:
             self._values["service_account_creds_data"] = service_account_creds_data
 
@@ -656,7 +686,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#name AuthMethodGcpA#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -666,7 +696,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def type(self) -> builtins.str:
         '''The type of the GCP Auth Method (iam/gce).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#type AuthMethodGcpA#type}
         '''
         result = self._values.get("type")
         assert result is not None, "Required property 'type' is missing"
@@ -676,7 +706,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_expires AuthMethodGcpA#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -685,7 +715,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#access_id AuthMethodGcpA#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -694,7 +724,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def audience(self) -> typing.Optional[builtins.str]:
         '''The audience to verify in the JWT received by the client.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#audience AuthMethodGcpA#audience}
         '''
         result = self._values.get("audience")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -703,7 +733,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_ips AuthMethodGcpA#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -714,7 +744,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         A list of GCP labels formatted as key:value pairs that must be set on instances in order to authenticate. For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_labels AuthMethodGcpA#bound_labels}
         '''
         result = self._values.get("bound_labels")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -725,7 +755,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Clients must belong to any of the provided projects in order to authenticate. For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_projects AuthMethodGcpA#bound_projects}
         '''
         result = self._values.get("bound_projects")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -736,7 +766,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         A list of regions. GCE instances must belong to any of the provided regions in order to authenticate. For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_regions AuthMethodGcpA#bound_regions}
         '''
         result = self._values.get("bound_regions")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -747,7 +777,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Clients must belong to any of the provided service accounts in order to authenticate. For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_service_accounts AuthMethodGcpA#bound_service_accounts}
         '''
         result = self._values.get("bound_service_accounts")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -758,7 +788,7 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         A list of zones. GCE instances must belong to any of the provided zones in order to authenticate. For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#bound_zones AuthMethodGcpA#bound_zones}
         '''
         result = self._values.get("bound_zones")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -769,14 +799,14 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#force_sub_claims AuthMethodGcpA#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#id AuthMethodGcpA#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -785,10 +815,19 @@ class AuthMethodGcpAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#jwt_ttl AuthMethodGcpA#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
     def service_account_creds_data(self) -> typing.Optional[builtins.str]:
         '''Service Account creds data, base64 encoded.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_gcp#service_account_creds_data AuthMethodGcpA#service_account_creds_data}
         '''
         result = self._values.get("service_account_creds_data")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -829,6 +868,7 @@ def _typecheckingstub__4c8194b9bd78005f6a24f3c91ff5907bd6f2fb59c843a3db0cd24e9cb
     bound_zones: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     service_account_creds_data: typing.Optional[builtins.str] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
     count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -916,6 +956,12 @@ def _typecheckingstub__a9381e3aa796691c34a15e681d5cf8557cd0951b4e11e0a945064b09e
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__58a617287f284efcd925ef31013707b17afcfd40fc36517350d30e3d32cf23cb(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__a7b81e3e57d6a44ee5ca6121de8a8766597afdae51233d1240853c8252f7cc83(
     value: builtins.str,
 ) -> None:
@@ -956,6 +1002,7 @@ def _typecheckingstub__cc880330eaa84483a6779da6311f5e09e92754e15b6127687c0071fc1
     bound_zones: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     service_account_creds_data: typing.Optional[builtins.str] = None,
 ) -> None:
     """Type checking stubs"""

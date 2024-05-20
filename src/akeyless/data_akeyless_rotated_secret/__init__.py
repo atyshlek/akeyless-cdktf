@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_rotated_secret`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_rotated_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret).
+Refer to the Terraform Registry for docs: [`data_akeyless_rotated_secret`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessRotatedSecret(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessRotatedSecret.DataAkeylessRotatedSecret",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret akeyless_rotated_secret}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret akeyless_rotated_secret}.'''
 
     def __init__(
         self,
@@ -44,13 +44,13 @@ class DataAkeylessRotatedSecret(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret akeyless_rotated_secret} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret akeyless_rotated_secret} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param version: Secret version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
+        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param version: Secret version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -91,7 +91,7 @@ class DataAkeylessRotatedSecret(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessRotatedSecret to import.
-        :param import_from_id: The id of the existing DataAkeylessRotatedSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessRotatedSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessRotatedSecret to import is found.
         '''
         if __debug__:
@@ -219,9 +219,9 @@ class DataAkeylessRotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param version: Secret version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
+        :param name: Secret name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param version: Secret version. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -327,7 +327,7 @@ class DataAkeylessRotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Secret name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#name DataAkeylessRotatedSecret#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -335,7 +335,7 @@ class DataAkeylessRotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#id DataAkeylessRotatedSecret#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -347,7 +347,7 @@ class DataAkeylessRotatedSecretConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def version(self) -> typing.Optional[jsii.Number]:
         '''Secret version.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/rotated_secret#version DataAkeylessRotatedSecret#version}
         '''
         result = self._values.get("version")
         return typing.cast(typing.Optional[jsii.Number], result)

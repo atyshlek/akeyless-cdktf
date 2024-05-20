@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_oracle`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_oracle`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle).
+Refer to the Terraform Registry for docs: [`akeyless_producer_oracle`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerOracle(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerOracle.ProducerOracle",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle akeyless_producer_oracle}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle akeyless_producer_oracle}.'''
 
     def __init__(
         self,
@@ -55,24 +55,24 @@ class ProducerOracle(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle akeyless_producer_oracle} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle akeyless_producer_oracle} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#name ProducerOracle#name}
-        :param db_server_certificates: the set of root certificate authorities in base64 encoding that clients use when verifying server certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
-        :param db_server_name: Server name is used to verify the hostname on the returned certificates unless InsecureSkipVerify is given. It is also included in the client's handshake to support virtual hosting unless it is an IP address Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#id ProducerOracle#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param oracle_host: Oracle host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
-        :param oracle_password: Oracle password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
-        :param oracle_port: Oracle port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
-        :param oracle_screation_statements: Oracle Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
-        :param oracle_service_name: Oracle service name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
-        :param oracle_username: Oracle user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#tags ProducerOracle#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#name ProducerOracle#name}
+        :param db_server_certificates: the set of root certificate authorities in base64 encoding that clients use when verifying server certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
+        :param db_server_name: Server name is used to verify the hostname on the returned certificates unless InsecureSkipVerify is given. It is also included in the client's handshake to support virtual hosting unless it is an IP address Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#id ProducerOracle#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param oracle_host: Oracle host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
+        :param oracle_password: Oracle password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
+        :param oracle_port: Oracle port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
+        :param oracle_screation_statements: Oracle Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
+        :param oracle_service_name: Oracle service name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
+        :param oracle_username: Oracle user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#tags ProducerOracle#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -124,7 +124,7 @@ class ProducerOracle(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerOracle to import.
-        :param import_from_id: The id of the existing ProducerOracle that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerOracle that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerOracle to import is found.
         '''
         if __debug__:
@@ -500,20 +500,20 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#name ProducerOracle#name}
-        :param db_server_certificates: the set of root certificate authorities in base64 encoding that clients use when verifying server certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
-        :param db_server_name: Server name is used to verify the hostname on the returned certificates unless InsecureSkipVerify is given. It is also included in the client's handshake to support virtual hosting unless it is an IP address Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#id ProducerOracle#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param oracle_host: Oracle host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
-        :param oracle_password: Oracle password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
-        :param oracle_port: Oracle port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
-        :param oracle_screation_statements: Oracle Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
-        :param oracle_service_name: Oracle service name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
-        :param oracle_username: Oracle user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#tags ProducerOracle#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#name ProducerOracle#name}
+        :param db_server_certificates: the set of root certificate authorities in base64 encoding that clients use when verifying server certificates. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
+        :param db_server_name: Server name is used to verify the hostname on the returned certificates unless InsecureSkipVerify is given. It is also included in the client's handshake to support virtual hosting unless it is an IP address Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#id ProducerOracle#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param oracle_host: Oracle host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
+        :param oracle_password: Oracle password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
+        :param oracle_port: Oracle port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
+        :param oracle_screation_statements: Oracle Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
+        :param oracle_service_name: Oracle service name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
+        :param oracle_username: Oracle user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#tags ProducerOracle#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -652,7 +652,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#name ProducerOracle#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#name ProducerOracle#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -662,7 +662,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def db_server_certificates(self) -> typing.Optional[builtins.str]:
         '''the set of root certificate authorities in base64 encoding that clients use when verifying server certificates.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_certificates ProducerOracle#db_server_certificates}
         '''
         result = self._values.get("db_server_certificates")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -673,14 +673,14 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         It is also included in the client's handshake to support virtual hosting unless it is an IP address
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#db_server_name ProducerOracle#db_server_name}
         '''
         result = self._values.get("db_server_name")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#id ProducerOracle#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#id ProducerOracle#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -692,7 +692,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_host(self) -> typing.Optional[builtins.str]:
         '''Oracle host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_host ProducerOracle#oracle_host}
         '''
         result = self._values.get("oracle_host")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -701,7 +701,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_password(self) -> typing.Optional[builtins.str]:
         '''Oracle password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_password ProducerOracle#oracle_password}
         '''
         result = self._values.get("oracle_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -710,7 +710,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_port(self) -> typing.Optional[builtins.str]:
         '''Oracle port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_port ProducerOracle#oracle_port}
         '''
         result = self._values.get("oracle_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -719,7 +719,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_screation_statements(self) -> typing.Optional[builtins.str]:
         '''Oracle Creation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_screation_statements ProducerOracle#oracle_screation_statements}
         '''
         result = self._values.get("oracle_screation_statements")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -728,7 +728,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_service_name(self) -> typing.Optional[builtins.str]:
         '''Oracle service name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_service_name ProducerOracle#oracle_service_name}
         '''
         result = self._values.get("oracle_service_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -737,7 +737,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def oracle_username(self) -> typing.Optional[builtins.str]:
         '''Oracle user.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#oracle_username ProducerOracle#oracle_username}
         '''
         result = self._values.get("oracle_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -746,7 +746,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#producer_encryption_key_name ProducerOracle#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -757,7 +757,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#tags ProducerOracle#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#tags ProducerOracle#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -766,7 +766,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#target_name ProducerOracle#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -775,7 +775,7 @@ class ProducerOracleConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_oracle#user_ttl ProducerOracle#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

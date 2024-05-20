@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_gcp`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp).
+Refer to the Terraform Registry for docs: [`akeyless_target_gcp`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetGcp(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetGcp.TargetGcp",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp akeyless_target_gcp}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp akeyless_target_gcp}.'''
 
     def __init__(
         self,
@@ -34,7 +34,6 @@ class TargetGcp(
         id_: builtins.str,
         *,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         gcp_key: typing.Optional[builtins.str] = None,
         gcp_sa_email: typing.Optional[builtins.str] = None,
@@ -49,18 +48,17 @@ class TargetGcp(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp akeyless_target_gcp} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp akeyless_target_gcp} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#name TargetGcp#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#comment TargetGcp#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#description TargetGcp#description}
-        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
-        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#id TargetGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#key TargetGcp#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#name TargetGcp#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#description TargetGcp#description}
+        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
+        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#id TargetGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#key TargetGcp#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -75,7 +73,6 @@ class TargetGcp(
             check_type(argname="argument id_", value=id_, expected_type=type_hints["id_"])
         config = TargetGcpConfig(
             name=name,
-            comment=comment,
             description=description,
             gcp_key=gcp_key,
             gcp_sa_email=gcp_sa_email,
@@ -106,7 +103,7 @@ class TargetGcp(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetGcp to import.
-        :param import_from_id: The id of the existing TargetGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetGcp to import is found.
         '''
         if __debug__:
@@ -116,10 +113,6 @@ class TargetGcp(
             check_type(argname="argument import_from_id", value=import_from_id, expected_type=type_hints["import_from_id"])
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
         return typing.cast(_cdktf_9a9027ec.ImportableResource, jsii.sinvoke(cls, "generateConfigForImport", [scope, import_to_id, import_from_id, provider]))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -159,11 +152,6 @@ class TargetGcp(
         return typing.cast(builtins.str, jsii.sget(cls, "tfResourceType"))
 
     @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
-
-    @builtins.property
     @jsii.member(jsii_name="descriptionInput")
     def description_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "descriptionInput"))
@@ -199,18 +187,6 @@ class TargetGcp(
         self,
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], jsii.get(self, "useGwCloudIdentityInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__aa42aa660be38aecfc088fc0d40598f16c0dec60ae7ab12f317fa8382d8542e3)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -314,7 +290,6 @@ class TargetGcp(
         "provider": "provider",
         "provisioners": "provisioners",
         "name": "name",
-        "comment": "comment",
         "description": "description",
         "gcp_key": "gcpKey",
         "gcp_sa_email": "gcpSaEmail",
@@ -335,7 +310,6 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         gcp_key: typing.Optional[builtins.str] = None,
         gcp_sa_email: typing.Optional[builtins.str] = None,
@@ -351,14 +325,13 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#name TargetGcp#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#comment TargetGcp#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#description TargetGcp#description}
-        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
-        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#id TargetGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#key TargetGcp#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#name TargetGcp#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#description TargetGcp#description}
+        :param gcp_key: Base64-encoded service account private key text. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
+        :param gcp_sa_email: GCP service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#id TargetGcp#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#key TargetGcp#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -372,7 +345,6 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
             check_type(argname="argument provisioners", value=provisioners, expected_type=type_hints["provisioners"])
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument gcp_key", value=gcp_key, expected_type=type_hints["gcp_key"])
             check_type(argname="argument gcp_sa_email", value=gcp_sa_email, expected_type=type_hints["gcp_sa_email"])
@@ -396,8 +368,6 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["provider"] = provider
         if provisioners is not None:
             self._values["provisioners"] = provisioners
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if gcp_key is not None:
@@ -479,23 +449,17 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#name TargetGcp#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#name TargetGcp#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#comment TargetGcp#comment}.'''
-        result = self._values.get("comment")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#description TargetGcp#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#description TargetGcp#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -504,7 +468,7 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_key(self) -> typing.Optional[builtins.str]:
         '''Base64-encoded service account private key text.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_key TargetGcp#gcp_key}
         '''
         result = self._values.get("gcp_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -513,14 +477,14 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gcp_sa_email(self) -> typing.Optional[builtins.str]:
         '''GCP service account email.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#gcp_sa_email TargetGcp#gcp_sa_email}
         '''
         result = self._values.get("gcp_sa_email")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#id TargetGcp#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#id TargetGcp#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -534,7 +498,7 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#key TargetGcp#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#key TargetGcp#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -545,7 +509,7 @@ class TargetGcpConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Use the GW's Cloud IAM.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gcp#use_gw_cloud_identity TargetGcp#use_gw_cloud_identity}
         '''
         result = self._values.get("use_gw_cloud_identity")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -574,7 +538,6 @@ def _typecheckingstub__ad7a01d7913abce97aa2449a462d1c62630311045366727c9021459fa
     id_: builtins.str,
     *,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     gcp_key: typing.Optional[builtins.str] = None,
     gcp_sa_email: typing.Optional[builtins.str] = None,
@@ -597,12 +560,6 @@ def _typecheckingstub__210af8ab849d075e5501f3f9d4ec10fe28716b9aab3ab4b613a0bb493
     import_to_id: builtins.str,
     import_from_id: builtins.str,
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__aa42aa660be38aecfc088fc0d40598f16c0dec60ae7ab12f317fa8382d8542e3(
-    value: builtins.str,
 ) -> None:
     """Type checking stubs"""
     pass
@@ -659,7 +616,6 @@ def _typecheckingstub__d6a49682846d33d274958127986f09549a1f2d27f0e58bdf63f5cb98e
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
     provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     gcp_key: typing.Optional[builtins.str] = None,
     gcp_sa_email: typing.Optional[builtins.str] = None,

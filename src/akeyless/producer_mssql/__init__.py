@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_mssql`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_mssql`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql).
+Refer to the Terraform Registry for docs: [`akeyless_producer_mssql`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerMssql(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerMssql.ProducerMssql",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql akeyless_producer_mssql}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql akeyless_producer_mssql}.'''
 
     def __init__(
         self,
@@ -60,29 +60,29 @@ class ProducerMssql(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql akeyless_producer_mssql} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql akeyless_producer_mssql} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#name ProducerMssql#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#id ProducerMssql#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param mssql_create_statements: MSSQL Server Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
-        :param mssql_dbname: MSSQL Server DB Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
-        :param mssql_host: MS SQL Server host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
-        :param mssql_password: MS SQL Server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
-        :param mssql_port: MS SQL Server port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
-        :param mssql_revocation_statements: MSSQL Server Revocation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
-        :param mssql_username: MS SQL Server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
-        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#tags ProducerMssql#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#name ProducerMssql#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#id ProducerMssql#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param mssql_create_statements: MSSQL Server Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
+        :param mssql_dbname: MSSQL Server DB Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
+        :param mssql_host: MS SQL Server host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
+        :param mssql_password: MS SQL Server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
+        :param mssql_port: MS SQL Server port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
+        :param mssql_revocation_statements: MSSQL Server Revocation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
+        :param mssql_username: MS SQL Server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
+        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#tags ProducerMssql#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -139,7 +139,7 @@ class ProducerMssql(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerMssql to import.
-        :param import_from_id: The id of the existing ProducerMssql that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerMssql that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerMssql to import is found.
         '''
         if __debug__:
@@ -637,25 +637,25 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#name ProducerMssql#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#id ProducerMssql#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param mssql_create_statements: MSSQL Server Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
-        :param mssql_dbname: MSSQL Server DB Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
-        :param mssql_host: MS SQL Server host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
-        :param mssql_password: MS SQL Server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
-        :param mssql_port: MS SQL Server port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
-        :param mssql_revocation_statements: MSSQL Server Revocation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
-        :param mssql_username: MS SQL Server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
-        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
-        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
-        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#tags ProducerMssql#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#name ProducerMssql#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#id ProducerMssql#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param mssql_create_statements: MSSQL Server Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
+        :param mssql_dbname: MSSQL Server DB Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
+        :param mssql_host: MS SQL Server host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
+        :param mssql_password: MS SQL Server password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
+        :param mssql_port: MS SQL Server port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
+        :param mssql_revocation_statements: MSSQL Server Revocation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
+        :param mssql_username: MS SQL Server user. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
+        :param secure_access_db_name: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
+        :param secure_access_db_schema: The db schema. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
+        :param secure_access_host: Target DB servers for connections., For multiple values repeat this flag. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#tags ProducerMssql#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -809,7 +809,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#name ProducerMssql#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#name ProducerMssql#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -817,7 +817,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#id ProducerMssql#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#id ProducerMssql#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_create_statements(self) -> typing.Optional[builtins.str]:
         '''MSSQL Server Creation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_create_statements ProducerMssql#mssql_create_statements}
         '''
         result = self._values.get("mssql_create_statements")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -838,7 +838,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_dbname(self) -> typing.Optional[builtins.str]:
         '''MSSQL Server DB Name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_dbname ProducerMssql#mssql_dbname}
         '''
         result = self._values.get("mssql_dbname")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -847,7 +847,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_host(self) -> typing.Optional[builtins.str]:
         '''MS SQL Server host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_host ProducerMssql#mssql_host}
         '''
         result = self._values.get("mssql_host")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -856,7 +856,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_password(self) -> typing.Optional[builtins.str]:
         '''MS SQL Server password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_password ProducerMssql#mssql_password}
         '''
         result = self._values.get("mssql_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -865,7 +865,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_port(self) -> typing.Optional[builtins.str]:
         '''MS SQL Server port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_port ProducerMssql#mssql_port}
         '''
         result = self._values.get("mssql_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -874,7 +874,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_revocation_statements(self) -> typing.Optional[builtins.str]:
         '''MSSQL Server Revocation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_revocation_statements ProducerMssql#mssql_revocation_statements}
         '''
         result = self._values.get("mssql_revocation_statements")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -883,7 +883,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def mssql_username(self) -> typing.Optional[builtins.str]:
         '''MS SQL Server user.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#mssql_username ProducerMssql#mssql_username}
         '''
         result = self._values.get("mssql_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -892,7 +892,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#producer_encryption_key_name ProducerMssql#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -901,7 +901,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_bastion_issuer ProducerMssql#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -910,7 +910,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_name(self) -> typing.Optional[builtins.str]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_name ProducerMssql#secure_access_db_name}
         '''
         result = self._values.get("secure_access_db_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -919,7 +919,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_db_schema(self) -> typing.Optional[builtins.str]:
         '''The db schema.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_db_schema ProducerMssql#secure_access_db_schema}
         '''
         result = self._values.get("secure_access_db_schema")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -928,7 +928,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_enable ProducerMssql#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -937,7 +937,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_host(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Target DB servers for connections., For multiple values repeat this flag.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_host ProducerMssql#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -948,7 +948,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#secure_access_web ProducerMssql#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -959,7 +959,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#tags ProducerMssql#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#tags ProducerMssql#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -968,7 +968,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#target_name ProducerMssql#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -977,7 +977,7 @@ class ProducerMssqlConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_mssql#user_ttl ProducerMssql#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

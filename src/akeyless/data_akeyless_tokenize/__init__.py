@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_tokenize`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_tokenize`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize).
+Refer to the Terraform Registry for docs: [`data_akeyless_tokenize`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessTokenize(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessTokenize.DataAkeylessTokenize",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize akeyless_tokenize}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize akeyless_tokenize}.'''
 
     def __init__(
         self,
@@ -45,14 +45,14 @@ class DataAkeylessTokenize(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize akeyless_tokenize} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize akeyless_tokenize} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param plaintext: Data to be encrypted. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
-        :param tokenizer_name: The name of the tokenizer to use in the encryption process. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#id DataAkeylessTokenize#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param tweak: Base64 encoded tweak for vaultless encryption. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
+        :param plaintext: Data to be encrypted. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
+        :param tokenizer_name: The name of the tokenizer to use in the encryption process. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#id DataAkeylessTokenize#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param tweak: Base64 encoded tweak for vaultless encryption. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -94,7 +94,7 @@ class DataAkeylessTokenize(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessTokenize to import.
-        :param import_from_id: The id of the existing DataAkeylessTokenize that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessTokenize that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessTokenize to import is found.
         '''
         if __debug__:
@@ -241,10 +241,10 @@ class DataAkeylessTokenizeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param plaintext: Data to be encrypted. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
-        :param tokenizer_name: The name of the tokenizer to use in the encryption process. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#id DataAkeylessTokenize#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param tweak: Base64 encoded tweak for vaultless encryption. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
+        :param plaintext: Data to be encrypted. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
+        :param tokenizer_name: The name of the tokenizer to use in the encryption process. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#id DataAkeylessTokenize#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param tweak: Base64 encoded tweak for vaultless encryption. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -352,7 +352,7 @@ class DataAkeylessTokenizeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def plaintext(self) -> builtins.str:
         '''Data to be encrypted.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#plaintext DataAkeylessTokenize#plaintext}
         '''
         result = self._values.get("plaintext")
         assert result is not None, "Required property 'plaintext' is missing"
@@ -362,7 +362,7 @@ class DataAkeylessTokenizeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tokenizer_name(self) -> builtins.str:
         '''The name of the tokenizer to use in the encryption process.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tokenizer_name DataAkeylessTokenize#tokenizer_name}
         '''
         result = self._values.get("tokenizer_name")
         assert result is not None, "Required property 'tokenizer_name' is missing"
@@ -370,7 +370,7 @@ class DataAkeylessTokenizeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#id DataAkeylessTokenize#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#id DataAkeylessTokenize#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -382,7 +382,7 @@ class DataAkeylessTokenizeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tweak(self) -> typing.Optional[builtins.str]:
         '''Base64 encoded tweak for vaultless encryption.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/tokenize#tweak DataAkeylessTokenize#tweak}
         '''
         result = self._values.get("tweak")
         return typing.cast(typing.Optional[builtins.str], result)

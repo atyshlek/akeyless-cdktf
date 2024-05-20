@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_producer_tmp_creds`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_producer_tmp_creds`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds).
+Refer to the Terraform Registry for docs: [`data_akeyless_producer_tmp_creds`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessProducerTmpCreds(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessProducerTmpCreds.DataAkeylessProducerTmpCreds",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds akeyless_producer_tmp_creds}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds akeyless_producer_tmp_creds}.'''
 
     def __init__(
         self,
@@ -43,12 +43,12 @@ class DataAkeylessProducerTmpCreds(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds akeyless_producer_tmp_creds} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds akeyless_producer_tmp_creds} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param name: Producer Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -88,7 +88,7 @@ class DataAkeylessProducerTmpCreds(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessProducerTmpCreds to import.
-        :param import_from_id: The id of the existing DataAkeylessProducerTmpCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessProducerTmpCreds that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessProducerTmpCreds to import is found.
         '''
         if __debug__:
@@ -193,8 +193,8 @@ class DataAkeylessProducerTmpCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments)
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param name: Producer Name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -297,7 +297,7 @@ class DataAkeylessProducerTmpCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments)
     def name(self) -> builtins.str:
         '''Producer Name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#name DataAkeylessProducerTmpCreds#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -305,7 +305,7 @@ class DataAkeylessProducerTmpCredsConfig(_cdktf_9a9027ec.TerraformMetaArguments)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/producer_tmp_creds#id DataAkeylessProducerTmpCreds#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

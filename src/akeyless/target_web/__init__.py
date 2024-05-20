@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_web`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_web`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web).
+Refer to the Terraform Registry for docs: [`akeyless_target_web`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetWeb(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetWeb.TargetWeb",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web akeyless_target_web}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web akeyless_target_web}.'''
 
     def __init__(
         self,
@@ -35,7 +35,6 @@ class TargetWeb(
         *,
         name: builtins.str,
         url: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
         key: typing.Optional[builtins.str] = None,
@@ -47,16 +46,15 @@ class TargetWeb(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web akeyless_target_web} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web akeyless_target_web} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#name TargetWeb#name}
-        :param url: Web target URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#url TargetWeb#url}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#comment TargetWeb#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#description TargetWeb#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#id TargetWeb#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#key TargetWeb#key}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#name TargetWeb#name}
+        :param url: Web target URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#url TargetWeb#url}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#description TargetWeb#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#id TargetWeb#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#key TargetWeb#key}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -72,7 +70,6 @@ class TargetWeb(
         config = TargetWebConfig(
             name=name,
             url=url,
-            comment=comment,
             description=description,
             id=id,
             key=key,
@@ -100,7 +97,7 @@ class TargetWeb(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetWeb to import.
-        :param import_from_id: The id of the existing TargetWeb that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetWeb that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetWeb to import is found.
         '''
         if __debug__:
@@ -110,10 +107,6 @@ class TargetWeb(
             check_type(argname="argument import_from_id", value=import_from_id, expected_type=type_hints["import_from_id"])
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
         return typing.cast(_cdktf_9a9027ec.ImportableResource, jsii.sinvoke(cls, "generateConfigForImport", [scope, import_to_id, import_from_id, provider]))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -141,11 +134,6 @@ class TargetWeb(
         return typing.cast(builtins.str, jsii.sget(cls, "tfResourceType"))
 
     @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
-
-    @builtins.property
     @jsii.member(jsii_name="descriptionInput")
     def description_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "descriptionInput"))
@@ -169,18 +157,6 @@ class TargetWeb(
     @jsii.member(jsii_name="urlInput")
     def url_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "urlInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__d0f911c08bc3f2ea22995740c5ddced0c2a9b87aaecb05afe4abbc78081377b8)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -256,7 +232,6 @@ class TargetWeb(
         "provisioners": "provisioners",
         "name": "name",
         "url": "url",
-        "comment": "comment",
         "description": "description",
         "id": "id",
         "key": "key",
@@ -275,7 +250,6 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
         name: builtins.str,
         url: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
         key: typing.Optional[builtins.str] = None,
@@ -288,12 +262,11 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#name TargetWeb#name}
-        :param url: Web target URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#url TargetWeb#url}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#comment TargetWeb#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#description TargetWeb#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#id TargetWeb#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#key TargetWeb#key}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#name TargetWeb#name}
+        :param url: Web target URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#url TargetWeb#url}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#description TargetWeb#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#id TargetWeb#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#key TargetWeb#key}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -308,7 +281,6 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument provisioners", value=provisioners, expected_type=type_hints["provisioners"])
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
             check_type(argname="argument url", value=url, expected_type=type_hints["url"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
             check_type(argname="argument key", value=key, expected_type=type_hints["key"])
@@ -330,8 +302,6 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["provider"] = provider
         if provisioners is not None:
             self._values["provisioners"] = provisioners
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if id is not None:
@@ -407,7 +377,7 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#name TargetWeb#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#name TargetWeb#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -417,30 +387,24 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def url(self) -> builtins.str:
         '''Web target URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#url TargetWeb#url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#url TargetWeb#url}
         '''
         result = self._values.get("url")
         assert result is not None, "Required property 'url' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#comment TargetWeb#comment}.'''
-        result = self._values.get("comment")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#description TargetWeb#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#description TargetWeb#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#id TargetWeb#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#id TargetWeb#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -454,7 +418,7 @@ class TargetWebConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_web#key TargetWeb#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_web#key TargetWeb#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -484,7 +448,6 @@ def _typecheckingstub__6851cfbfac78d270e2d3b1f9e568ac4cfb2e35034fc04fdef0cbb3a6e
     *,
     name: builtins.str,
     url: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
     key: typing.Optional[builtins.str] = None,
@@ -504,12 +467,6 @@ def _typecheckingstub__18b9ac5d5556ea6a1a9408e220563a9b83e9cc29e3dac2f19fab6309f
     import_to_id: builtins.str,
     import_from_id: builtins.str,
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__d0f911c08bc3f2ea22995740c5ddced0c2a9b87aaecb05afe4abbc78081377b8(
-    value: builtins.str,
 ) -> None:
     """Type checking stubs"""
     pass
@@ -555,7 +512,6 @@ def _typecheckingstub__46daa6a173bf37ab61470cc63b5858a39467505e6bcc1a336af0d7fcc
     provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     name: builtins.str,
     url: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
     key: typing.Optional[builtins.str] = None,

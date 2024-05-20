@@ -1,7 +1,7 @@
 '''
 # `akeyless_ssh_cert_issuer`
 
-Refer to the Terraform Registry for docs: [`akeyless_ssh_cert_issuer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer).
+Refer to the Terraform Registry for docs: [`akeyless_ssh_cert_issuer`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class SshCertIssuer(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.sshCertIssuer.SshCertIssuer",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer akeyless_ssh_cert_issuer}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer akeyless_ssh_cert_issuer}.'''
 
     def __init__(
         self,
@@ -41,7 +41,6 @@ class SshCertIssuer(
         description: typing.Optional[builtins.str] = None,
         extensions: typing.Optional[typing.Mapping[builtins.str, builtins.str]] = None,
         id: typing.Optional[builtins.str] = None,
-        metadata: typing.Optional[builtins.str] = None,
         principals: typing.Optional[builtins.str] = None,
         secure_access_bastion_api: typing.Optional[builtins.str] = None,
         secure_access_bastion_ssh: typing.Optional[builtins.str] = None,
@@ -58,27 +57,26 @@ class SshCertIssuer(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer akeyless_ssh_cert_issuer} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer akeyless_ssh_cert_issuer} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param allowed_users: Users allowed to fetch the certificate, e.g root,ubuntu. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
-        :param name: SSH certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
-        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
-        :param ttl: The requested Time To Live for the certificate, in seconds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
-        :param extensions: Signed certificates with extensions (key/val), e.g permit-port-forwarding=. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#metadata SshCertIssuer#metadata}
-        :param principals: Signed certificates with principal, e.g example_role1,example_role2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
-        :param secure_access_bastion_api: Bastion's SSH control API endpoint. E.g. https://my.bastion:9900. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
-        :param secure_access_bastion_ssh: Bastion's SSH server. E.g. my.bastion:22. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
-        :param secure_access_host: Target servers for connections. (In case of Linked Target association, host(s) will inherit Linked Target hosts - Relevant only for Dynamic Secrets/producers) Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
-        :param secure_access_ssh_creds_user: SSH username to connect to target server, must be in 'Allowed Users' list. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
-        :param secure_access_use_internal_bastion: Use internal SSH Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
-        :param tags: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
+        :param allowed_users: Users allowed to fetch the certificate, e.g root,ubuntu. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
+        :param name: SSH certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
+        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
+        :param ttl: The requested Time To Live for the certificate, in seconds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
+        :param extensions: Signed certificates with extensions (key/val), e.g permit-port-forwarding=. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param principals: Signed certificates with principal, e.g example_role1,example_role2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
+        :param secure_access_bastion_api: Bastion's SSH control API endpoint. E.g. https://my.bastion:9900. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
+        :param secure_access_bastion_ssh: Bastion's SSH server. E.g. my.bastion:22. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
+        :param secure_access_host: Target servers for connections. (In case of Linked Target association, host(s) will inherit Linked Target hosts - Relevant only for Dynamic Secrets/producers) Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
+        :param secure_access_ssh_creds_user: SSH username to connect to target server, must be in 'Allowed Users' list. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
+        :param secure_access_use_internal_bastion: Use internal SSH Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
+        :param tags: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -100,7 +98,6 @@ class SshCertIssuer(
             description=description,
             extensions=extensions,
             id=id,
-            metadata=metadata,
             principals=principals,
             secure_access_bastion_api=secure_access_bastion_api,
             secure_access_bastion_ssh=secure_access_bastion_ssh,
@@ -133,7 +130,7 @@ class SshCertIssuer(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the SshCertIssuer to import.
-        :param import_from_id: The id of the existing SshCertIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing SshCertIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the SshCertIssuer to import is found.
         '''
         if __debug__:
@@ -159,10 +156,6 @@ class SshCertIssuer(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
-
-    @jsii.member(jsii_name="resetMetadata")
-    def reset_metadata(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetMetadata", []))
 
     @jsii.member(jsii_name="resetPrincipals")
     def reset_principals(self) -> None:
@@ -237,11 +230,6 @@ class SshCertIssuer(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="metadataInput")
-    def metadata_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "metadataInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -364,18 +352,6 @@ class SshCertIssuer(
             type_hints = typing.get_type_hints(_typecheckingstub__ad38f9644005ade28aa84d1266e427f63903eb8732e7623adf4a803c67933d9e)
             check_type(argname="argument value", value=value, expected_type=type_hints["value"])
         jsii.set(self, "id", value)
-
-    @builtins.property
-    @jsii.member(jsii_name="metadata")
-    def metadata(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "metadata"))
-
-    @metadata.setter
-    def metadata(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__dafe450137b04ad2aa5f20027f53e799ddd4ead4974f4871dc9a9bacfaf4bb0c)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "metadata", value)
 
     @builtins.property
     @jsii.member(jsii_name="name")
@@ -534,7 +510,6 @@ class SshCertIssuer(
         "description": "description",
         "extensions": "extensions",
         "id": "id",
-        "metadata": "metadata",
         "principals": "principals",
         "secure_access_bastion_api": "secureAccessBastionApi",
         "secure_access_bastion_ssh": "secureAccessBastionSsh",
@@ -564,7 +539,6 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         description: typing.Optional[builtins.str] = None,
         extensions: typing.Optional[typing.Mapping[builtins.str, builtins.str]] = None,
         id: typing.Optional[builtins.str] = None,
-        metadata: typing.Optional[builtins.str] = None,
         principals: typing.Optional[builtins.str] = None,
         secure_access_bastion_api: typing.Optional[builtins.str] = None,
         secure_access_bastion_ssh: typing.Optional[builtins.str] = None,
@@ -582,23 +556,22 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param allowed_users: Users allowed to fetch the certificate, e.g root,ubuntu. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
-        :param name: SSH certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
-        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
-        :param ttl: The requested Time To Live for the certificate, in seconds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
-        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
-        :param extensions: Signed certificates with extensions (key/val), e.g permit-port-forwarding=. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param metadata: [Deprecated: Use description instead]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#metadata SshCertIssuer#metadata}
-        :param principals: Signed certificates with principal, e.g example_role1,example_role2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
-        :param secure_access_bastion_api: Bastion's SSH control API endpoint. E.g. https://my.bastion:9900. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
-        :param secure_access_bastion_ssh: Bastion's SSH server. E.g. my.bastion:22. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
-        :param secure_access_host: Target servers for connections. (In case of Linked Target association, host(s) will inherit Linked Target hosts - Relevant only for Dynamic Secrets/producers) Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
-        :param secure_access_ssh_creds_user: SSH username to connect to target server, must be in 'Allowed Users' list. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
-        :param secure_access_use_internal_bastion: Use internal SSH Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
-        :param tags: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
+        :param allowed_users: Users allowed to fetch the certificate, e.g root,ubuntu. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
+        :param name: SSH certificate issuer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
+        :param signer_key_name: A key to sign the certificate with. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
+        :param ttl: The requested Time To Live for the certificate, in seconds. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
+        :param delete_protection: Protection from accidental deletion of this item, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
+        :param extensions: Signed certificates with extensions (key/val), e.g permit-port-forwarding=. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param principals: Signed certificates with principal, e.g example_role1,example_role2. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
+        :param secure_access_bastion_api: Bastion's SSH control API endpoint. E.g. https://my.bastion:9900. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
+        :param secure_access_bastion_ssh: Bastion's SSH server. E.g. my.bastion:22. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
+        :param secure_access_host: Target servers for connections. (In case of Linked Target association, host(s) will inherit Linked Target hosts - Relevant only for Dynamic Secrets/producers) Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
+        :param secure_access_ssh_creds_user: SSH username to connect to target server, must be in 'Allowed Users' list. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
+        :param secure_access_use_internal_bastion: Use internal SSH Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
+        :param tags: List of the tags attached to this key. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -619,7 +592,6 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument extensions", value=extensions, expected_type=type_hints["extensions"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
-            check_type(argname="argument metadata", value=metadata, expected_type=type_hints["metadata"])
             check_type(argname="argument principals", value=principals, expected_type=type_hints["principals"])
             check_type(argname="argument secure_access_bastion_api", value=secure_access_bastion_api, expected_type=type_hints["secure_access_bastion_api"])
             check_type(argname="argument secure_access_bastion_ssh", value=secure_access_bastion_ssh, expected_type=type_hints["secure_access_bastion_ssh"])
@@ -656,8 +628,6 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["extensions"] = extensions
         if id is not None:
             self._values["id"] = id
-        if metadata is not None:
-            self._values["metadata"] = metadata
         if principals is not None:
             self._values["principals"] = principals
         if secure_access_bastion_api is not None:
@@ -743,7 +713,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def allowed_users(self) -> builtins.str:
         '''Users allowed to fetch the certificate, e.g root,ubuntu.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#allowed_users SshCertIssuer#allowed_users}
         '''
         result = self._values.get("allowed_users")
         assert result is not None, "Required property 'allowed_users' is missing"
@@ -753,7 +723,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''SSH certificate issuer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#name SshCertIssuer#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -763,7 +733,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def signer_key_name(self) -> builtins.str:
         '''A key to sign the certificate with.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#signer_key_name SshCertIssuer#signer_key_name}
         '''
         result = self._values.get("signer_key_name")
         assert result is not None, "Required property 'signer_key_name' is missing"
@@ -773,7 +743,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ttl(self) -> jsii.Number:
         '''The requested Time To Live for the certificate, in seconds.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#ttl SshCertIssuer#ttl}
         '''
         result = self._values.get("ttl")
         assert result is not None, "Required property 'ttl' is missing"
@@ -785,7 +755,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Protection from accidental deletion of this item, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#delete_protection SshCertIssuer#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -794,7 +764,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#description SshCertIssuer#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -803,14 +773,14 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def extensions(self) -> typing.Optional[typing.Mapping[builtins.str, builtins.str]]:
         '''Signed certificates with extensions (key/val), e.g permit-port-forwarding=.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#extensions SshCertIssuer#extensions}
         '''
         result = self._values.get("extensions")
         return typing.cast(typing.Optional[typing.Mapping[builtins.str, builtins.str]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#id SshCertIssuer#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,19 +789,10 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
-    def metadata(self) -> typing.Optional[builtins.str]:
-        '''[Deprecated: Use description instead].
-
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#metadata SshCertIssuer#metadata}
-        '''
-        result = self._values.get("metadata")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def principals(self) -> typing.Optional[builtins.str]:
         '''Signed certificates with principal, e.g example_role1,example_role2.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#principals SshCertIssuer#principals}
         '''
         result = self._values.get("principals")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -840,7 +801,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_api(self) -> typing.Optional[builtins.str]:
         '''Bastion's SSH control API endpoint. E.g. https://my.bastion:9900.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_api SshCertIssuer#secure_access_bastion_api}
         '''
         result = self._values.get("secure_access_bastion_api")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -849,7 +810,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_ssh(self) -> typing.Optional[builtins.str]:
         '''Bastion's SSH server. E.g. my.bastion:22.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_bastion_ssh SshCertIssuer#secure_access_bastion_ssh}
         '''
         result = self._values.get("secure_access_bastion_ssh")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -858,7 +819,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_enable SshCertIssuer#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -869,7 +830,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         (In case of Linked Target association, host(s) will inherit Linked Target hosts - Relevant only for Dynamic Secrets/producers)
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_host SshCertIssuer#secure_access_host}
         '''
         result = self._values.get("secure_access_host")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -878,7 +839,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_ssh_creds_user(self) -> typing.Optional[builtins.str]:
         '''SSH username to connect to target server, must be in 'Allowed Users' list.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_ssh_creds_user SshCertIssuer#secure_access_ssh_creds_user}
         '''
         result = self._values.get("secure_access_ssh_creds_user")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -889,7 +850,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Use internal SSH Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#secure_access_use_internal_bastion SshCertIssuer#secure_access_use_internal_bastion}
         '''
         result = self._values.get("secure_access_use_internal_bastion")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -900,7 +861,7 @@ class SshCertIssuerConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/ssh_cert_issuer#tags SshCertIssuer#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -936,7 +897,6 @@ def _typecheckingstub__2ab6801d9809be063348fa5ab7a1d2c7dc0538767c6da011faba0e813
     description: typing.Optional[builtins.str] = None,
     extensions: typing.Optional[typing.Mapping[builtins.str, builtins.str]] = None,
     id: typing.Optional[builtins.str] = None,
-    metadata: typing.Optional[builtins.str] = None,
     principals: typing.Optional[builtins.str] = None,
     secure_access_bastion_api: typing.Optional[builtins.str] = None,
     secure_access_bastion_ssh: typing.Optional[builtins.str] = None,
@@ -990,12 +950,6 @@ def _typecheckingstub__67054a88f0195f702780f758fb7c01f29cd4ca43946a2643fe40fe5c1
     pass
 
 def _typecheckingstub__ad38f9644005ade28aa84d1266e427f63903eb8732e7623adf4a803c67933d9e(
-    value: builtins.str,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__dafe450137b04ad2aa5f20027f53e799ddd4ead4974f4871dc9a9bacfaf4bb0c(
     value: builtins.str,
 ) -> None:
     """Type checking stubs"""
@@ -1084,7 +1038,6 @@ def _typecheckingstub__a570ebd57e4703d29a63441f76bea8516ce928751b3a434f5676e19e1
     description: typing.Optional[builtins.str] = None,
     extensions: typing.Optional[typing.Mapping[builtins.str, builtins.str]] = None,
     id: typing.Optional[builtins.str] = None,
-    metadata: typing.Optional[builtins.str] = None,
     principals: typing.Optional[builtins.str] = None,
     secure_access_bastion_api: typing.Optional[builtins.str] = None,
     secure_access_bastion_ssh: typing.Optional[builtins.str] = None,

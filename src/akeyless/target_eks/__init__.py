@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_eks`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_eks`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks).
+Refer to the Terraform Registry for docs: [`akeyless_target_eks`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetEks(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetEks.TargetEks",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks akeyless_target_eks}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks akeyless_target_eks}.'''
 
     def __init__(
         self,
@@ -39,7 +39,6 @@ class TargetEks(
         eks_cluster_name: builtins.str,
         eks_secret_access_key: builtins.str,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         eks_region: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
@@ -53,22 +52,21 @@ class TargetEks(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks akeyless_target_eks} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks akeyless_target_eks} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param eks_access_key_id: EKS access key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
-        :param eks_cluster_ca_cert: EKS cluster base-64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
-        :param eks_cluster_endpoint: EKS cluster endpoint (i.e., https:// of the cluster). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
-        :param eks_cluster_name: EKS cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
-        :param eks_secret_access_key: EKS secret access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#name TargetEks#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#comment TargetEks#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#description TargetEks#description}
-        :param eks_region: EKS region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_region TargetEks#eks_region}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#id TargetEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#key TargetEks#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
+        :param eks_access_key_id: EKS access key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
+        :param eks_cluster_ca_cert: EKS cluster base-64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
+        :param eks_cluster_endpoint: EKS cluster endpoint (i.e., https:// of the cluster). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
+        :param eks_cluster_name: EKS cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
+        :param eks_secret_access_key: EKS secret access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#name TargetEks#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#description TargetEks#description}
+        :param eks_region: EKS region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_region TargetEks#eks_region}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#id TargetEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#key TargetEks#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -88,7 +86,6 @@ class TargetEks(
             eks_cluster_name=eks_cluster_name,
             eks_secret_access_key=eks_secret_access_key,
             name=name,
-            comment=comment,
             description=description,
             eks_region=eks_region,
             id=id,
@@ -118,7 +115,7 @@ class TargetEks(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetEks to import.
-        :param import_from_id: The id of the existing TargetEks that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetEks that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetEks to import is found.
         '''
         if __debug__:
@@ -128,10 +125,6 @@ class TargetEks(
             check_type(argname="argument import_from_id", value=import_from_id, expected_type=type_hints["import_from_id"])
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
         return typing.cast(_cdktf_9a9027ec.ImportableResource, jsii.sinvoke(cls, "generateConfigForImport", [scope, import_to_id, import_from_id, provider]))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -165,11 +158,6 @@ class TargetEks(
     @jsii.member(jsii_name="tfResourceType")
     def TF_RESOURCE_TYPE(cls) -> builtins.str:
         return typing.cast(builtins.str, jsii.sget(cls, "tfResourceType"))
-
-    @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
 
     @builtins.property
     @jsii.member(jsii_name="descriptionInput")
@@ -227,18 +215,6 @@ class TargetEks(
         self,
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], jsii.get(self, "useGwCloudIdentityInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__a6ce8811d036e1a97cc66b5597ff87a088ddc30bb3600d67b91fe77af1277175)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -395,7 +371,6 @@ class TargetEks(
         "eks_cluster_name": "eksClusterName",
         "eks_secret_access_key": "eksSecretAccessKey",
         "name": "name",
-        "comment": "comment",
         "description": "description",
         "eks_region": "eksRegion",
         "id": "id",
@@ -420,7 +395,6 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         eks_cluster_name: builtins.str,
         eks_secret_access_key: builtins.str,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         eks_region: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
@@ -435,18 +409,17 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param eks_access_key_id: EKS access key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
-        :param eks_cluster_ca_cert: EKS cluster base-64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
-        :param eks_cluster_endpoint: EKS cluster endpoint (i.e., https:// of the cluster). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
-        :param eks_cluster_name: EKS cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
-        :param eks_secret_access_key: EKS secret access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#name TargetEks#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#comment TargetEks#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#description TargetEks#description}
-        :param eks_region: EKS region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_region TargetEks#eks_region}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#id TargetEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#key TargetEks#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
+        :param eks_access_key_id: EKS access key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
+        :param eks_cluster_ca_cert: EKS cluster base-64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
+        :param eks_cluster_endpoint: EKS cluster endpoint (i.e., https:// of the cluster). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
+        :param eks_cluster_name: EKS cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
+        :param eks_secret_access_key: EKS secret access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#name TargetEks#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#description TargetEks#description}
+        :param eks_region: EKS region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_region TargetEks#eks_region}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#id TargetEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#key TargetEks#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -465,7 +438,6 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument eks_cluster_name", value=eks_cluster_name, expected_type=type_hints["eks_cluster_name"])
             check_type(argname="argument eks_secret_access_key", value=eks_secret_access_key, expected_type=type_hints["eks_secret_access_key"])
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument eks_region", value=eks_region, expected_type=type_hints["eks_region"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
@@ -493,8 +465,6 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["provider"] = provider
         if provisioners is not None:
             self._values["provisioners"] = provisioners
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if eks_region is not None:
@@ -574,7 +544,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_access_key_id(self) -> builtins.str:
         '''EKS access key ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_access_key_id TargetEks#eks_access_key_id}
         '''
         result = self._values.get("eks_access_key_id")
         assert result is not None, "Required property 'eks_access_key_id' is missing"
@@ -584,7 +554,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_ca_cert(self) -> builtins.str:
         '''EKS cluster base-64 encoded certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_ca_cert TargetEks#eks_cluster_ca_cert}
         '''
         result = self._values.get("eks_cluster_ca_cert")
         assert result is not None, "Required property 'eks_cluster_ca_cert' is missing"
@@ -594,7 +564,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_endpoint(self) -> builtins.str:
         '''EKS cluster endpoint (i.e., https:// of the cluster).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_endpoint TargetEks#eks_cluster_endpoint}
         '''
         result = self._values.get("eks_cluster_endpoint")
         assert result is not None, "Required property 'eks_cluster_endpoint' is missing"
@@ -604,7 +574,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_name(self) -> builtins.str:
         '''EKS cluster name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_cluster_name TargetEks#eks_cluster_name}
         '''
         result = self._values.get("eks_cluster_name")
         assert result is not None, "Required property 'eks_cluster_name' is missing"
@@ -614,7 +584,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_secret_access_key(self) -> builtins.str:
         '''EKS secret access key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_secret_access_key TargetEks#eks_secret_access_key}
         '''
         result = self._values.get("eks_secret_access_key")
         assert result is not None, "Required property 'eks_secret_access_key' is missing"
@@ -624,23 +594,17 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#name TargetEks#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#name TargetEks#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#comment TargetEks#comment}.'''
-        result = self._values.get("comment")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#description TargetEks#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#description TargetEks#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -649,14 +613,14 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_region(self) -> typing.Optional[builtins.str]:
         '''EKS region.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#eks_region TargetEks#eks_region}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#eks_region TargetEks#eks_region}
         '''
         result = self._values.get("eks_region")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#id TargetEks#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#id TargetEks#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -670,7 +634,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#key TargetEks#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#key TargetEks#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -681,7 +645,7 @@ class TargetEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Use the GW's Cloud IAM.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_eks#use_gw_cloud_identity TargetEks#use_gw_cloud_identity}
         '''
         result = self._values.get("use_gw_cloud_identity")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -715,7 +679,6 @@ def _typecheckingstub__5468002f85ddd98d445213374129ab55af6f0b15b80a9f58db6f6e055
     eks_cluster_name: builtins.str,
     eks_secret_access_key: builtins.str,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     eks_region: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
@@ -737,12 +700,6 @@ def _typecheckingstub__6ca78259a05f6fdf226983ed38883541c3dd645dd79330717bdc1ec9e
     import_to_id: builtins.str,
     import_from_id: builtins.str,
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__a6ce8811d036e1a97cc66b5597ff87a088ddc30bb3600d67b91fe77af1277175(
-    value: builtins.str,
 ) -> None:
     """Type checking stubs"""
     pass
@@ -828,7 +785,6 @@ def _typecheckingstub__19d25a86946f8a062357a9224c4081605bc2a2666ae2cc862aae0591a
     eks_cluster_name: builtins.str,
     eks_secret_access_key: builtins.str,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     eks_region: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,

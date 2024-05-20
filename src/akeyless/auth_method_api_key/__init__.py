@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_api_key`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_api_key`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_api_key`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodApiKeyA(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodApiKey.AuthMethodApiKeyA",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key akeyless_auth_method_api_key}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key akeyless_auth_method_api_key}.'''
 
     def __init__(
         self,
@@ -40,6 +40,7 @@ class AuthMethodApiKeyA(
         bound_ips: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
         count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
         depends_on: typing.Optional[typing.Sequence[_cdktf_9a9027ec.ITerraformDependable]] = None,
@@ -48,17 +49,18 @@ class AuthMethodApiKeyA(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key akeyless_auth_method_api_key} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key akeyless_auth_method_api_key} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
-        :param access_key: Auth Method access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
+        :param access_key: Auth Method access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#jwt_ttl AuthMethodApiKeyA#jwt_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -79,6 +81,7 @@ class AuthMethodApiKeyA(
             bound_ips=bound_ips,
             force_sub_claims=force_sub_claims,
             id=id,
+            jwt_ttl=jwt_ttl,
             connection=connection,
             count=count,
             depends_on=depends_on,
@@ -103,7 +106,7 @@ class AuthMethodApiKeyA(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodApiKeyA to import.
-        :param import_from_id: The id of the existing AuthMethodApiKeyA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodApiKeyA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodApiKeyA to import is found.
         '''
         if __debug__:
@@ -137,6 +140,10 @@ class AuthMethodApiKeyA(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="synthesizeAttributes")
     def _synthesize_attributes(self) -> typing.Mapping[builtins.str, typing.Any]:
@@ -182,6 +189,11 @@ class AuthMethodApiKeyA(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -266,6 +278,18 @@ class AuthMethodApiKeyA(
         jsii.set(self, "id", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__d889f42588f564289212475dbd9ba0db4cc8db15e10f0c8129e7f3077e8650f2)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -296,6 +320,7 @@ class AuthMethodApiKeyA(
         "bound_ips": "boundIps",
         "force_sub_claims": "forceSubClaims",
         "id": "id",
+        "jwt_ttl": "jwtTtl",
     },
 )
 class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
@@ -316,6 +341,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         bound_ips: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
     ) -> None:
         '''
         :param connection: 
@@ -325,13 +351,14 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
-        :param access_key: Auth Method access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
+        :param access_key: Auth Method access key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#jwt_ttl AuthMethodApiKeyA#jwt_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -351,6 +378,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument bound_ips", value=bound_ips, expected_type=type_hints["bound_ips"])
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
             "name": name,
         }
@@ -380,6 +408,8 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["force_sub_claims"] = force_sub_claims
         if id is not None:
             self._values["id"] = id
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
 
     @builtins.property
     def connection(
@@ -449,7 +479,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#name AuthMethodApiKeyA#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -459,7 +489,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_expires AuthMethodApiKeyA#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -468,7 +498,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_id AuthMethodApiKeyA#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -477,7 +507,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_key(self) -> typing.Optional[builtins.str]:
         '''Auth Method access key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#access_key AuthMethodApiKeyA#access_key}
         '''
         result = self._values.get("access_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -486,7 +516,7 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#bound_ips AuthMethodApiKeyA#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -497,20 +527,29 @@ class AuthMethodApiKeyAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#force_sub_claims AuthMethodApiKeyA#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#id AuthMethodApiKeyA#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
         '''
         result = self._values.get("id")
         return typing.cast(typing.Optional[builtins.str], result)
+
+    @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_api_key#jwt_ttl AuthMethodApiKeyA#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
 
     def __eq__(self, rhs: typing.Any) -> builtins.bool:
         return isinstance(rhs, self.__class__) and rhs._values == self._values
@@ -542,6 +581,7 @@ def _typecheckingstub__039d7505f7281a523d20d0de0adffa8559e798e7a4a08a5b3349bb1a7
     bound_ips: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
     count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
     depends_on: typing.Optional[typing.Sequence[_cdktf_9a9027ec.ITerraformDependable]] = None,
@@ -598,6 +638,12 @@ def _typecheckingstub__f392b9365d4914049d3ad59d3156e9d181d47fe79023565dafab056cf
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__d889f42588f564289212475dbd9ba0db4cc8db15e10f0c8129e7f3077e8650f2(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__3f469ea86646affe199827db55fd3670b93363df03b1427d1758e013eee76004(
     value: builtins.str,
 ) -> None:
@@ -620,6 +666,7 @@ def _typecheckingstub__af01432bbccd1711e0a030a595032efa0042ec8271066dfab9dc40939
     bound_ips: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
 ) -> None:
     """Type checking stubs"""
     pass

@@ -4,9 +4,9 @@
   "projectId": "8a4db1e4-6a14-4660-a064-ef20525d0e78",
   "sendCrashReports": "false",
   "terraformProviders": [
-    "akeyless-community/akeyless@~> 1.4"
+    "akeyless-community/akeyless@~> 1.5"
   ],
   "terraformModules": [],
-  "codeMakerOutput": "imports",
+  "codeMakerOutput": "src",
   "context": {}
 }

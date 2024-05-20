@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_cassandra`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_cassandra`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra).
+Refer to the Terraform Registry for docs: [`akeyless_producer_cassandra`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerCassandra(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerCassandra.ProducerCassandra",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra akeyless_producer_cassandra}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra akeyless_producer_cassandra}.'''
 
     def __init__(
         self,
@@ -52,21 +52,21 @@ class ProducerCassandra(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra akeyless_producer_cassandra} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra akeyless_producer_cassandra} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#name ProducerCassandra#name}
-        :param cassandra_creation_statements: Cassandra Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
-        :param cassandra_hosts: Cassandra hosts names or IP addresses, comma separated. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
-        :param cassandra_password: Cassandra superuser password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
-        :param cassandra_port: Cassandra port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
-        :param cassandra_username: Cassandra superuser user name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#id ProducerCassandra#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
-        :param target_name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
-        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#name ProducerCassandra#name}
+        :param cassandra_creation_statements: Cassandra Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
+        :param cassandra_hosts: Cassandra hosts names or IP addresses, comma separated. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
+        :param cassandra_password: Cassandra superuser password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
+        :param cassandra_port: Cassandra port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
+        :param cassandra_username: Cassandra superuser user name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#id ProducerCassandra#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
+        :param target_name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
+        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -115,7 +115,7 @@ class ProducerCassandra(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerCassandra to import.
-        :param import_from_id: The id of the existing ProducerCassandra that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerCassandra that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerCassandra to import is found.
         '''
         if __debug__:
@@ -422,17 +422,17 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#name ProducerCassandra#name}
-        :param cassandra_creation_statements: Cassandra Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
-        :param cassandra_hosts: Cassandra hosts names or IP addresses, comma separated. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
-        :param cassandra_password: Cassandra superuser password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
-        :param cassandra_port: Cassandra port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
-        :param cassandra_username: Cassandra superuser user name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#id ProducerCassandra#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
-        :param target_name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
-        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#name ProducerCassandra#name}
+        :param cassandra_creation_statements: Cassandra Creation Statements. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
+        :param cassandra_hosts: Cassandra hosts names or IP addresses, comma separated. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
+        :param cassandra_password: Cassandra superuser password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
+        :param cassandra_port: Cassandra port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
+        :param cassandra_username: Cassandra superuser user name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#id ProducerCassandra#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Dynamic producer encryption key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
+        :param target_name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
+        :param user_ttl: User TTL (<=60m for access token). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -562,7 +562,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#name ProducerCassandra#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#name ProducerCassandra#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -572,7 +572,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cassandra_creation_statements(self) -> typing.Optional[builtins.str]:
         '''Cassandra Creation Statements.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_creation_statements ProducerCassandra#cassandra_creation_statements}
         '''
         result = self._values.get("cassandra_creation_statements")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -581,7 +581,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cassandra_hosts(self) -> typing.Optional[builtins.str]:
         '''Cassandra hosts names or IP addresses, comma separated.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_hosts ProducerCassandra#cassandra_hosts}
         '''
         result = self._values.get("cassandra_hosts")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -590,7 +590,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cassandra_password(self) -> typing.Optional[builtins.str]:
         '''Cassandra superuser password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_password ProducerCassandra#cassandra_password}
         '''
         result = self._values.get("cassandra_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -599,7 +599,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cassandra_port(self) -> typing.Optional[builtins.str]:
         '''Cassandra port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_port ProducerCassandra#cassandra_port}
         '''
         result = self._values.get("cassandra_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -608,14 +608,14 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cassandra_username(self) -> typing.Optional[builtins.str]:
         '''Cassandra superuser user name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#cassandra_username ProducerCassandra#cassandra_username}
         '''
         result = self._values.get("cassandra_username")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#id ProducerCassandra#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#id ProducerCassandra#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -627,7 +627,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Dynamic producer encryption key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#producer_encryption_key_name ProducerCassandra#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -638,7 +638,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#tags ProducerCassandra#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -647,7 +647,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#target_name ProducerCassandra#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -656,7 +656,7 @@ class ProducerCassandraConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL (<=60m for access token).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_cassandra#user_ttl ProducerCassandra#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

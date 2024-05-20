@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_globalsign`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_globalsign`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign).
+Refer to the Terraform Registry for docs: [`akeyless_target_globalsign`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetGlobalsign(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetGlobalsign.TargetGlobalsign",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign akeyless_target_globalsign}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign akeyless_target_globalsign}.'''
 
     def __init__(
         self,
@@ -53,22 +53,22 @@ class TargetGlobalsign(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign akeyless_target_globalsign} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign akeyless_target_globalsign} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param contact_email: Email of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
-        :param contact_first_name: First name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
-        :param contact_last_name: Last name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
-        :param contact_phone: Telephone of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#name TargetGlobalsign#name}
-        :param password: Password of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#password TargetGlobalsign#password}
-        :param profile_id: Profile ID of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
-        :param username: Username of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#username TargetGlobalsign#username}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#description TargetGlobalsign#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#id TargetGlobalsign#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#key TargetGlobalsign#key}
-        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
+        :param contact_email: Email of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
+        :param contact_first_name: First name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
+        :param contact_last_name: Last name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
+        :param contact_phone: Telephone of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#name TargetGlobalsign#name}
+        :param password: Password of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#password TargetGlobalsign#password}
+        :param profile_id: Profile ID of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
+        :param username: Username of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#username TargetGlobalsign#username}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#description TargetGlobalsign#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#id TargetGlobalsign#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#key TargetGlobalsign#key}
+        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -118,7 +118,7 @@ class TargetGlobalsign(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetGlobalsign to import.
-        :param import_from_id: The id of the existing TargetGlobalsign that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetGlobalsign that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetGlobalsign to import is found.
         '''
         if __debug__:
@@ -420,18 +420,18 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param contact_email: Email of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
-        :param contact_first_name: First name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
-        :param contact_last_name: Last name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
-        :param contact_phone: Telephone of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#name TargetGlobalsign#name}
-        :param password: Password of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#password TargetGlobalsign#password}
-        :param profile_id: Profile ID of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
-        :param username: Username of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#username TargetGlobalsign#username}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#description TargetGlobalsign#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#id TargetGlobalsign#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#key TargetGlobalsign#key}
-        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
+        :param contact_email: Email of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
+        :param contact_first_name: First name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
+        :param contact_last_name: Last name of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
+        :param contact_phone: Telephone of the GlobalSign GCC account contact. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#name TargetGlobalsign#name}
+        :param password: Password of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#password TargetGlobalsign#password}
+        :param profile_id: Profile ID of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
+        :param username: Username of the GlobalSign GCC account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#username TargetGlobalsign#username}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#description TargetGlobalsign#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#id TargetGlobalsign#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#key TargetGlobalsign#key}
+        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -557,7 +557,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def contact_email(self) -> builtins.str:
         '''Email of the GlobalSign GCC account contact.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_email TargetGlobalsign#contact_email}
         '''
         result = self._values.get("contact_email")
         assert result is not None, "Required property 'contact_email' is missing"
@@ -567,7 +567,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def contact_first_name(self) -> builtins.str:
         '''First name of the GlobalSign GCC account contact.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_first_name TargetGlobalsign#contact_first_name}
         '''
         result = self._values.get("contact_first_name")
         assert result is not None, "Required property 'contact_first_name' is missing"
@@ -577,7 +577,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def contact_last_name(self) -> builtins.str:
         '''Last name of the GlobalSign GCC account contact.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_last_name TargetGlobalsign#contact_last_name}
         '''
         result = self._values.get("contact_last_name")
         assert result is not None, "Required property 'contact_last_name' is missing"
@@ -587,7 +587,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def contact_phone(self) -> builtins.str:
         '''Telephone of the GlobalSign GCC account contact.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#contact_phone TargetGlobalsign#contact_phone}
         '''
         result = self._values.get("contact_phone")
         assert result is not None, "Required property 'contact_phone' is missing"
@@ -597,7 +597,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#name TargetGlobalsign#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#name TargetGlobalsign#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -607,7 +607,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def password(self) -> builtins.str:
         '''Password of the GlobalSign GCC account.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#password TargetGlobalsign#password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#password TargetGlobalsign#password}
         '''
         result = self._values.get("password")
         assert result is not None, "Required property 'password' is missing"
@@ -617,7 +617,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def profile_id(self) -> builtins.str:
         '''Profile ID of the GlobalSign GCC account.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#profile_id TargetGlobalsign#profile_id}
         '''
         result = self._values.get("profile_id")
         assert result is not None, "Required property 'profile_id' is missing"
@@ -627,7 +627,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def username(self) -> builtins.str:
         '''Username of the GlobalSign GCC account.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#username TargetGlobalsign#username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#username TargetGlobalsign#username}
         '''
         result = self._values.get("username")
         assert result is not None, "Required property 'username' is missing"
@@ -637,14 +637,14 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#description TargetGlobalsign#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#description TargetGlobalsign#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#id TargetGlobalsign#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#id TargetGlobalsign#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -658,7 +658,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#key TargetGlobalsign#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#key TargetGlobalsign#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -667,7 +667,7 @@ class TargetGlobalsignConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def timeout(self) -> typing.Optional[builtins.str]:
         '''Timeout waiting for certificate validation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_globalsign#timeout TargetGlobalsign#timeout}
         '''
         result = self._values.get("timeout")
         return typing.cast(typing.Optional[builtins.str], result)

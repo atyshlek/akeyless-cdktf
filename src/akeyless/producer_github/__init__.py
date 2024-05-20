@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_github`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_github`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github).
+Refer to the Terraform Registry for docs: [`akeyless_producer_github`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerGithub(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerGithub.ProducerGithub",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github akeyless_producer_github}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github akeyless_producer_github}.'''
 
     def __init__(
         self,
@@ -51,20 +51,20 @@ class ProducerGithub(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github akeyless_producer_github} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github akeyless_producer_github} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#name ProducerGithub#name}
-        :param github_app_id: Github application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
-        :param github_app_private_key: Github application private key (base64 encoded key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
-        :param github_base_url: Github base url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#id ProducerGithub#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param installation_id: Github application installation id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
-        :param installation_repository: Optional, instead of installation id, set a GitHub repository '/'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#target_name ProducerGithub#target_name}
-        :param token_permissions: Tokens' allowed permissions. By default use installation allowed permissions. Input format: key=value pairs or JSON strings, e.g - -p contents=read -p issues=write or -p '{content:read}' Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
-        :param token_repositories: Tokens' allowed repositories. By default use installation allowed repositories. To specify multiple repositories use argument multiple times: -r RepoName1 -r RepoName2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#name ProducerGithub#name}
+        :param github_app_id: Github application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
+        :param github_app_private_key: Github application private key (base64 encoded key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
+        :param github_base_url: Github base url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#id ProducerGithub#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param installation_id: Github application installation id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
+        :param installation_repository: Optional, instead of installation id, set a GitHub repository '/'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#target_name ProducerGithub#target_name}
+        :param token_permissions: Tokens' allowed permissions. By default use installation allowed permissions. Input format: key=value pairs or JSON strings, e.g - -p contents=read -p issues=write or -p '{content:read}' Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
+        :param token_repositories: Tokens' allowed repositories. By default use installation allowed repositories. To specify multiple repositories use argument multiple times: -r RepoName1 -r RepoName2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -112,7 +112,7 @@ class ProducerGithub(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerGithub to import.
-        :param import_from_id: The id of the existing ProducerGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerGithub to import is found.
         '''
         if __debug__:
@@ -396,16 +396,16 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#name ProducerGithub#name}
-        :param github_app_id: Github application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
-        :param github_app_private_key: Github application private key (base64 encoded key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
-        :param github_base_url: Github base url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#id ProducerGithub#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param installation_id: Github application installation id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
-        :param installation_repository: Optional, instead of installation id, set a GitHub repository '/'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#target_name ProducerGithub#target_name}
-        :param token_permissions: Tokens' allowed permissions. By default use installation allowed permissions. Input format: key=value pairs or JSON strings, e.g - -p contents=read -p issues=write or -p '{content:read}' Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
-        :param token_repositories: Tokens' allowed repositories. By default use installation allowed repositories. To specify multiple repositories use argument multiple times: -r RepoName1 -r RepoName2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#name ProducerGithub#name}
+        :param github_app_id: Github application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
+        :param github_app_private_key: Github application private key (base64 encoded key). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
+        :param github_base_url: Github base url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#id ProducerGithub#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param installation_id: Github application installation id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
+        :param installation_repository: Optional, instead of installation id, set a GitHub repository '/'. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#target_name ProducerGithub#target_name}
+        :param token_permissions: Tokens' allowed permissions. By default use installation allowed permissions. Input format: key=value pairs or JSON strings, e.g - -p contents=read -p issues=write or -p '{content:read}' Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
+        :param token_repositories: Tokens' allowed repositories. By default use installation allowed repositories. To specify multiple repositories use argument multiple times: -r RepoName1 -r RepoName2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -532,7 +532,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#name ProducerGithub#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#name ProducerGithub#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -542,7 +542,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def github_app_id(self) -> typing.Optional[jsii.Number]:
         '''Github application id.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_id ProducerGithub#github_app_id}
         '''
         result = self._values.get("github_app_id")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -551,7 +551,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def github_app_private_key(self) -> typing.Optional[builtins.str]:
         '''Github application private key (base64 encoded key).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_app_private_key ProducerGithub#github_app_private_key}
         '''
         result = self._values.get("github_app_private_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -560,14 +560,14 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def github_base_url(self) -> typing.Optional[builtins.str]:
         '''Github base url.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#github_base_url ProducerGithub#github_base_url}
         '''
         result = self._values.get("github_base_url")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#id ProducerGithub#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#id ProducerGithub#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -579,7 +579,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def installation_id(self) -> typing.Optional[jsii.Number]:
         '''Github application installation id.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_id ProducerGithub#installation_id}
         '''
         result = self._values.get("installation_id")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -588,7 +588,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def installation_repository(self) -> typing.Optional[builtins.str]:
         '''Optional, instead of installation id, set a GitHub repository '/'.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#installation_repository ProducerGithub#installation_repository}
         '''
         result = self._values.get("installation_repository")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -597,7 +597,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#target_name ProducerGithub#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#target_name ProducerGithub#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -608,7 +608,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         By default use installation allowed permissions. Input format: key=value pairs or JSON strings, e.g - -p contents=read -p issues=write or -p '{content:read}'
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_permissions ProducerGithub#token_permissions}
         '''
         result = self._values.get("token_permissions")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -619,7 +619,7 @@ class ProducerGithubConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         By default use installation allowed repositories. To specify multiple repositories use argument multiple times: -r RepoName1 -r RepoName2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_github#token_repositories ProducerGithub#token_repositories}
         '''
         result = self._values.get("token_repositories")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)

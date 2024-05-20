@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_aws_iam`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_aws_iam`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_aws_iam`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodAwsIamA(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodAwsIam.AuthMethodAwsIamA",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam akeyless_auth_method_aws_iam}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam akeyless_auth_method_aws_iam}.'''
 
     def __init__(
         self,
@@ -46,6 +46,7 @@ class AuthMethodAwsIamA(
         bound_user_name: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         sts_url: typing.Optional[builtins.str] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
         count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -55,24 +56,25 @@ class AuthMethodAwsIamA(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam akeyless_auth_method_aws_iam} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam akeyless_auth_method_aws_iam} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
-        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
-        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
-        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
-        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
-        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
-        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param sts_url: sts URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
+        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
+        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
+        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
+        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
+        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
+        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
+        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#jwt_ttl AuthMethodAwsIamA#jwt_ttl}
+        :param sts_url: sts URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -99,6 +101,7 @@ class AuthMethodAwsIamA(
             bound_user_name=bound_user_name,
             force_sub_claims=force_sub_claims,
             id=id,
+            jwt_ttl=jwt_ttl,
             sts_url=sts_url,
             connection=connection,
             count=count,
@@ -124,7 +127,7 @@ class AuthMethodAwsIamA(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodAwsIamA to import.
-        :param import_from_id: The id of the existing AuthMethodAwsIamA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodAwsIamA that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodAwsIamA to import is found.
         '''
         if __debug__:
@@ -178,6 +181,10 @@ class AuthMethodAwsIamA(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="resetStsUrl")
     def reset_sts_url(self) -> None:
@@ -257,6 +264,11 @@ class AuthMethodAwsIamA(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -418,6 +430,18 @@ class AuthMethodAwsIamA(
         jsii.set(self, "id", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__e8976046b156d366f522b203a370bdf84c7d3160f176d8ceba68cf91d906d662)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -466,6 +490,7 @@ class AuthMethodAwsIamA(
         "bound_user_name": "boundUserName",
         "force_sub_claims": "forceSubClaims",
         "id": "id",
+        "jwt_ttl": "jwtTtl",
         "sts_url": "stsUrl",
     },
 )
@@ -493,6 +518,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         bound_user_name: typing.Optional[typing.Sequence[builtins.str]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         sts_url: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
@@ -503,20 +529,21 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
-        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
-        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
-        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
-        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
-        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
-        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param sts_url: sts URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
+        :param bound_aws_account_id: A list of AWS account-IDs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
+        :param bound_arn: A list of full arns that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
+        :param bound_resource_id: A list of full resource ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
+        :param bound_role_id: A list of full role ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
+        :param bound_role_name: A list of full role-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
+        :param bound_user_id: A list of full user ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
+        :param bound_user_name: A list of full user-name that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#jwt_ttl AuthMethodAwsIamA#jwt_ttl}
+        :param sts_url: sts URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -542,6 +569,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument bound_user_name", value=bound_user_name, expected_type=type_hints["bound_user_name"])
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
             check_type(argname="argument sts_url", value=sts_url, expected_type=type_hints["sts_url"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
             "bound_aws_account_id": bound_aws_account_id,
@@ -583,6 +611,8 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["force_sub_claims"] = force_sub_claims
         if id is not None:
             self._values["id"] = id
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
         if sts_url is not None:
             self._values["sts_url"] = sts_url
 
@@ -654,7 +684,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_aws_account_id(self) -> typing.List[builtins.str]:
         '''A list of AWS account-IDs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_aws_account_id AuthMethodAwsIamA#bound_aws_account_id}
         '''
         result = self._values.get("bound_aws_account_id")
         assert result is not None, "Required property 'bound_aws_account_id' is missing"
@@ -664,7 +694,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#name AuthMethodAwsIamA#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -674,7 +704,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_expires AuthMethodAwsIamA#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -683,7 +713,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#access_id AuthMethodAwsIamA#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -692,7 +722,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_arn(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full arns that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_arn AuthMethodAwsIamA#bound_arn}
         '''
         result = self._values.get("bound_arn")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -701,7 +731,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_ips AuthMethodAwsIamA#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -710,7 +740,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_resource_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full resource ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_resource_id AuthMethodAwsIamA#bound_resource_id}
         '''
         result = self._values.get("bound_resource_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -719,7 +749,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_role_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full role ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_id AuthMethodAwsIamA#bound_role_id}
         '''
         result = self._values.get("bound_role_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -728,7 +758,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_role_name(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full role-name that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_role_name AuthMethodAwsIamA#bound_role_name}
         '''
         result = self._values.get("bound_role_name")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -737,7 +767,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_user_id(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full user ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_id AuthMethodAwsIamA#bound_user_id}
         '''
         result = self._values.get("bound_user_id")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -746,7 +776,7 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_user_name(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of full user-name that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#bound_user_name AuthMethodAwsIamA#bound_user_name}
         '''
         result = self._values.get("bound_user_name")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -757,14 +787,14 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#force_sub_claims AuthMethodAwsIamA#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#id AuthMethodAwsIamA#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -773,10 +803,19 @@ class AuthMethodAwsIamAConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#jwt_ttl AuthMethodAwsIamA#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
     def sts_url(self) -> typing.Optional[builtins.str]:
         '''sts URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_aws_iam#sts_url AuthMethodAwsIamA#sts_url}
         '''
         result = self._values.get("sts_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -817,6 +856,7 @@ def _typecheckingstub__4fdb6a5c572cc8aaccdd3b8aaf74ac7d955aeaeb8d87b3601efb4a1dc
     bound_user_name: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     sts_url: typing.Optional[builtins.str] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
     count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -910,6 +950,12 @@ def _typecheckingstub__a40cdbef0015b6d0123b3011b84ea2ba4c12cc6ea92678a951906cb27
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__e8976046b156d366f522b203a370bdf84c7d3160f176d8ceba68cf91d906d662(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__b673443fc73c32ad62ddc4ddae51f510823cf9e551eb330cd7187a381a2777af(
     value: builtins.str,
 ) -> None:
@@ -944,6 +990,7 @@ def _typecheckingstub__2889a04f9bbbbaa9de19e5e947c6475edc89793cb37b0047bac1ba12f
     bound_user_name: typing.Optional[typing.Sequence[builtins.str]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     sts_url: typing.Optional[builtins.str] = None,
 ) -> None:
     """Type checking stubs"""

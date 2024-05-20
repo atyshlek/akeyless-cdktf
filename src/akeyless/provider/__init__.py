@@ -1,7 +1,7 @@
 '''
 # `provider`
 
-Refer to the Terraform Registry for docs: [`akeyless`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs).
+Refer to the Terraform Registry for docs: [`akeyless`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AkeylessProvider(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.provider.AkeylessProvider",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs akeyless}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs akeyless}.'''
 
     def __init__(
         self,
@@ -44,20 +44,20 @@ class AkeylessProvider(
         jwt_login: typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.Sequence[typing.Union["AkeylessProviderJwtLogin", typing.Dict[builtins.str, typing.Any]]]]] = None,
         uid_login: typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.Sequence[typing.Union["AkeylessProviderUidLogin", typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs akeyless} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs akeyless} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param alias: Alias name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#alias AkeylessProvider#alias}
-        :param api_gateway_address: Origin URL of the API Gateway server. This is a URL with a scheme, a hostname and a port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_gateway_address AkeylessProvider#api_gateway_address}
-        :param api_key_login: api_key_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_key_login AkeylessProvider#api_key_login}
-        :param aws_iam_login: aws_iam_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#aws_iam_login AkeylessProvider#aws_iam_login}
-        :param azure_ad_login: azure_ad_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#azure_ad_login AkeylessProvider#azure_ad_login}
-        :param cert_login: cert_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_login AkeylessProvider#cert_login}
-        :param email_login: email_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#email_login AkeylessProvider#email_login}
-        :param gcp_login: gcp_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#gcp_login AkeylessProvider#gcp_login}
-        :param jwt_login: jwt_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#jwt_login AkeylessProvider#jwt_login}
-        :param uid_login: uid_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#uid_login AkeylessProvider#uid_login}
+        :param alias: Alias name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#alias AkeylessProvider#alias}
+        :param api_gateway_address: Origin URL of the API Gateway server. This is a URL with a scheme, a hostname and a port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_gateway_address AkeylessProvider#api_gateway_address}
+        :param api_key_login: api_key_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_key_login AkeylessProvider#api_key_login}
+        :param aws_iam_login: aws_iam_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#aws_iam_login AkeylessProvider#aws_iam_login}
+        :param azure_ad_login: azure_ad_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#azure_ad_login AkeylessProvider#azure_ad_login}
+        :param cert_login: cert_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_login AkeylessProvider#cert_login}
+        :param email_login: email_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#email_login AkeylessProvider#email_login}
+        :param gcp_login: gcp_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#gcp_login AkeylessProvider#gcp_login}
+        :param jwt_login: jwt_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#jwt_login AkeylessProvider#jwt_login}
+        :param uid_login: uid_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#uid_login AkeylessProvider#uid_login}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__8240bb7e189c60a5103b8e54843e452d0c83f7633d1c8a792f0d65a9b3b45e22)
@@ -91,7 +91,7 @@ class AkeylessProvider(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AkeylessProvider to import.
-        :param import_from_id: The id of the existing AkeylessProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AkeylessProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AkeylessProvider to import is found.
         '''
         if __debug__:
@@ -390,8 +390,8 @@ class AkeylessProvider(
 class AkeylessProviderApiKeyLogin:
     def __init__(self, *, access_id: builtins.str, access_key: builtins.str) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
-        :param access_key: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_key AkeylessProvider#access_key}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
+        :param access_key: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_key AkeylessProvider#access_key}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__8ae342a9e1d3e21c82da9c9d8220d65337f652ae10677906efe546db1d500224)
@@ -404,14 +404,14 @@ class AkeylessProviderApiKeyLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def access_key(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_key AkeylessProvider#access_key}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_key AkeylessProvider#access_key}.'''
         result = self._values.get("access_key")
         assert result is not None, "Required property 'access_key' is missing"
         return typing.cast(builtins.str, result)
@@ -436,7 +436,7 @@ class AkeylessProviderApiKeyLogin:
 class AkeylessProviderAwsIamLogin:
     def __init__(self, *, access_id: builtins.str) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__833f4ebf364e90a1ad61abdbdc9420ddabd94112a8b1efe00ed83d67db9e2d39)
@@ -447,7 +447,7 @@ class AkeylessProviderAwsIamLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
@@ -472,7 +472,7 @@ class AkeylessProviderAwsIamLogin:
 class AkeylessProviderAzureAdLogin:
     def __init__(self, *, access_id: builtins.str) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__ede3c8c76fb9f9060ef7b6011526cd50dbc0640d0f6b5a8e0ec2d92bcb0c99de)
@@ -483,7 +483,7 @@ class AkeylessProviderAzureAdLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
@@ -522,11 +522,11 @@ class AkeylessProviderCertLogin:
         key_file_name: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
-        :param cert_data: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_data AkeylessProvider#cert_data}.
-        :param cert_file_name: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_file_name AkeylessProvider#cert_file_name}.
-        :param key_data: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#key_data AkeylessProvider#key_data}.
-        :param key_file_name: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#key_file_name AkeylessProvider#key_file_name}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
+        :param cert_data: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_data AkeylessProvider#cert_data}.
+        :param cert_file_name: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_file_name AkeylessProvider#cert_file_name}.
+        :param key_data: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#key_data AkeylessProvider#key_data}.
+        :param key_file_name: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#key_file_name AkeylessProvider#key_file_name}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__9ddbef9982b88e01946c7e5770863758b9664b81936f1fdd6966706fa16248dc)
@@ -549,32 +549,32 @@ class AkeylessProviderCertLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def cert_data(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_data AkeylessProvider#cert_data}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_data AkeylessProvider#cert_data}.'''
         result = self._values.get("cert_data")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def cert_file_name(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_file_name AkeylessProvider#cert_file_name}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_file_name AkeylessProvider#cert_file_name}.'''
         result = self._values.get("cert_file_name")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def key_data(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#key_data AkeylessProvider#key_data}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#key_data AkeylessProvider#key_data}.'''
         result = self._values.get("key_data")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def key_file_name(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#key_file_name AkeylessProvider#key_file_name}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#key_file_name AkeylessProvider#key_file_name}.'''
         result = self._values.get("key_file_name")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -622,16 +622,16 @@ class AkeylessProviderConfig:
         uid_login: typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.Sequence[typing.Union["AkeylessProviderUidLogin", typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
         '''
-        :param alias: Alias name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#alias AkeylessProvider#alias}
-        :param api_gateway_address: Origin URL of the API Gateway server. This is a URL with a scheme, a hostname and a port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_gateway_address AkeylessProvider#api_gateway_address}
-        :param api_key_login: api_key_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_key_login AkeylessProvider#api_key_login}
-        :param aws_iam_login: aws_iam_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#aws_iam_login AkeylessProvider#aws_iam_login}
-        :param azure_ad_login: azure_ad_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#azure_ad_login AkeylessProvider#azure_ad_login}
-        :param cert_login: cert_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_login AkeylessProvider#cert_login}
-        :param email_login: email_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#email_login AkeylessProvider#email_login}
-        :param gcp_login: gcp_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#gcp_login AkeylessProvider#gcp_login}
-        :param jwt_login: jwt_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#jwt_login AkeylessProvider#jwt_login}
-        :param uid_login: uid_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#uid_login AkeylessProvider#uid_login}
+        :param alias: Alias name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#alias AkeylessProvider#alias}
+        :param api_gateway_address: Origin URL of the API Gateway server. This is a URL with a scheme, a hostname and a port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_gateway_address AkeylessProvider#api_gateway_address}
+        :param api_key_login: api_key_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_key_login AkeylessProvider#api_key_login}
+        :param aws_iam_login: aws_iam_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#aws_iam_login AkeylessProvider#aws_iam_login}
+        :param azure_ad_login: azure_ad_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#azure_ad_login AkeylessProvider#azure_ad_login}
+        :param cert_login: cert_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_login AkeylessProvider#cert_login}
+        :param email_login: email_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#email_login AkeylessProvider#email_login}
+        :param gcp_login: gcp_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#gcp_login AkeylessProvider#gcp_login}
+        :param jwt_login: jwt_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#jwt_login AkeylessProvider#jwt_login}
+        :param uid_login: uid_login block. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#uid_login AkeylessProvider#uid_login}
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__c80218a6cf187a792438c44f7bea96c5d404c36ff3311194e3b916b221d615a0)
@@ -671,7 +671,7 @@ class AkeylessProviderConfig:
     def alias(self) -> typing.Optional[builtins.str]:
         '''Alias name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#alias AkeylessProvider#alias}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#alias AkeylessProvider#alias}
         '''
         result = self._values.get("alias")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -680,7 +680,7 @@ class AkeylessProviderConfig:
     def api_gateway_address(self) -> typing.Optional[builtins.str]:
         '''Origin URL of the API Gateway server. This is a URL with a scheme, a hostname and a port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_gateway_address AkeylessProvider#api_gateway_address}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_gateway_address AkeylessProvider#api_gateway_address}
         '''
         result = self._values.get("api_gateway_address")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -691,7 +691,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderApiKeyLogin]]]:
         '''api_key_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#api_key_login AkeylessProvider#api_key_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#api_key_login AkeylessProvider#api_key_login}
         '''
         result = self._values.get("api_key_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderApiKeyLogin]]], result)
@@ -702,7 +702,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderAwsIamLogin]]]:
         '''aws_iam_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#aws_iam_login AkeylessProvider#aws_iam_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#aws_iam_login AkeylessProvider#aws_iam_login}
         '''
         result = self._values.get("aws_iam_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderAwsIamLogin]]], result)
@@ -713,7 +713,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderAzureAdLogin]]]:
         '''azure_ad_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#azure_ad_login AkeylessProvider#azure_ad_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#azure_ad_login AkeylessProvider#azure_ad_login}
         '''
         result = self._values.get("azure_ad_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderAzureAdLogin]]], result)
@@ -724,7 +724,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderCertLogin]]]:
         '''cert_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#cert_login AkeylessProvider#cert_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#cert_login AkeylessProvider#cert_login}
         '''
         result = self._values.get("cert_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List[AkeylessProviderCertLogin]]], result)
@@ -735,7 +735,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderEmailLogin"]]]:
         '''email_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#email_login AkeylessProvider#email_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#email_login AkeylessProvider#email_login}
         '''
         result = self._values.get("email_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderEmailLogin"]]], result)
@@ -746,7 +746,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderGcpLogin"]]]:
         '''gcp_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#gcp_login AkeylessProvider#gcp_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#gcp_login AkeylessProvider#gcp_login}
         '''
         result = self._values.get("gcp_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderGcpLogin"]]], result)
@@ -757,7 +757,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderJwtLogin"]]]:
         '''jwt_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#jwt_login AkeylessProvider#jwt_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#jwt_login AkeylessProvider#jwt_login}
         '''
         result = self._values.get("jwt_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderJwtLogin"]]], result)
@@ -768,7 +768,7 @@ class AkeylessProviderConfig:
     ) -> typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderUidLogin"]]]:
         '''uid_login block.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#uid_login AkeylessProvider#uid_login}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#uid_login AkeylessProvider#uid_login}
         '''
         result = self._values.get("uid_login")
         return typing.cast(typing.Optional[typing.Union[_cdktf_9a9027ec.IResolvable, typing.List["AkeylessProviderUidLogin"]]], result)
@@ -798,8 +798,8 @@ class AkeylessProviderEmailLogin:
         admin_password: builtins.str,
     ) -> None:
         '''
-        :param admin_email: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#admin_email AkeylessProvider#admin_email}.
-        :param admin_password: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#admin_password AkeylessProvider#admin_password}.
+        :param admin_email: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#admin_email AkeylessProvider#admin_email}.
+        :param admin_password: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#admin_password AkeylessProvider#admin_password}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__1ee39fd5c2ba5ace68a7b55e589aa0517e2eb5aae1daa509b066ea75ae8dc9c4)
@@ -812,14 +812,14 @@ class AkeylessProviderEmailLogin:
 
     @builtins.property
     def admin_email(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#admin_email AkeylessProvider#admin_email}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#admin_email AkeylessProvider#admin_email}.'''
         result = self._values.get("admin_email")
         assert result is not None, "Required property 'admin_email' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def admin_password(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#admin_password AkeylessProvider#admin_password}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#admin_password AkeylessProvider#admin_password}.'''
         result = self._values.get("admin_password")
         assert result is not None, "Required property 'admin_password' is missing"
         return typing.cast(builtins.str, result)
@@ -849,8 +849,8 @@ class AkeylessProviderGcpLogin:
         audience: typing.Optional[builtins.str] = None,
     ) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
-        :param audience: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#audience AkeylessProvider#audience}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
+        :param audience: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#audience AkeylessProvider#audience}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__f17b427804a3fc8c99419e3f64bed9d6982e3f72fee78e6a217dffb60be97ee2)
@@ -864,14 +864,14 @@ class AkeylessProviderGcpLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def audience(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#audience AkeylessProvider#audience}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#audience AkeylessProvider#audience}.'''
         result = self._values.get("audience")
         return typing.cast(typing.Optional[builtins.str], result)
 
@@ -895,8 +895,8 @@ class AkeylessProviderGcpLogin:
 class AkeylessProviderJwtLogin:
     def __init__(self, *, access_id: builtins.str, jwt: builtins.str) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
-        :param jwt: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#jwt AkeylessProvider#jwt}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
+        :param jwt: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#jwt AkeylessProvider#jwt}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__3ac07c08d039d4697d3c41185c5831e9eee4b399f24bafc72e6f87b6cb57f696)
@@ -909,14 +909,14 @@ class AkeylessProviderJwtLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def jwt(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#jwt AkeylessProvider#jwt}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#jwt AkeylessProvider#jwt}.'''
         result = self._values.get("jwt")
         assert result is not None, "Required property 'jwt' is missing"
         return typing.cast(builtins.str, result)
@@ -941,8 +941,8 @@ class AkeylessProviderJwtLogin:
 class AkeylessProviderUidLogin:
     def __init__(self, *, access_id: builtins.str, uid_token: builtins.str) -> None:
         '''
-        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.
-        :param uid_token: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#uid_token AkeylessProvider#uid_token}.
+        :param access_id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.
+        :param uid_token: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#uid_token AkeylessProvider#uid_token}.
         '''
         if __debug__:
             type_hints = typing.get_type_hints(_typecheckingstub__98734c340230bc430c5f4ae41120b42ee344ebe1cd3dc628d7aa5bda28054978)
@@ -955,14 +955,14 @@ class AkeylessProviderUidLogin:
 
     @builtins.property
     def access_id(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#access_id AkeylessProvider#access_id}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#access_id AkeylessProvider#access_id}.'''
         result = self._values.get("access_id")
         assert result is not None, "Required property 'access_id' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
     def uid_token(self) -> builtins.str:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs#uid_token AkeylessProvider#uid_token}.'''
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs#uid_token AkeylessProvider#uid_token}.'''
         result = self._values.get("uid_token")
         assert result is not None, "Required property 'uid_token' is missing"
         return typing.cast(builtins.str, result)

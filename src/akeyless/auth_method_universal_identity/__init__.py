@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_universal_identity`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_universal_identity`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_universal_identity`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodUniversalIdentity(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodUniversalIdentity.AuthMethodUniversalIdentity",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity akeyless_auth_method_universal_identity}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity akeyless_auth_method_universal_identity}.'''
 
     def __init__(
         self,
@@ -41,6 +41,7 @@ class AuthMethodUniversalIdentity(
         deny_rotate: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         ttl: typing.Optional[jsii.Number] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
         count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -50,19 +51,20 @@ class AuthMethodUniversalIdentity(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity akeyless_auth_method_universal_identity} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity akeyless_auth_method_universal_identity} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
-        :param deny_inheritance: Deny from root to create children. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
-        :param deny_rotate: Deny from the token to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param ttl: Token ttl (in minutes). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
+        :param deny_inheritance: Deny from root to create children. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
+        :param deny_rotate: Deny from the token to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#jwt_ttl AuthMethodUniversalIdentity#jwt_ttl}
+        :param ttl: Token ttl (in minutes). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -84,6 +86,7 @@ class AuthMethodUniversalIdentity(
             deny_rotate=deny_rotate,
             force_sub_claims=force_sub_claims,
             id=id,
+            jwt_ttl=jwt_ttl,
             ttl=ttl,
             connection=connection,
             count=count,
@@ -109,7 +112,7 @@ class AuthMethodUniversalIdentity(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodUniversalIdentity to import.
-        :param import_from_id: The id of the existing AuthMethodUniversalIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodUniversalIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodUniversalIdentity to import is found.
         '''
         if __debug__:
@@ -147,6 +150,10 @@ class AuthMethodUniversalIdentity(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="resetTtl")
     def reset_ttl(self) -> None:
@@ -205,6 +212,11 @@ class AuthMethodUniversalIdentity(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -314,6 +326,18 @@ class AuthMethodUniversalIdentity(
         jsii.set(self, "id", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__554a7c650690f90732049341a62029daea625028c838b3cdc834b3102d63fe95)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -357,6 +381,7 @@ class AuthMethodUniversalIdentity(
         "deny_rotate": "denyRotate",
         "force_sub_claims": "forceSubClaims",
         "id": "id",
+        "jwt_ttl": "jwtTtl",
         "ttl": "ttl",
     },
 )
@@ -379,6 +404,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         deny_rotate: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         ttl: typing.Optional[jsii.Number] = None,
     ) -> None:
         '''
@@ -389,15 +415,16 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
-        :param deny_inheritance: Deny from root to create children. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
-        :param deny_rotate: Deny from the token to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param ttl: Token ttl (in minutes). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
+        :param deny_inheritance: Deny from root to create children. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
+        :param deny_rotate: Deny from the token to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#jwt_ttl AuthMethodUniversalIdentity#jwt_ttl}
+        :param ttl: Token ttl (in minutes). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -418,6 +445,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument deny_rotate", value=deny_rotate, expected_type=type_hints["deny_rotate"])
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
             check_type(argname="argument ttl", value=ttl, expected_type=type_hints["ttl"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
             "name": name,
@@ -450,6 +478,8 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["force_sub_claims"] = force_sub_claims
         if id is not None:
             self._values["id"] = id
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
         if ttl is not None:
             self._values["ttl"] = ttl
 
@@ -521,7 +551,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#name AuthMethodUniversalIdentity#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -531,7 +561,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_expires AuthMethodUniversalIdentity#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -540,7 +570,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#access_id AuthMethodUniversalIdentity#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -549,7 +579,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#bound_ips AuthMethodUniversalIdentity#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -560,7 +590,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Deny from root to create children.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_inheritance AuthMethodUniversalIdentity#deny_inheritance}
         '''
         result = self._values.get("deny_inheritance")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -571,7 +601,7 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Deny from the token to rotate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#deny_rotate AuthMethodUniversalIdentity#deny_rotate}
         '''
         result = self._values.get("deny_rotate")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -582,14 +612,14 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#force_sub_claims AuthMethodUniversalIdentity#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#id AuthMethodUniversalIdentity#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -598,10 +628,19 @@ class AuthMethodUniversalIdentityConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#jwt_ttl AuthMethodUniversalIdentity#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
     def ttl(self) -> typing.Optional[jsii.Number]:
         '''Token ttl (in minutes).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_universal_identity#ttl AuthMethodUniversalIdentity#ttl}
         '''
         result = self._values.get("ttl")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -637,6 +676,7 @@ def _typecheckingstub__dbd799c8163bd39e404b803aafbdff12927ef6f062ddabd5ef2578896
     deny_rotate: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     ttl: typing.Optional[jsii.Number] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
     count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
@@ -700,6 +740,12 @@ def _typecheckingstub__ad91eed93579c4a1cee0954fa160c1bd27bd44af7fd430ae913c09c24
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__554a7c650690f90732049341a62029daea625028c838b3cdc834b3102d63fe95(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__aca77514df4e43d47cea885f6db02a77bdd6ceba7319ce6c0edd627a889accf9(
     value: builtins.str,
 ) -> None:
@@ -729,6 +775,7 @@ def _typecheckingstub__34e43fb4ae5c29618e10f084c4513702b3ca3175139b8bf4a121020ae
     deny_rotate: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     ttl: typing.Optional[jsii.Number] = None,
 ) -> None:
     """Type checking stubs"""

@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_gke`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_gke`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke).
+Refer to the Terraform Registry for docs: [`akeyless_target_gke`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetGke(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetGke.TargetGke",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke akeyless_target_gke}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke akeyless_target_gke}.'''
 
     def __init__(
         self,
@@ -34,7 +34,6 @@ class TargetGke(
         id_: builtins.str,
         *,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         gke_account_key: typing.Optional[builtins.str] = None,
         gke_cluster_cert: typing.Optional[builtins.str] = None,
@@ -52,21 +51,20 @@ class TargetGke(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke akeyless_target_gke} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke akeyless_target_gke} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#name TargetGke#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#comment TargetGke#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#description TargetGke#description}
-        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
-        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
-        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
-        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
-        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#id TargetGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#key TargetGke#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#name TargetGke#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#description TargetGke#description}
+        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
+        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
+        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
+        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
+        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#id TargetGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#key TargetGke#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -81,7 +79,6 @@ class TargetGke(
             check_type(argname="argument id_", value=id_, expected_type=type_hints["id_"])
         config = TargetGkeConfig(
             name=name,
-            comment=comment,
             description=description,
             gke_account_key=gke_account_key,
             gke_cluster_cert=gke_cluster_cert,
@@ -115,7 +112,7 @@ class TargetGke(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetGke to import.
-        :param import_from_id: The id of the existing TargetGke that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetGke that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetGke to import is found.
         '''
         if __debug__:
@@ -125,10 +122,6 @@ class TargetGke(
             check_type(argname="argument import_from_id", value=import_from_id, expected_type=type_hints["import_from_id"])
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
         return typing.cast(_cdktf_9a9027ec.ImportableResource, jsii.sinvoke(cls, "generateConfigForImport", [scope, import_to_id, import_from_id, provider]))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -178,11 +171,6 @@ class TargetGke(
     @jsii.member(jsii_name="tfResourceType")
     def TF_RESOURCE_TYPE(cls) -> builtins.str:
         return typing.cast(builtins.str, jsii.sget(cls, "tfResourceType"))
-
-    @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
 
     @builtins.property
     @jsii.member(jsii_name="descriptionInput")
@@ -235,18 +223,6 @@ class TargetGke(
         self,
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], jsii.get(self, "useGwCloudIdentityInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__9cdb956ba5b550f06ac14f142503ebf01ca917c237481e466fa228f27a9c31f6)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -386,7 +362,6 @@ class TargetGke(
         "provider": "provider",
         "provisioners": "provisioners",
         "name": "name",
-        "comment": "comment",
         "description": "description",
         "gke_account_key": "gkeAccountKey",
         "gke_cluster_cert": "gkeClusterCert",
@@ -410,7 +385,6 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         gke_account_key: typing.Optional[builtins.str] = None,
         gke_cluster_cert: typing.Optional[builtins.str] = None,
@@ -429,17 +403,16 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#name TargetGke#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#comment TargetGke#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#description TargetGke#description}
-        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
-        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
-        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
-        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
-        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#id TargetGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#key TargetGke#key}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#name TargetGke#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#description TargetGke#description}
+        :param gke_account_key: GKE service account key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
+        :param gke_cluster_cert: GKE Base-64 encoded cluster certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
+        :param gke_cluster_endpoint: GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
+        :param gke_cluster_name: GKE cluster name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
+        :param gke_service_account_email: GKE service account email. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#id TargetGke#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#key TargetGke#key}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -453,7 +426,6 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
             check_type(argname="argument provisioners", value=provisioners, expected_type=type_hints["provisioners"])
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument gke_account_key", value=gke_account_key, expected_type=type_hints["gke_account_key"])
             check_type(argname="argument gke_cluster_cert", value=gke_cluster_cert, expected_type=type_hints["gke_cluster_cert"])
@@ -480,8 +452,6 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["provider"] = provider
         if provisioners is not None:
             self._values["provisioners"] = provisioners
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if gke_account_key is not None:
@@ -569,23 +539,17 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#name TargetGke#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#name TargetGke#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#comment TargetGke#comment}.'''
-        result = self._values.get("comment")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#description TargetGke#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#description TargetGke#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -594,7 +558,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_account_key(self) -> typing.Optional[builtins.str]:
         '''GKE service account key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_account_key TargetGke#gke_account_key}
         '''
         result = self._values.get("gke_account_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -603,7 +567,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_cert(self) -> typing.Optional[builtins.str]:
         '''GKE Base-64 encoded cluster certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_cert TargetGke#gke_cluster_cert}
         '''
         result = self._values.get("gke_cluster_cert")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -612,7 +576,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''GKE cluster endpoint, i.e., cluster URI https://<DNS/IP>.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_endpoint TargetGke#gke_cluster_endpoint}
         '''
         result = self._values.get("gke_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -621,7 +585,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_cluster_name(self) -> typing.Optional[builtins.str]:
         '''GKE cluster name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_cluster_name TargetGke#gke_cluster_name}
         '''
         result = self._values.get("gke_cluster_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -630,14 +594,14 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gke_service_account_email(self) -> typing.Optional[builtins.str]:
         '''GKE service account email.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#gke_service_account_email TargetGke#gke_service_account_email}
         '''
         result = self._values.get("gke_service_account_email")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#id TargetGke#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#id TargetGke#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -651,7 +615,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#key TargetGke#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#key TargetGke#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -662,7 +626,7 @@ class TargetGkeConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Use the GW's Cloud IAM.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_gke#use_gw_cloud_identity TargetGke#use_gw_cloud_identity}
         '''
         result = self._values.get("use_gw_cloud_identity")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -691,7 +655,6 @@ def _typecheckingstub__96c1a442b9cddecf1809691c9d4eb9c95761cbfe5c105ecb9ec173a78
     id_: builtins.str,
     *,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     gke_account_key: typing.Optional[builtins.str] = None,
     gke_cluster_cert: typing.Optional[builtins.str] = None,
@@ -717,12 +680,6 @@ def _typecheckingstub__14d65775338b1a94ee0ddf252dc06590af8b7a250b20593588e62d0d8
     import_to_id: builtins.str,
     import_from_id: builtins.str,
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__9cdb956ba5b550f06ac14f142503ebf01ca917c237481e466fa228f27a9c31f6(
-    value: builtins.str,
 ) -> None:
     """Type checking stubs"""
     pass
@@ -797,7 +754,6 @@ def _typecheckingstub__4c0196b1a1100f86ceb2a038e9a56d06f1c956b2372f7e926ba98f2de
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
     provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     gke_account_key: typing.Optional[builtins.str] = None,
     gke_cluster_cert: typing.Optional[builtins.str] = None,

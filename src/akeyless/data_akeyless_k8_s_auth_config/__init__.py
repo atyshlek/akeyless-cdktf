@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_k8s_auth_config`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_k8s_auth_config`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config).
+Refer to the Terraform Registry for docs: [`data_akeyless_k8s_auth_config`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessK8SAuthConfig(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessK8SAuthConfig.DataAkeylessK8SAuthConfig",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config akeyless_k8s_auth_config}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config akeyless_k8s_auth_config}.'''
 
     def __init__(
         self,
@@ -42,11 +42,11 @@ class DataAkeylessK8SAuthConfig(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config akeyless_k8s_auth_config} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config akeyless_k8s_auth_config} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: K8S Auth config name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
+        :param name: K8S Auth config name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -85,7 +85,7 @@ class DataAkeylessK8SAuthConfig(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessK8SAuthConfig to import.
-        :param import_from_id: The id of the existing DataAkeylessK8SAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessK8SAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessK8SAuthConfig to import is found.
         '''
         if __debug__:
@@ -222,7 +222,7 @@ class DataAkeylessK8SAuthConfigConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: K8S Auth config name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
+        :param name: K8S Auth config name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -322,7 +322,7 @@ class DataAkeylessK8SAuthConfigConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''K8S Auth config name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/k8s_auth_config#name DataAkeylessK8SAuthConfig#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"

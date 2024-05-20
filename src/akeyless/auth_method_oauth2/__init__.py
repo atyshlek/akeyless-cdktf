@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_oauth2`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_oauth2`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_oauth2`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodOauth2(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodOauth2.AuthMethodOauth2",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2 akeyless_auth_method_oauth2}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2 akeyless_auth_method_oauth2}.'''
 
     def __init__(
         self,
@@ -45,6 +45,7 @@ class AuthMethodOauth2(
         issuer: typing.Optional[builtins.str] = None,
         jwks_json_data: typing.Optional[builtins.str] = None,
         jwks_uri: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
         count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
         depends_on: typing.Optional[typing.Sequence[_cdktf_9a9027ec.ITerraformDependable]] = None,
@@ -53,22 +54,23 @@ class AuthMethodOauth2(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2 akeyless_auth_method_oauth2} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2 akeyless_auth_method_oauth2} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
-        :param audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
-        :param bound_client_ids: The clients ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
-        :param jwks_json_data: The JSON Web Key Set (JWKS) containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization serve, in base64 format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
-        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
+        :param audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
+        :param bound_client_ids: The clients ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
+        :param jwks_json_data: The JSON Web Key Set (JWKS) containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization serve, in base64 format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
+        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwt_ttl AuthMethodOauth2#jwt_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -94,6 +96,7 @@ class AuthMethodOauth2(
             issuer=issuer,
             jwks_json_data=jwks_json_data,
             jwks_uri=jwks_uri,
+            jwt_ttl=jwt_ttl,
             connection=connection,
             count=count,
             depends_on=depends_on,
@@ -118,7 +121,7 @@ class AuthMethodOauth2(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodOauth2 to import.
-        :param import_from_id: The id of the existing AuthMethodOauth2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodOauth2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodOauth2 to import is found.
         '''
         if __debug__:
@@ -168,6 +171,10 @@ class AuthMethodOauth2(
     @jsii.member(jsii_name="resetJwksUri")
     def reset_jwks_uri(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetJwksUri", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="synthesizeAttributes")
     def _synthesize_attributes(self) -> typing.Mapping[builtins.str, typing.Any]:
@@ -233,6 +240,11 @@ class AuthMethodOauth2(
     @jsii.member(jsii_name="jwksUriInput")
     def jwks_uri_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "jwksUriInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -370,6 +382,18 @@ class AuthMethodOauth2(
         jsii.set(self, "jwksUri", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__29828ad9f2d8911cbff1438333f0a632dcb366e5ca3c1ce3b2744dcc99881a6e)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -417,6 +441,7 @@ class AuthMethodOauth2(
         "issuer": "issuer",
         "jwks_json_data": "jwksJsonData",
         "jwks_uri": "jwksUri",
+        "jwt_ttl": "jwtTtl",
     },
 )
 class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
@@ -442,6 +467,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
         issuer: typing.Optional[builtins.str] = None,
         jwks_json_data: typing.Optional[builtins.str] = None,
         jwks_uri: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
     ) -> None:
         '''
         :param connection: 
@@ -451,18 +477,19 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
-        :param audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
-        :param bound_client_ids: The clients ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
-        :param jwks_json_data: The JSON Web Key Set (JWKS) containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization serve, in base64 format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
-        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
+        :param audience: The audience in the JWT. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
+        :param bound_client_ids: The clients ids that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
+        :param jwks_json_data: The JSON Web Key Set (JWKS) containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization serve, in base64 format. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
+        :param jwks_uri: The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwt_ttl AuthMethodOauth2#jwt_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -487,6 +514,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument issuer", value=issuer, expected_type=type_hints["issuer"])
             check_type(argname="argument jwks_json_data", value=jwks_json_data, expected_type=type_hints["jwks_json_data"])
             check_type(argname="argument jwks_uri", value=jwks_uri, expected_type=type_hints["jwks_uri"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
             "name": name,
             "unique_identifier": unique_identifier,
@@ -525,6 +553,8 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["jwks_json_data"] = jwks_json_data
         if jwks_uri is not None:
             self._values["jwks_uri"] = jwks_uri
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
 
     @builtins.property
     def connection(
@@ -594,7 +624,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#name AuthMethodOauth2#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -606,7 +636,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#unique_identifier AuthMethodOauth2#unique_identifier}
         '''
         result = self._values.get("unique_identifier")
         assert result is not None, "Required property 'unique_identifier' is missing"
@@ -616,7 +646,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_expires AuthMethodOauth2#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -625,7 +655,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#access_id AuthMethodOauth2#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -634,7 +664,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def audience(self) -> typing.Optional[builtins.str]:
         '''The audience in the JWT.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#audience AuthMethodOauth2#audience}
         '''
         result = self._values.get("audience")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -643,7 +673,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_client_ids(self) -> typing.Optional[typing.List[builtins.str]]:
         '''The clients ids that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_client_ids AuthMethodOauth2#bound_client_ids}
         '''
         result = self._values.get("bound_client_ids")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -652,7 +682,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#bound_ips AuthMethodOauth2#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -663,14 +693,14 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#force_sub_claims AuthMethodOauth2#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#id AuthMethodOauth2#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -682,7 +712,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def issuer(self) -> typing.Optional[builtins.str]:
         '''Issuer URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#issuer AuthMethodOauth2#issuer}
         '''
         result = self._values.get("issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -691,7 +721,7 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def jwks_json_data(self) -> typing.Optional[builtins.str]:
         '''The JSON Web Key Set (JWKS) containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization serve, in base64 format.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_json_data AuthMethodOauth2#jwks_json_data}
         '''
         result = self._values.get("jwks_json_data")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -700,10 +730,19 @@ class AuthMethodOauth2Config(_cdktf_9a9027ec.TerraformMetaArguments):
     def jwks_uri(self) -> typing.Optional[builtins.str]:
         '''The URL to the JSON Web Key Set (JWKS) that containing the public keys that should be used to verify any JSON Web Token (JWT) issued by the authorization server.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwks_uri AuthMethodOauth2#jwks_uri}
         '''
         result = self._values.get("jwks_uri")
         return typing.cast(typing.Optional[builtins.str], result)
+
+    @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oauth2#jwt_ttl AuthMethodOauth2#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
 
     def __eq__(self, rhs: typing.Any) -> builtins.bool:
         return isinstance(rhs, self.__class__) and rhs._values == self._values
@@ -740,6 +779,7 @@ def _typecheckingstub__b593bd6d6df3808e83d6e18417c60b409abbe9932e73fca416f42628a
     issuer: typing.Optional[builtins.str] = None,
     jwks_json_data: typing.Optional[builtins.str] = None,
     jwks_uri: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
     count: typing.Optional[typing.Union[jsii.Number, _cdktf_9a9027ec.TerraformCount]] = None,
     depends_on: typing.Optional[typing.Sequence[_cdktf_9a9027ec.ITerraformDependable]] = None,
@@ -820,6 +860,12 @@ def _typecheckingstub__0513fb43ca75f9decb7f25a63edf6a2686ada3b78998825ba5a24f336
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__29828ad9f2d8911cbff1438333f0a632dcb366e5ca3c1ce3b2744dcc99881a6e(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__2146dd09d9f741cf04ee7fc9bb9d8c8a01b518040bb1abe69eb17dab5ee369bc(
     value: builtins.str,
 ) -> None:
@@ -853,6 +899,7 @@ def _typecheckingstub__c373068f466d767fc2e9d43efc350aa152fbb79d5ae27e1744dabd8fa
     issuer: typing.Optional[builtins.str] = None,
     jwks_json_data: typing.Optional[builtins.str] = None,
     jwks_uri: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
 ) -> None:
     """Type checking stubs"""
     pass

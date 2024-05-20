@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_k8s`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodK8S(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodK8S.AuthMethodK8S",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s akeyless_auth_method_k8s}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s akeyless_auth_method_k8s}.'''
 
     def __init__(
         self,
@@ -44,6 +44,7 @@ class AuthMethodK8S(
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         gen_key: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         private_key: typing.Optional[builtins.str] = None,
         public_key: typing.Optional[builtins.str] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
@@ -54,23 +55,24 @@ class AuthMethodK8S(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s akeyless_auth_method_k8s} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s akeyless_auth_method_k8s} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
-        :param audience: The audience in the Kubernetes JWT that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
-        :param bound_namespaces: A list of namespaces that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
-        :param bound_pod_names: A list of pod names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
-        :param bound_sa_names: A list of service account names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
-        :param gen_key: If this flag is set to true, there is no need to manually provide a public key for the Kubernetes Auth Method, and instead, a key pair, will be generated as part of the command and the private part of the key will be returned (the private key is required for the K8S Auth Config in the Akeyless Gateway). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#id AuthMethodK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param private_key: The generated private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
-        :param public_key: The generated public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
+        :param audience: The audience in the Kubernetes JWT that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
+        :param bound_namespaces: A list of namespaces that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
+        :param bound_pod_names: A list of pod names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
+        :param bound_sa_names: A list of service account names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
+        :param gen_key: If this flag is set to true, there is no need to manually provide a public key for the Kubernetes Auth Method, and instead, a key pair, will be generated as part of the command and the private part of the key will be returned (the private key is required for the K8S Auth Config in the Akeyless Gateway). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#id AuthMethodK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#jwt_ttl AuthMethodK8S#jwt_ttl}
+        :param private_key: The generated private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
+        :param public_key: The generated public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -95,6 +97,7 @@ class AuthMethodK8S(
             force_sub_claims=force_sub_claims,
             gen_key=gen_key,
             id=id,
+            jwt_ttl=jwt_ttl,
             private_key=private_key,
             public_key=public_key,
             connection=connection,
@@ -121,7 +124,7 @@ class AuthMethodK8S(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodK8S to import.
-        :param import_from_id: The id of the existing AuthMethodK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodK8S to import is found.
         '''
         if __debug__:
@@ -171,6 +174,10 @@ class AuthMethodK8S(
     @jsii.member(jsii_name="resetId")
     def reset_id(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetId", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="resetPrivateKey")
     def reset_private_key(self) -> None:
@@ -244,6 +251,11 @@ class AuthMethodK8S(
     @jsii.member(jsii_name="idInput")
     def id_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "idInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -386,6 +398,18 @@ class AuthMethodK8S(
         jsii.set(self, "id", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__bb170744823f835f5eff06f68a95ea4ad8fd986685e69b54aaf4b5068cfaab57)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -444,6 +468,7 @@ class AuthMethodK8S(
         "force_sub_claims": "forceSubClaims",
         "gen_key": "genKey",
         "id": "id",
+        "jwt_ttl": "jwtTtl",
         "private_key": "privateKey",
         "public_key": "publicKey",
     },
@@ -470,6 +495,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         gen_key: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         private_key: typing.Optional[builtins.str] = None,
         public_key: typing.Optional[builtins.str] = None,
     ) -> None:
@@ -481,19 +507,20 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
-        :param audience: The audience in the Kubernetes JWT that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
-        :param bound_namespaces: A list of namespaces that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
-        :param bound_pod_names: A list of pod names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
-        :param bound_sa_names: A list of service account names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
-        :param gen_key: If this flag is set to true, there is no need to manually provide a public key for the Kubernetes Auth Method, and instead, a key pair, will be generated as part of the command and the private part of the key will be returned (the private key is required for the K8S Auth Config in the Akeyless Gateway). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#id AuthMethodK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param private_key: The generated private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
-        :param public_key: The generated public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
+        :param audience: The audience in the Kubernetes JWT that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
+        :param bound_namespaces: A list of namespaces that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
+        :param bound_pod_names: A list of pod names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
+        :param bound_sa_names: A list of service account names that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
+        :param gen_key: If this flag is set to true, there is no need to manually provide a public key for the Kubernetes Auth Method, and instead, a key pair, will be generated as part of the command and the private part of the key will be returned (the private key is required for the K8S Auth Config in the Akeyless Gateway). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#id AuthMethodK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#jwt_ttl AuthMethodK8S#jwt_ttl}
+        :param private_key: The generated private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
+        :param public_key: The generated public key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -517,6 +544,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument gen_key", value=gen_key, expected_type=type_hints["gen_key"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
             check_type(argname="argument private_key", value=private_key, expected_type=type_hints["private_key"])
             check_type(argname="argument public_key", value=public_key, expected_type=type_hints["public_key"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
@@ -556,6 +584,8 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["gen_key"] = gen_key
         if id is not None:
             self._values["id"] = id
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
         if private_key is not None:
             self._values["private_key"] = private_key
         if public_key is not None:
@@ -629,7 +659,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#name AuthMethodK8S#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -639,7 +669,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_expires AuthMethodK8S#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -648,7 +678,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#access_id AuthMethodK8S#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -657,7 +687,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def audience(self) -> typing.Optional[builtins.str]:
         '''The audience in the Kubernetes JWT that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#audience AuthMethodK8S#audience}
         '''
         result = self._values.get("audience")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -666,7 +696,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_ips AuthMethodK8S#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -675,7 +705,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_namespaces(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of namespaces that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_namespaces AuthMethodK8S#bound_namespaces}
         '''
         result = self._values.get("bound_namespaces")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -684,7 +714,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_pod_names(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of pod names that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_pod_names AuthMethodK8S#bound_pod_names}
         '''
         result = self._values.get("bound_pod_names")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -693,7 +723,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_sa_names(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A list of service account names that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#bound_sa_names AuthMethodK8S#bound_sa_names}
         '''
         result = self._values.get("bound_sa_names")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -704,7 +734,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#force_sub_claims AuthMethodK8S#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -713,14 +743,14 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def gen_key(self) -> typing.Optional[builtins.str]:
         '''If this flag is set to true, there is no need to manually provide a public key for the Kubernetes Auth Method, and instead, a key pair, will be generated as part of the command and the private part of the key will be returned (the private key is required for the K8S Auth Config in the Akeyless Gateway).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#gen_key AuthMethodK8S#gen_key}
         '''
         result = self._values.get("gen_key")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#id AuthMethodK8S#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#id AuthMethodK8S#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,10 +759,19 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#jwt_ttl AuthMethodK8S#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
     def private_key(self) -> typing.Optional[builtins.str]:
         '''The generated private key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#private_key AuthMethodK8S#private_key}
         '''
         result = self._values.get("private_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -741,7 +780,7 @@ class AuthMethodK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def public_key(self) -> typing.Optional[builtins.str]:
         '''The generated public key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_k8s#public_key AuthMethodK8S#public_key}
         '''
         result = self._values.get("public_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -780,6 +819,7 @@ def _typecheckingstub__5eae3d86876ee89dfa27b6f9b91e3f26abe9d24bf9dfc3a6ba6e9ec8f
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     gen_key: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     private_key: typing.Optional[builtins.str] = None,
     public_key: typing.Optional[builtins.str] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
@@ -862,6 +902,12 @@ def _typecheckingstub__d113db030f86900ccb4f7f47601cb3ea96673b09ee7cdbb3a0678375d
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__bb170744823f835f5eff06f68a95ea4ad8fd986685e69b54aaf4b5068cfaab57(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__c7b433ffdeeb2e6677aa176dafed58a4e757075728b23eb9ea34a9bf84fca15d(
     value: builtins.str,
 ) -> None:
@@ -900,6 +946,7 @@ def _typecheckingstub__6c31ccd40a6872b2a58db42d90c9c4783f58b1091241bd5803838d00d
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     gen_key: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     private_key: typing.Optional[builtins.str] = None,
     public_key: typing.Optional[builtins.str] = None,
 ) -> None:

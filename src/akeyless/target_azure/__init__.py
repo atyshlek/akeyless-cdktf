@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_azure`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_azure`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure).
+Refer to the Terraform Registry for docs: [`akeyless_target_azure`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetAzure(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetAzure.TargetAzure",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure akeyless_target_azure}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure akeyless_target_azure}.'''
 
     def __init__(
         self,
@@ -36,7 +36,6 @@ class TargetAzure(
         name: builtins.str,
         client_id: typing.Optional[builtins.str] = None,
         client_secret: typing.Optional[builtins.str] = None,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
         key: typing.Optional[builtins.str] = None,
@@ -50,19 +49,18 @@ class TargetAzure(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure akeyless_target_azure} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure akeyless_target_azure} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#name TargetAzure#name}
-        :param client_id: Azure client/application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_id TargetAzure#client_id}
-        :param client_secret: Azure client secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_secret TargetAzure#client_secret}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#comment TargetAzure#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#description TargetAzure#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#id TargetAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key is used to encrypt the target secret value. If the key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#key TargetAzure#key}
-        :param tenant_id: Azure tenant id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#name TargetAzure#name}
+        :param client_id: Azure client/application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_id TargetAzure#client_id}
+        :param client_secret: Azure client secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_secret TargetAzure#client_secret}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#description TargetAzure#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#id TargetAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key is used to encrypt the target secret value. If the key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#key TargetAzure#key}
+        :param tenant_id: Azure tenant id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -79,7 +77,6 @@ class TargetAzure(
             name=name,
             client_id=client_id,
             client_secret=client_secret,
-            comment=comment,
             description=description,
             id=id,
             key=key,
@@ -109,7 +106,7 @@ class TargetAzure(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetAzure to import.
-        :param import_from_id: The id of the existing TargetAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetAzure to import is found.
         '''
         if __debug__:
@@ -127,10 +124,6 @@ class TargetAzure(
     @jsii.member(jsii_name="resetClientSecret")
     def reset_client_secret(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetClientSecret", []))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -174,11 +167,6 @@ class TargetAzure(
     @jsii.member(jsii_name="clientSecretInput")
     def client_secret_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "clientSecretInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
 
     @builtins.property
     @jsii.member(jsii_name="descriptionInput")
@@ -235,18 +223,6 @@ class TargetAzure(
             type_hints = typing.get_type_hints(_typecheckingstub__7c459cf8fabe344ef55b509e746734fc5f7860fccdcc09edb81d20cdba163fe9)
             check_type(argname="argument value", value=value, expected_type=type_hints["value"])
         jsii.set(self, "clientSecret", value)
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__81c8f8ca00ce78f9c9a58b701a7ddefccd26af9da776e70ef6eb1a32a4b5cf91)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -340,7 +316,6 @@ class TargetAzure(
         "name": "name",
         "client_id": "clientId",
         "client_secret": "clientSecret",
-        "comment": "comment",
         "description": "description",
         "id": "id",
         "key": "key",
@@ -362,7 +337,6 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         name: builtins.str,
         client_id: typing.Optional[builtins.str] = None,
         client_secret: typing.Optional[builtins.str] = None,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
         key: typing.Optional[builtins.str] = None,
@@ -377,15 +351,14 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#name TargetAzure#name}
-        :param client_id: Azure client/application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_id TargetAzure#client_id}
-        :param client_secret: Azure client secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_secret TargetAzure#client_secret}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#comment TargetAzure#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#description TargetAzure#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#id TargetAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key is used to encrypt the target secret value. If the key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#key TargetAzure#key}
-        :param tenant_id: Azure tenant id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
-        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#name TargetAzure#name}
+        :param client_id: Azure client/application id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_id TargetAzure#client_id}
+        :param client_secret: Azure client secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_secret TargetAzure#client_secret}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#description TargetAzure#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#id TargetAzure#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key is used to encrypt the target secret value. If the key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#key TargetAzure#key}
+        :param tenant_id: Azure tenant id. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
+        :param use_gw_cloud_identity: Use the GW's Cloud IAM. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -401,7 +374,6 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
             check_type(argname="argument client_id", value=client_id, expected_type=type_hints["client_id"])
             check_type(argname="argument client_secret", value=client_secret, expected_type=type_hints["client_secret"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
             check_type(argname="argument key", value=key, expected_type=type_hints["key"])
@@ -428,8 +400,6 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["client_id"] = client_id
         if client_secret is not None:
             self._values["client_secret"] = client_secret
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if id is not None:
@@ -509,7 +479,7 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#name TargetAzure#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#name TargetAzure#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -519,7 +489,7 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def client_id(self) -> typing.Optional[builtins.str]:
         '''Azure client/application id.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_id TargetAzure#client_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_id TargetAzure#client_id}
         '''
         result = self._values.get("client_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -528,29 +498,23 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def client_secret(self) -> typing.Optional[builtins.str]:
         '''Azure client secret.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#client_secret TargetAzure#client_secret}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#client_secret TargetAzure#client_secret}
         '''
         result = self._values.get("client_secret")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#comment TargetAzure#comment}.'''
-        result = self._values.get("comment")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#description TargetAzure#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#description TargetAzure#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#id TargetAzure#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#id TargetAzure#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -564,7 +528,7 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key is used to encrypt the target secret value. If the key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#key TargetAzure#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#key TargetAzure#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -573,7 +537,7 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def tenant_id(self) -> typing.Optional[builtins.str]:
         '''Azure tenant id.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#tenant_id TargetAzure#tenant_id}
         '''
         result = self._values.get("tenant_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -584,7 +548,7 @@ class TargetAzureConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Use the GW's Cloud IAM.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_azure#use_gw_cloud_identity TargetAzure#use_gw_cloud_identity}
         '''
         result = self._values.get("use_gw_cloud_identity")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -615,7 +579,6 @@ def _typecheckingstub__c1e3b37f015e4e9e8beb7bf4fb6cfe0326cc14e12d20b40fbbf996935
     name: builtins.str,
     client_id: typing.Optional[builtins.str] = None,
     client_secret: typing.Optional[builtins.str] = None,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
     key: typing.Optional[builtins.str] = None,
@@ -648,12 +611,6 @@ def _typecheckingstub__f415b4a00a0271767d772a0247fdd53a085a305fb755b80d4034a3191
     pass
 
 def _typecheckingstub__7c459cf8fabe344ef55b509e746734fc5f7860fccdcc09edb81d20cdba163fe9(
-    value: builtins.str,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__81c8f8ca00ce78f9c9a58b701a7ddefccd26af9da776e70ef6eb1a32a4b5cf91(
     value: builtins.str,
 ) -> None:
     """Type checking stubs"""
@@ -707,7 +664,6 @@ def _typecheckingstub__7cecdc235dfb6e8fc1f8db642523bea76ca6e0266356393387dbc72ed
     name: builtins.str,
     client_id: typing.Optional[builtins.str] = None,
     client_secret: typing.Optional[builtins.str] = None,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
     key: typing.Optional[builtins.str] = None,

@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_ssh`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_ssh`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh).
+Refer to the Terraform Registry for docs: [`akeyless_target_ssh`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetSsh(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetSsh.TargetSsh",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh akeyless_target_ssh}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh akeyless_target_ssh}.'''
 
     def __init__(
         self,
@@ -34,7 +34,6 @@ class TargetSsh(
         id_: builtins.str,
         *,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         host: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
@@ -52,21 +51,20 @@ class TargetSsh(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh akeyless_target_ssh} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh akeyless_target_ssh} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#name TargetSsh#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#comment TargetSsh#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#description TargetSsh#description}
-        :param host: SSH host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#host TargetSsh#host}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#id TargetSsh#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#key TargetSsh#key}
-        :param port: SSH port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#port TargetSsh#port}
-        :param private_key: SSH private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key TargetSsh#private_key}
-        :param private_key_password: SSH private key password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
-        :param ssh_password: SSH password to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
-        :param ssh_username: SSH username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#name TargetSsh#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#description TargetSsh#description}
+        :param host: SSH host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#host TargetSsh#host}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#id TargetSsh#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#key TargetSsh#key}
+        :param port: SSH port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#port TargetSsh#port}
+        :param private_key: SSH private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key TargetSsh#private_key}
+        :param private_key_password: SSH private key password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
+        :param ssh_password: SSH password to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
+        :param ssh_username: SSH username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -81,7 +79,6 @@ class TargetSsh(
             check_type(argname="argument id_", value=id_, expected_type=type_hints["id_"])
         config = TargetSshConfig(
             name=name,
-            comment=comment,
             description=description,
             host=host,
             id=id,
@@ -115,7 +112,7 @@ class TargetSsh(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetSsh to import.
-        :param import_from_id: The id of the existing TargetSsh that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetSsh that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetSsh to import is found.
         '''
         if __debug__:
@@ -125,10 +122,6 @@ class TargetSsh(
             check_type(argname="argument import_from_id", value=import_from_id, expected_type=type_hints["import_from_id"])
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
         return typing.cast(_cdktf_9a9027ec.ImportableResource, jsii.sinvoke(cls, "generateConfigForImport", [scope, import_to_id, import_from_id, provider]))
-
-    @jsii.member(jsii_name="resetComment")
-    def reset_comment(self) -> None:
-        return typing.cast(None, jsii.invoke(self, "resetComment", []))
 
     @jsii.member(jsii_name="resetDescription")
     def reset_description(self) -> None:
@@ -180,11 +173,6 @@ class TargetSsh(
         return typing.cast(builtins.str, jsii.sget(cls, "tfResourceType"))
 
     @builtins.property
-    @jsii.member(jsii_name="commentInput")
-    def comment_input(self) -> typing.Optional[builtins.str]:
-        return typing.cast(typing.Optional[builtins.str], jsii.get(self, "commentInput"))
-
-    @builtins.property
     @jsii.member(jsii_name="descriptionInput")
     def description_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "descriptionInput"))
@@ -233,18 +221,6 @@ class TargetSsh(
     @jsii.member(jsii_name="sshUsernameInput")
     def ssh_username_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "sshUsernameInput"))
-
-    @builtins.property
-    @jsii.member(jsii_name="comment")
-    def comment(self) -> builtins.str:
-        return typing.cast(builtins.str, jsii.get(self, "comment"))
-
-    @comment.setter
-    def comment(self, value: builtins.str) -> None:
-        if __debug__:
-            type_hints = typing.get_type_hints(_typecheckingstub__596bb7d70241db8d8f570efd1e9c5ea19b1b20a9ef8886e51278c37224d408fa)
-            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
-        jsii.set(self, "comment", value)
 
     @builtins.property
     @jsii.member(jsii_name="description")
@@ -379,7 +355,6 @@ class TargetSsh(
         "provider": "provider",
         "provisioners": "provisioners",
         "name": "name",
-        "comment": "comment",
         "description": "description",
         "host": "host",
         "id": "id",
@@ -403,7 +378,6 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
         name: builtins.str,
-        comment: typing.Optional[builtins.str] = None,
         description: typing.Optional[builtins.str] = None,
         host: typing.Optional[builtins.str] = None,
         id: typing.Optional[builtins.str] = None,
@@ -422,17 +396,16 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#name TargetSsh#name}
-        :param comment: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#comment TargetSsh#comment}.
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#description TargetSsh#description}
-        :param host: SSH host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#host TargetSsh#host}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#id TargetSsh#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#key TargetSsh#key}
-        :param port: SSH port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#port TargetSsh#port}
-        :param private_key: SSH private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key TargetSsh#private_key}
-        :param private_key_password: SSH private key password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
-        :param ssh_password: SSH password to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
-        :param ssh_username: SSH username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#name TargetSsh#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#description TargetSsh#description}
+        :param host: SSH host name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#host TargetSsh#host}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#id TargetSsh#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#key TargetSsh#key}
+        :param port: SSH port. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#port TargetSsh#port}
+        :param private_key: SSH private key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key TargetSsh#private_key}
+        :param private_key_password: SSH private key password. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
+        :param ssh_password: SSH password to rotate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
+        :param ssh_username: SSH username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -446,7 +419,6 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument provider", value=provider, expected_type=type_hints["provider"])
             check_type(argname="argument provisioners", value=provisioners, expected_type=type_hints["provisioners"])
             check_type(argname="argument name", value=name, expected_type=type_hints["name"])
-            check_type(argname="argument comment", value=comment, expected_type=type_hints["comment"])
             check_type(argname="argument description", value=description, expected_type=type_hints["description"])
             check_type(argname="argument host", value=host, expected_type=type_hints["host"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
@@ -473,8 +445,6 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["provider"] = provider
         if provisioners is not None:
             self._values["provisioners"] = provisioners
-        if comment is not None:
-            self._values["comment"] = comment
         if description is not None:
             self._values["description"] = description
         if host is not None:
@@ -562,23 +532,17 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#name TargetSsh#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#name TargetSsh#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
         return typing.cast(builtins.str, result)
 
     @builtins.property
-    def comment(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#comment TargetSsh#comment}.'''
-        result = self._values.get("comment")
-        return typing.cast(typing.Optional[builtins.str], result)
-
-    @builtins.property
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#description TargetSsh#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#description TargetSsh#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -587,14 +551,14 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def host(self) -> typing.Optional[builtins.str]:
         '''SSH host name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#host TargetSsh#host}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#host TargetSsh#host}
         '''
         result = self._values.get("host")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#id TargetSsh#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#id TargetSsh#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -608,7 +572,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#key TargetSsh#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#key TargetSsh#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -617,7 +581,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def port(self) -> typing.Optional[builtins.str]:
         '''SSH port.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#port TargetSsh#port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#port TargetSsh#port}
         '''
         result = self._values.get("port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -626,7 +590,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def private_key(self) -> typing.Optional[builtins.str]:
         '''SSH private key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key TargetSsh#private_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key TargetSsh#private_key}
         '''
         result = self._values.get("private_key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -635,7 +599,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def private_key_password(self) -> typing.Optional[builtins.str]:
         '''SSH private key password.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#private_key_password TargetSsh#private_key_password}
         '''
         result = self._values.get("private_key_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -644,7 +608,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ssh_password(self) -> typing.Optional[builtins.str]:
         '''SSH password to rotate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_password TargetSsh#ssh_password}
         '''
         result = self._values.get("ssh_password")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -653,7 +617,7 @@ class TargetSshConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ssh_username(self) -> typing.Optional[builtins.str]:
         '''SSH username.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_ssh#ssh_username TargetSsh#ssh_username}
         '''
         result = self._values.get("ssh_username")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -682,7 +646,6 @@ def _typecheckingstub__8f72b921344b053100816177ff695812a32b76e16c231c4c1f6207104
     id_: builtins.str,
     *,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     host: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,
@@ -708,12 +671,6 @@ def _typecheckingstub__77994f437e54574e3422f4bf092e5b578ede52651c47d01abb6303b28
     import_to_id: builtins.str,
     import_from_id: builtins.str,
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
-) -> None:
-    """Type checking stubs"""
-    pass
-
-def _typecheckingstub__596bb7d70241db8d8f570efd1e9c5ea19b1b20a9ef8886e51278c37224d408fa(
-    value: builtins.str,
 ) -> None:
     """Type checking stubs"""
     pass
@@ -788,7 +745,6 @@ def _typecheckingstub__9963ed9681986b00614decc52d1cbb0684059395728186eb2ad2ffd09
     provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
     provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     name: builtins.str,
-    comment: typing.Optional[builtins.str] = None,
     description: typing.Optional[builtins.str] = None,
     host: typing.Optional[builtins.str] = None,
     id: typing.Optional[builtins.str] = None,

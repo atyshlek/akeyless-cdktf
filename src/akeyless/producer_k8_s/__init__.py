@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_k8s`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s).
+Refer to the Terraform Registry for docs: [`akeyless_producer_k8s`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerK8S(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerK8S.ProducerK8S",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s akeyless_producer_k8s}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s akeyless_producer_k8s}.'''
 
     def __init__(
         self,
@@ -65,34 +65,34 @@ class ProducerK8S(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s akeyless_producer_k8s} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s akeyless_producer_k8s} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#name ProducerK8S#name}
-        :param delete_protection: Protection from accidental deletion of this item [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#id ProducerK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param k8_s_allowed_namespaces: Comma-separated list of allowed K8S namespaces for the generated ServiceAccount (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
-        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
-        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
-        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
-        :param k8_s_namespace: K8S Namespace where the ServiceAccount exists. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
-        :param k8_s_predefined_role_name: The pre-existing Role or ClusterRole name to bind the generated ServiceAccount to (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
-        :param k8_s_predefined_role_type: Specifies the type of the pre-existing K8S role [Role, ClusterRole] (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
-        :param k8_s_service_account: K8S ServiceAccount to extract token from. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
-        :param k8_s_service_account_type: K8S ServiceAccount type [fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
-        :param secure_access_dashboard_url: The K8s dashboard url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
-        :param secure_access_web_proxy: Web-Proxy via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#tags ProducerK8S#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#name ProducerK8S#name}
+        :param delete_protection: Protection from accidental deletion of this item [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#id ProducerK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param k8_s_allowed_namespaces: Comma-separated list of allowed K8S namespaces for the generated ServiceAccount (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
+        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
+        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
+        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
+        :param k8_s_namespace: K8S Namespace where the ServiceAccount exists. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
+        :param k8_s_predefined_role_name: The pre-existing Role or ClusterRole name to bind the generated ServiceAccount to (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
+        :param k8_s_predefined_role_type: Specifies the type of the pre-existing K8S role [Role, ClusterRole] (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
+        :param k8_s_service_account: K8S ServiceAccount to extract token from. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
+        :param k8_s_service_account_type: K8S ServiceAccount type [fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
+        :param secure_access_dashboard_url: The K8s dashboard url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
+        :param secure_access_web_proxy: Web-Proxy via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#tags ProducerK8S#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -154,7 +154,7 @@ class ProducerK8S(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerK8S to import.
-        :param import_from_id: The id of the existing ProducerK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerK8S that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerK8S to import is found.
         '''
         if __debug__:
@@ -788,30 +788,30 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#name ProducerK8S#name}
-        :param delete_protection: Protection from accidental deletion of this item [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#id ProducerK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param k8_s_allowed_namespaces: Comma-separated list of allowed K8S namespaces for the generated ServiceAccount (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
-        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
-        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
-        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
-        :param k8_s_namespace: K8S Namespace where the ServiceAccount exists. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
-        :param k8_s_predefined_role_name: The pre-existing Role or ClusterRole name to bind the generated ServiceAccount to (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
-        :param k8_s_predefined_role_type: Specifies the type of the pre-existing K8S role [Role, ClusterRole] (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
-        :param k8_s_service_account: K8S ServiceAccount to extract token from. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
-        :param k8_s_service_account_type: K8S ServiceAccount type [fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
-        :param secure_access_dashboard_url: The K8s dashboard url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
-        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
-        :param secure_access_web_proxy: Web-Proxy via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#tags ProducerK8S#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#name ProducerK8S#name}
+        :param delete_protection: Protection from accidental deletion of this item [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#id ProducerK8S#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param k8_s_allowed_namespaces: Comma-separated list of allowed K8S namespaces for the generated ServiceAccount (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
+        :param k8_s_cluster_ca_cert: K8S Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
+        :param k8_s_cluster_endpoint: K8S Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
+        :param k8_s_cluster_token: K8S Cluster authentication token. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
+        :param k8_s_namespace: K8S Namespace where the ServiceAccount exists. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
+        :param k8_s_predefined_role_name: The pre-existing Role or ClusterRole name to bind the generated ServiceAccount to (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
+        :param k8_s_predefined_role_type: Specifies the type of the pre-existing K8S role [Role, ClusterRole] (relevant only for k8s-service-account-type=dynamic). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
+        :param k8_s_service_account: K8S ServiceAccount to extract token from. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
+        :param k8_s_service_account_type: K8S ServiceAccount type [fixed, dynamic]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
+        :param secure_access_dashboard_url: The K8s dashboard url. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
+        :param secure_access_web_browsing: Secure browser via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
+        :param secure_access_web_proxy: Web-Proxy via Akeyless Web Access Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#tags ProducerK8S#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -980,7 +980,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#name ProducerK8S#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#name ProducerK8S#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -990,14 +990,14 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def delete_protection(self) -> typing.Optional[builtins.str]:
         '''Protection from accidental deletion of this item [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#delete_protection ProducerK8S#delete_protection}
         '''
         result = self._values.get("delete_protection")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#id ProducerK8S#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#id ProducerK8S#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_allowed_namespaces(self) -> typing.Optional[builtins.str]:
         '''Comma-separated list of allowed K8S namespaces for the generated ServiceAccount (relevant only for k8s-service-account-type=dynamic).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_allowed_namespaces ProducerK8S#k8s_allowed_namespaces}
         '''
         result = self._values.get("k8_s_allowed_namespaces")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1018,7 +1018,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_ca_cert(self) -> typing.Optional[builtins.str]:
         '''K8S Cluster certificate. Base 64 encoded certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_ca_cert ProducerK8S#k8s_cluster_ca_cert}
         '''
         result = self._values.get("k8_s_cluster_ca_cert")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1027,7 +1027,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''K8S Cluster endpoint. https:// , <DNS / IP> of the cluster.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_endpoint ProducerK8S#k8s_cluster_endpoint}
         '''
         result = self._values.get("k8_s_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1036,7 +1036,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_cluster_token(self) -> typing.Optional[builtins.str]:
         '''K8S Cluster authentication token.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_cluster_token ProducerK8S#k8s_cluster_token}
         '''
         result = self._values.get("k8_s_cluster_token")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1045,7 +1045,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_namespace(self) -> typing.Optional[builtins.str]:
         '''K8S Namespace where the ServiceAccount exists.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_namespace ProducerK8S#k8s_namespace}
         '''
         result = self._values.get("k8_s_namespace")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1054,7 +1054,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_predefined_role_name(self) -> typing.Optional[builtins.str]:
         '''The pre-existing Role or ClusterRole name to bind the generated ServiceAccount to (relevant only for k8s-service-account-type=dynamic).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_name ProducerK8S#k8s_predefined_role_name}
         '''
         result = self._values.get("k8_s_predefined_role_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1063,7 +1063,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_predefined_role_type(self) -> typing.Optional[builtins.str]:
         '''Specifies the type of the pre-existing K8S role [Role, ClusterRole] (relevant only for k8s-service-account-type=dynamic).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_predefined_role_type ProducerK8S#k8s_predefined_role_type}
         '''
         result = self._values.get("k8_s_predefined_role_type")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1072,7 +1072,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_service_account(self) -> typing.Optional[builtins.str]:
         '''K8S ServiceAccount to extract token from.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account ProducerK8S#k8s_service_account}
         '''
         result = self._values.get("k8_s_service_account")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1081,7 +1081,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def k8_s_service_account_type(self) -> typing.Optional[builtins.str]:
         '''K8S ServiceAccount type [fixed, dynamic].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#k8s_service_account_type ProducerK8S#k8s_service_account_type}
         '''
         result = self._values.get("k8_s_service_account_type")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1090,7 +1090,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#producer_encryption_key_name ProducerK8S#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1101,7 +1101,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Port forwarding while using CLI access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_allow_port_forwading ProducerK8S#secure_access_allow_port_forwading}
         '''
         result = self._values.get("secure_access_allow_port_forwading")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1110,7 +1110,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_bastion_issuer ProducerK8S#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1119,7 +1119,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''The K8s cluster endpoint.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_cluster_endpoint ProducerK8S#secure_access_cluster_endpoint}
         '''
         result = self._values.get("secure_access_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1128,7 +1128,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_dashboard_url(self) -> typing.Optional[builtins.str]:
         '''The K8s dashboard url.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_dashboard_url ProducerK8S#secure_access_dashboard_url}
         '''
         result = self._values.get("secure_access_dashboard_url")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1137,7 +1137,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_enable ProducerK8S#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1148,7 +1148,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web ProducerK8S#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1159,7 +1159,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Secure browser via Akeyless Web Access Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_browsing ProducerK8S#secure_access_web_browsing}
         '''
         result = self._values.get("secure_access_web_browsing")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1170,7 +1170,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Web-Proxy via Akeyless Web Access Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#secure_access_web_proxy ProducerK8S#secure_access_web_proxy}
         '''
         result = self._values.get("secure_access_web_proxy")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -1181,7 +1181,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: --tag Tag1 --tag Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#tags ProducerK8S#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#tags ProducerK8S#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -1190,7 +1190,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#target_name ProducerK8S#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -1199,7 +1199,7 @@ class ProducerK8SConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_k8s#user_ttl ProducerK8S#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

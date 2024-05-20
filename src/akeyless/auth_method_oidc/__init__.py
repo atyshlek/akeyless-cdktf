@@ -1,7 +1,7 @@
 '''
 # `akeyless_auth_method_oidc`
 
-Refer to the Terraform Registry for docs: [`akeyless_auth_method_oidc`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc).
+Refer to the Terraform Registry for docs: [`akeyless_auth_method_oidc`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class AuthMethodOidc(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.authMethodOidc.AuthMethodOidc",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc akeyless_auth_method_oidc}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc akeyless_auth_method_oidc}.'''
 
     def __init__(
         self,
@@ -44,6 +44,7 @@ class AuthMethodOidc(
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
         issuer: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         required_scopes: typing.Optional[typing.Sequence[builtins.str]] = None,
         required_scopes_prefix: typing.Optional[builtins.str] = None,
         connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
@@ -54,23 +55,24 @@ class AuthMethodOidc(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc akeyless_auth_method_oidc} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc akeyless_auth_method_oidc} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OIDC, OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
-        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-oidc to enable OIDC via Akeyless Console and http://127.0.0.1:* to enable OIDC via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
-        :param client_id: Client ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
-        :param client_secret: Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#id AuthMethodOidc#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
-        :param required_scopes: Required scopes that the oidc method will request from the oidc provider and the user must approve. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
-        :param required_scopes_prefix: A prefix to add to all required-scopes when requesting them from the oidc server (for example, azure's Application ID URI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OIDC, OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
+        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-oidc to enable OIDC via Akeyless Console and http://127.0.0.1:* to enable OIDC via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
+        :param client_id: Client ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
+        :param client_secret: Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#id AuthMethodOidc#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#jwt_ttl AuthMethodOidc#jwt_ttl}
+        :param required_scopes: Required scopes that the oidc method will request from the oidc provider and the user must approve. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
+        :param required_scopes_prefix: A prefix to add to all required-scopes when requesting them from the oidc server (for example, azure's Application ID URI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -95,6 +97,7 @@ class AuthMethodOidc(
             force_sub_claims=force_sub_claims,
             id=id,
             issuer=issuer,
+            jwt_ttl=jwt_ttl,
             required_scopes=required_scopes,
             required_scopes_prefix=required_scopes_prefix,
             connection=connection,
@@ -121,7 +124,7 @@ class AuthMethodOidc(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the AuthMethodOidc to import.
-        :param import_from_id: The id of the existing AuthMethodOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing AuthMethodOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the AuthMethodOidc to import is found.
         '''
         if __debug__:
@@ -167,6 +170,10 @@ class AuthMethodOidc(
     @jsii.member(jsii_name="resetIssuer")
     def reset_issuer(self) -> None:
         return typing.cast(None, jsii.invoke(self, "resetIssuer", []))
+
+    @jsii.member(jsii_name="resetJwtTtl")
+    def reset_jwt_ttl(self) -> None:
+        return typing.cast(None, jsii.invoke(self, "resetJwtTtl", []))
 
     @jsii.member(jsii_name="resetRequiredScopes")
     def reset_required_scopes(self) -> None:
@@ -235,6 +242,11 @@ class AuthMethodOidc(
     @jsii.member(jsii_name="issuerInput")
     def issuer_input(self) -> typing.Optional[builtins.str]:
         return typing.cast(typing.Optional[builtins.str], jsii.get(self, "issuerInput"))
+
+    @builtins.property
+    @jsii.member(jsii_name="jwtTtlInput")
+    def jwt_ttl_input(self) -> typing.Optional[jsii.Number]:
+        return typing.cast(typing.Optional[jsii.Number], jsii.get(self, "jwtTtlInput"))
 
     @builtins.property
     @jsii.member(jsii_name="nameInput")
@@ -370,6 +382,18 @@ class AuthMethodOidc(
         jsii.set(self, "issuer", value)
 
     @builtins.property
+    @jsii.member(jsii_name="jwtTtl")
+    def jwt_ttl(self) -> jsii.Number:
+        return typing.cast(jsii.Number, jsii.get(self, "jwtTtl"))
+
+    @jwt_ttl.setter
+    def jwt_ttl(self, value: jsii.Number) -> None:
+        if __debug__:
+            type_hints = typing.get_type_hints(_typecheckingstub__24cc2d2e59fa01f2138fd8072f83646506ca45adbe466df61b0255fb3cdd6d58)
+            check_type(argname="argument value", value=value, expected_type=type_hints["value"])
+        jsii.set(self, "jwtTtl", value)
+
+    @builtins.property
     @jsii.member(jsii_name="name")
     def name(self) -> builtins.str:
         return typing.cast(builtins.str, jsii.get(self, "name"))
@@ -440,6 +464,7 @@ class AuthMethodOidc(
         "force_sub_claims": "forceSubClaims",
         "id": "id",
         "issuer": "issuer",
+        "jwt_ttl": "jwtTtl",
         "required_scopes": "requiredScopes",
         "required_scopes_prefix": "requiredScopesPrefix",
     },
@@ -466,6 +491,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
         id: typing.Optional[builtins.str] = None,
         issuer: typing.Optional[builtins.str] = None,
+        jwt_ttl: typing.Optional[jsii.Number] = None,
         required_scopes: typing.Optional[typing.Sequence[builtins.str]] = None,
         required_scopes_prefix: typing.Optional[builtins.str] = None,
     ) -> None:
@@ -477,19 +503,20 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
-        :param unique_identifier: A unique identifier (ID) value should be configured for OIDC, OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
-        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
-        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
-        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-oidc to enable OIDC via Akeyless Console and http://127.0.0.1:* to enable OIDC via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
-        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
-        :param client_id: Client ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
-        :param client_secret: Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
-        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#id AuthMethodOidc#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
-        :param required_scopes: Required scopes that the oidc method will request from the oidc provider and the user must approve. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
-        :param required_scopes_prefix: A prefix to add to all required-scopes when requesting them from the oidc server (for example, azure's Application ID URI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
+        :param name: Auth Method name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
+        :param unique_identifier: A unique identifier (ID) value should be configured for OIDC, OAuth2, LDAP and SAML authentication method types and is usually a value such as the email, username, or upn for example. Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
+        :param access_expires: Access expiration date in Unix timestamp (select 0 for access without expiry date). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
+        :param access_id: Auth Method access ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
+        :param allowed_redirect_uri: Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-oidc to enable OIDC via Akeyless Console and http://127.0.0.1:* to enable OIDC via akeyless CLI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
+        :param bound_ips: A CIDR whitelist with the IPs that the access is restricted to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
+        :param client_id: Client ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
+        :param client_secret: Client Secret. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
+        :param force_sub_claims: enforce role-association must include sub claims. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#id AuthMethodOidc#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param issuer: Issuer URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
+        :param jwt_ttl: Creds expiration time in minutes. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#jwt_ttl AuthMethodOidc#jwt_ttl}
+        :param required_scopes: Required scopes that the oidc method will request from the oidc provider and the user must approve. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
+        :param required_scopes_prefix: A prefix to add to all required-scopes when requesting them from the oidc server (for example, azure's Application ID URI). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -513,6 +540,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             check_type(argname="argument force_sub_claims", value=force_sub_claims, expected_type=type_hints["force_sub_claims"])
             check_type(argname="argument id", value=id, expected_type=type_hints["id"])
             check_type(argname="argument issuer", value=issuer, expected_type=type_hints["issuer"])
+            check_type(argname="argument jwt_ttl", value=jwt_ttl, expected_type=type_hints["jwt_ttl"])
             check_type(argname="argument required_scopes", value=required_scopes, expected_type=type_hints["required_scopes"])
             check_type(argname="argument required_scopes_prefix", value=required_scopes_prefix, expected_type=type_hints["required_scopes_prefix"])
         self._values: typing.Dict[builtins.str, typing.Any] = {
@@ -551,6 +579,8 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
             self._values["id"] = id
         if issuer is not None:
             self._values["issuer"] = issuer
+        if jwt_ttl is not None:
+            self._values["jwt_ttl"] = jwt_ttl
         if required_scopes is not None:
             self._values["required_scopes"] = required_scopes
         if required_scopes_prefix is not None:
@@ -624,7 +654,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Auth Method name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -636,7 +666,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         Whenever a user logs in with a token, these authentication types issue a sub claim that contains details uniquely identifying that user. This sub claim includes a key containing the ID value that you configured, and is used to distinguish between different users from within the same organization.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#unique_identifier AuthMethodOidc#unique_identifier}
         '''
         result = self._values.get("unique_identifier")
         assert result is not None, "Required property 'unique_identifier' is missing"
@@ -646,7 +676,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_expires(self) -> typing.Optional[jsii.Number]:
         '''Access expiration date in Unix timestamp (select 0 for access without expiry date).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_expires AuthMethodOidc#access_expires}
         '''
         result = self._values.get("access_expires")
         return typing.cast(typing.Optional[jsii.Number], result)
@@ -655,7 +685,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def access_id(self) -> typing.Optional[builtins.str]:
         '''Auth Method access ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#access_id AuthMethodOidc#access_id}
         '''
         result = self._values.get("access_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -664,7 +694,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def allowed_redirect_uri(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Allowed redirect URIs after the authentication (default is https://console.akeyless.io/login-oidc to enable OIDC via Akeyless Console and  http://127.0.0.1:* to enable OIDC via akeyless CLI).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#allowed_redirect_uri AuthMethodOidc#allowed_redirect_uri}
         '''
         result = self._values.get("allowed_redirect_uri")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -673,7 +703,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def bound_ips(self) -> typing.Optional[typing.List[builtins.str]]:
         '''A CIDR whitelist with the IPs that the access is restricted to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#bound_ips AuthMethodOidc#bound_ips}
         '''
         result = self._values.get("bound_ips")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -682,7 +712,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def client_id(self) -> typing.Optional[builtins.str]:
         '''Client ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
         '''
         result = self._values.get("client_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -691,7 +721,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def client_secret(self) -> typing.Optional[builtins.str]:
         '''Client Secret.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
         '''
         result = self._values.get("client_secret")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -702,14 +732,14 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''enforce role-association must include sub claims.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#force_sub_claims AuthMethodOidc#force_sub_claims}
         '''
         result = self._values.get("force_sub_claims")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#id AuthMethodOidc#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#id AuthMethodOidc#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -721,16 +751,25 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def issuer(self) -> typing.Optional[builtins.str]:
         '''Issuer URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
         '''
         result = self._values.get("issuer")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
+    def jwt_ttl(self) -> typing.Optional[jsii.Number]:
+        '''Creds expiration time in minutes.
+
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#jwt_ttl AuthMethodOidc#jwt_ttl}
+        '''
+        result = self._values.get("jwt_ttl")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
     def required_scopes(self) -> typing.Optional[typing.List[builtins.str]]:
         '''Required scopes that the oidc method will request from the oidc provider and the user must approve.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes AuthMethodOidc#required_scopes}
         '''
         result = self._values.get("required_scopes")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -739,7 +778,7 @@ class AuthMethodOidcConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def required_scopes_prefix(self) -> typing.Optional[builtins.str]:
         '''A prefix to add to all required-scopes when requesting them from the oidc server (for example, azure's Application ID URI).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/auth_method_oidc#required_scopes_prefix AuthMethodOidc#required_scopes_prefix}
         '''
         result = self._values.get("required_scopes_prefix")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -778,6 +817,7 @@ def _typecheckingstub__457f59b42a1bd2d0cd34498d0e4fdcad4021325d1f4591c0bcde7e30e
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
     issuer: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     required_scopes: typing.Optional[typing.Sequence[builtins.str]] = None,
     required_scopes_prefix: typing.Optional[builtins.str] = None,
     connection: typing.Optional[typing.Union[typing.Union[_cdktf_9a9027ec.SSHProvisionerConnection, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.WinrmProvisionerConnection, typing.Dict[builtins.str, typing.Any]]]] = None,
@@ -854,6 +894,12 @@ def _typecheckingstub__7e035596c5e65fc4a3833c4d1541bd7c2f1470b13b90619cb5c0c7cd0
     """Type checking stubs"""
     pass
 
+def _typecheckingstub__24cc2d2e59fa01f2138fd8072f83646506ca45adbe466df61b0255fb3cdd6d58(
+    value: jsii.Number,
+) -> None:
+    """Type checking stubs"""
+    pass
+
 def _typecheckingstub__4740316c55fd6493ff897f5f1e5a180e4880b2bc97818404dcab814f699a82d0(
     value: builtins.str,
 ) -> None:
@@ -898,6 +944,7 @@ def _typecheckingstub__bbcbcf8fd928c71987e2c1357b369928f0f19b8610b4c5033d7870e92
     force_sub_claims: typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]] = None,
     id: typing.Optional[builtins.str] = None,
     issuer: typing.Optional[builtins.str] = None,
+    jwt_ttl: typing.Optional[jsii.Number] = None,
     required_scopes: typing.Optional[typing.Sequence[builtins.str]] = None,
     required_scopes_prefix: typing.Optional[builtins.str] = None,
 ) -> None:

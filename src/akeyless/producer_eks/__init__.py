@@ -1,7 +1,7 @@
 '''
 # `akeyless_producer_eks`
 
-Refer to the Terraform Registry for docs: [`akeyless_producer_eks`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks).
+Refer to the Terraform Registry for docs: [`akeyless_producer_eks`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class ProducerEks(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.producerEks.ProducerEks",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks akeyless_producer_eks}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks akeyless_producer_eks}.'''
 
     def __init__(
         self,
@@ -59,28 +59,28 @@ class ProducerEks(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks akeyless_producer_eks} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks akeyless_producer_eks} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#name ProducerEks#name}
-        :param eks_access_key_id: EKS Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
-        :param eks_assume_role: Role ARN. Role to assume when connecting to the EKS cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
-        :param eks_cluster_ca_cert: EKS Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
-        :param eks_cluster_endpoint: EKS Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
-        :param eks_cluster_name: EKS cluster name. Must match the EKS cluster name you want to connect to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
-        :param eks_region: EKS Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
-        :param eks_secret_access_key: EKS Secret Access Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#id ProducerEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#tags ProducerEks#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#target_name ProducerEks#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#name ProducerEks#name}
+        :param eks_access_key_id: EKS Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
+        :param eks_assume_role: Role ARN. Role to assume when connecting to the EKS cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
+        :param eks_cluster_ca_cert: EKS Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
+        :param eks_cluster_endpoint: EKS Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
+        :param eks_cluster_name: EKS cluster name. Must match the EKS cluster name you want to connect to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
+        :param eks_region: EKS Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
+        :param eks_secret_access_key: EKS Secret Access Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#id ProducerEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#tags ProducerEks#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#target_name ProducerEks#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -136,7 +136,7 @@ class ProducerEks(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the ProducerEks to import.
-        :param import_from_id: The id of the existing ProducerEks that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing ProducerEks that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the ProducerEks to import is found.
         '''
         if __debug__:
@@ -618,24 +618,24 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#name ProducerEks#name}
-        :param eks_access_key_id: EKS Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
-        :param eks_assume_role: Role ARN. Role to assume when connecting to the EKS cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
-        :param eks_cluster_ca_cert: EKS Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
-        :param eks_cluster_endpoint: EKS Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
-        :param eks_cluster_name: EKS cluster name. Must match the EKS cluster name you want to connect to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
-        :param eks_region: EKS Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
-        :param eks_secret_access_key: EKS Secret Access Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#id ProducerEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
-        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
-        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
-        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
-        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
-        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
-        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#tags ProducerEks#tags}
-        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#target_name ProducerEks#target_name}
-        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
+        :param name: Producer name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#name ProducerEks#name}
+        :param eks_access_key_id: EKS Access Key ID. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
+        :param eks_assume_role: Role ARN. Role to assume when connecting to the EKS cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
+        :param eks_cluster_ca_cert: EKS Cluster certificate. Base 64 encoded certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
+        :param eks_cluster_endpoint: EKS Cluster endpoint. https:// , <DNS / IP> of the cluster. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
+        :param eks_cluster_name: EKS cluster name. Must match the EKS cluster name you want to connect to. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
+        :param eks_region: EKS Region. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
+        :param eks_secret_access_key: EKS Secret Access Key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#id ProducerEks#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param producer_encryption_key_name: Encrypt producer with following key. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
+        :param secure_access_allow_port_forwading: Enable Port forwarding while using CLI access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
+        :param secure_access_bastion_issuer: Path to the SSH Certificate Issuer for your Akeyless Bastion. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
+        :param secure_access_cluster_endpoint: The K8s cluster endpoint URL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
+        :param secure_access_enable: Enable/Disable secure remote access, [true/false]. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
+        :param secure_access_web: Enable Web Secure Remote Access. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
+        :param tags: List of the tags attached to this secret. To specify multiple tags use argument multiple times: -t Tag1 -t Tag2 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#tags ProducerEks#tags}
+        :param target_name: Name of existing target to use in producer creation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#target_name ProducerEks#target_name}
+        :param user_ttl: User TTL. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -786,7 +786,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Producer name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#name ProducerEks#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#name ProducerEks#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -796,7 +796,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_access_key_id(self) -> typing.Optional[builtins.str]:
         '''EKS Access Key ID.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_access_key_id ProducerEks#eks_access_key_id}
         '''
         result = self._values.get("eks_access_key_id")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -805,7 +805,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_assume_role(self) -> typing.Optional[builtins.str]:
         '''Role ARN. Role to assume when connecting to the EKS cluster.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_assume_role ProducerEks#eks_assume_role}
         '''
         result = self._values.get("eks_assume_role")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -814,7 +814,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_ca_cert(self) -> typing.Optional[builtins.str]:
         '''EKS Cluster certificate. Base 64 encoded certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_ca_cert ProducerEks#eks_cluster_ca_cert}
         '''
         result = self._values.get("eks_cluster_ca_cert")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -823,7 +823,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''EKS Cluster endpoint. https:// , <DNS / IP> of the cluster.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_endpoint ProducerEks#eks_cluster_endpoint}
         '''
         result = self._values.get("eks_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -832,7 +832,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_cluster_name(self) -> typing.Optional[builtins.str]:
         '''EKS cluster name. Must match the EKS cluster name you want to connect to.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_cluster_name ProducerEks#eks_cluster_name}
         '''
         result = self._values.get("eks_cluster_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -841,7 +841,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_region(self) -> typing.Optional[builtins.str]:
         '''EKS Region.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_region ProducerEks#eks_region}
         '''
         result = self._values.get("eks_region")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -850,14 +850,14 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def eks_secret_access_key(self) -> typing.Optional[builtins.str]:
         '''EKS Secret Access Key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#eks_secret_access_key ProducerEks#eks_secret_access_key}
         '''
         result = self._values.get("eks_secret_access_key")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#id ProducerEks#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#id ProducerEks#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -869,7 +869,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def producer_encryption_key_name(self) -> typing.Optional[builtins.str]:
         '''Encrypt producer with following key.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#producer_encryption_key_name ProducerEks#producer_encryption_key_name}
         '''
         result = self._values.get("producer_encryption_key_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -880,7 +880,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Port forwarding while using CLI access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_allow_port_forwading ProducerEks#secure_access_allow_port_forwading}
         '''
         result = self._values.get("secure_access_allow_port_forwading")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -889,7 +889,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_bastion_issuer(self) -> typing.Optional[builtins.str]:
         '''Path to the SSH Certificate Issuer for your Akeyless Bastion.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_bastion_issuer ProducerEks#secure_access_bastion_issuer}
         '''
         result = self._values.get("secure_access_bastion_issuer")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -898,7 +898,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_cluster_endpoint(self) -> typing.Optional[builtins.str]:
         '''The K8s cluster endpoint URL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_cluster_endpoint ProducerEks#secure_access_cluster_endpoint}
         '''
         result = self._values.get("secure_access_cluster_endpoint")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -907,7 +907,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def secure_access_enable(self) -> typing.Optional[builtins.str]:
         '''Enable/Disable secure remote access, [true/false].
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_enable ProducerEks#secure_access_enable}
         '''
         result = self._values.get("secure_access_enable")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -918,7 +918,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Enable Web Secure Remote Access.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#secure_access_web ProducerEks#secure_access_web}
         '''
         result = self._values.get("secure_access_web")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -929,7 +929,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         To specify multiple tags use argument multiple times: -t Tag1 -t Tag2
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#tags ProducerEks#tags}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#tags ProducerEks#tags}
         '''
         result = self._values.get("tags")
         return typing.cast(typing.Optional[typing.List[builtins.str]], result)
@@ -938,7 +938,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def target_name(self) -> typing.Optional[builtins.str]:
         '''Name of existing target to use in producer creation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#target_name ProducerEks#target_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#target_name ProducerEks#target_name}
         '''
         result = self._values.get("target_name")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -947,7 +947,7 @@ class ProducerEksConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def user_ttl(self) -> typing.Optional[builtins.str]:
         '''User TTL.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/producer_eks#user_ttl ProducerEks#user_ttl}
         '''
         result = self._values.get("user_ttl")
         return typing.cast(typing.Optional[builtins.str], result)

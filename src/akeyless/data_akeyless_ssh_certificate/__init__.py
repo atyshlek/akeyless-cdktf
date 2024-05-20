@@ -1,7 +1,7 @@
 '''
 # `data_akeyless_ssh_certificate`
 
-Refer to the Terraform Registry for docs: [`data_akeyless_ssh_certificate`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate).
+Refer to the Terraform Registry for docs: [`data_akeyless_ssh_certificate`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class DataAkeylessSshCertificate(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.dataAkeylessSshCertificate.DataAkeylessSshCertificate",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate akeyless_ssh_certificate}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate akeyless_ssh_certificate}.'''
 
     def __init__(
         self,
@@ -47,16 +47,16 @@ class DataAkeylessSshCertificate(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate akeyless_ssh_certificate} Data Source.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate akeyless_ssh_certificate} Data Source.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param cert_issuer_name: The name of the SSH certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
-        :param cert_username: The username to sign in the SSH certificate (use a comma-separated list for more than one username). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
-        :param public_key_data: SSH public key file contents. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param legacy_signing_alg_name: Set this option to output legacy ('ssh-rsa-cert-v01@openssh.com') signing algorithm name in the certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
-        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
+        :param cert_issuer_name: The name of the SSH certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
+        :param cert_username: The username to sign in the SSH certificate (use a comma-separated list for more than one username). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
+        :param public_key_data: SSH public key file contents. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param legacy_signing_alg_name: Set this option to output legacy ('ssh-rsa-cert-v01@openssh.com') signing algorithm name in the certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
+        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -100,7 +100,7 @@ class DataAkeylessSshCertificate(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the DataAkeylessSshCertificate to import.
-        :param import_from_id: The id of the existing DataAkeylessSshCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing DataAkeylessSshCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the DataAkeylessSshCertificate to import is found.
         '''
         if __debug__:
@@ -296,12 +296,12 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param cert_issuer_name: The name of the SSH certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
-        :param cert_username: The username to sign in the SSH certificate (use a comma-separated list for more than one username). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
-        :param public_key_data: SSH public key file contents. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param legacy_signing_alg_name: Set this option to output legacy ('ssh-rsa-cert-v01@openssh.com') signing algorithm name in the certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
-        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
+        :param cert_issuer_name: The name of the SSH certificate issuer. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
+        :param cert_username: The username to sign in the SSH certificate (use a comma-separated list for more than one username). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
+        :param public_key_data: SSH public key file contents. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param legacy_signing_alg_name: Set this option to output legacy ('ssh-rsa-cert-v01@openssh.com') signing algorithm name in the certificate. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
+        :param ttl: Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL). Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -414,7 +414,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cert_issuer_name(self) -> builtins.str:
         '''The name of the SSH certificate issuer.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_issuer_name DataAkeylessSshCertificate#cert_issuer_name}
         '''
         result = self._values.get("cert_issuer_name")
         assert result is not None, "Required property 'cert_issuer_name' is missing"
@@ -424,7 +424,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def cert_username(self) -> builtins.str:
         '''The username to sign in the SSH certificate (use a comma-separated list for more than one username).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#cert_username DataAkeylessSshCertificate#cert_username}
         '''
         result = self._values.get("cert_username")
         assert result is not None, "Required property 'cert_username' is missing"
@@ -434,7 +434,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def public_key_data(self) -> builtins.str:
         '''SSH public key file contents.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#public_key_data DataAkeylessSshCertificate#public_key_data}
         '''
         result = self._values.get("public_key_data")
         assert result is not None, "Required property 'public_key_data' is missing"
@@ -442,7 +442,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#id DataAkeylessSshCertificate#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -456,7 +456,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     ) -> typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]]:
         '''Set this option to output legacy ('ssh-rsa-cert-v01@openssh.com') signing algorithm name in the certificate.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#legacy_signing_alg_name DataAkeylessSshCertificate#legacy_signing_alg_name}
         '''
         result = self._values.get("legacy_signing_alg_name")
         return typing.cast(typing.Optional[typing.Union[builtins.bool, _cdktf_9a9027ec.IResolvable]], result)
@@ -465,7 +465,7 @@ class DataAkeylessSshCertificateConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def ttl(self) -> typing.Optional[jsii.Number]:
         '''Updated certificate lifetime in seconds (must be less than the Certificate Issuer default TTL).
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/data-sources/ssh_certificate#ttl DataAkeylessSshCertificate#ttl}
         '''
         result = self._values.get("ttl")
         return typing.cast(typing.Optional[jsii.Number], result)

@@ -1,7 +1,7 @@
 '''
 # `akeyless_target_zerossl`
 
-Refer to the Terraform Registry for docs: [`akeyless_target_zerossl`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl).
+Refer to the Terraform Registry for docs: [`akeyless_target_zerossl`](https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl).
 '''
 import abc
 import builtins
@@ -26,7 +26,7 @@ class TargetZerossl(
     metaclass=jsii.JSIIMeta,
     jsii_type="akeyless.targetZerossl.TargetZerossl",
 ):
-    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl akeyless_target_zerossl}.'''
+    '''Represents a {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl akeyless_target_zerossl}.'''
 
     def __init__(
         self,
@@ -52,21 +52,21 @@ class TargetZerossl(
         provider: typing.Optional[_cdktf_9a9027ec.TerraformProvider] = None,
         provisioners: typing.Optional[typing.Sequence[typing.Union[typing.Union[_cdktf_9a9027ec.FileProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.LocalExecProvisioner, typing.Dict[builtins.str, typing.Any]], typing.Union[_cdktf_9a9027ec.RemoteExecProvisioner, typing.Dict[builtins.str, typing.Any]]]]] = None,
     ) -> None:
-        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl akeyless_target_zerossl} Resource.
+        '''Create a new {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl akeyless_target_zerossl} Resource.
 
         :param scope: The scope in which to define this construct.
         :param id_: The scoped construct ID. Must be unique amongst siblings in the same scope
-        :param api_key: API Key of the ZeroSSLTarget account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
-        :param imap_fqdn: FQDN of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
-        :param imap_password: Password to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
-        :param imap_username: Username to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#name TargetZerossl#name}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#description TargetZerossl#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#id TargetZerossl#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param imap_port: Port of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
-        :param imap_target_email: Email to use when asking ZeroSSL to send a validation email, if empty will use username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#key TargetZerossl#key}
-        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
+        :param api_key: API Key of the ZeroSSLTarget account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
+        :param imap_fqdn: FQDN of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
+        :param imap_password: Password to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
+        :param imap_username: Username to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#name TargetZerossl#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#description TargetZerossl#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#id TargetZerossl#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param imap_port: Port of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
+        :param imap_target_email: Email to use when asking ZeroSSL to send a validation email, if empty will use username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#key TargetZerossl#key}
+        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
         :param connection: 
         :param count: 
         :param depends_on: 
@@ -115,7 +115,7 @@ class TargetZerossl(
 
         :param scope: The scope in which to define this construct.
         :param import_to_id: The construct id used in the generated config for the TargetZerossl to import.
-        :param import_from_id: The id of the existing TargetZerossl that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#import import section} in the documentation of this resource for the id to use
+        :param import_from_id: The id of the existing TargetZerossl that should be imported. Refer to the {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#import import section} in the documentation of this resource for the id to use
         :param provider: ? Optional instance of the provider where the TargetZerossl to import is found.
         '''
         if __debug__:
@@ -406,17 +406,17 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
         :param lifecycle: 
         :param provider: 
         :param provisioners: 
-        :param api_key: API Key of the ZeroSSLTarget account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
-        :param imap_fqdn: FQDN of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
-        :param imap_password: Password to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
-        :param imap_username: Username to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
-        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#name TargetZerossl#name}
-        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#description TargetZerossl#description}
-        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#id TargetZerossl#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-        :param imap_port: Port of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
-        :param imap_target_email: Email to use when asking ZeroSSL to send a validation email, if empty will use username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
-        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#key TargetZerossl#key}
-        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
+        :param api_key: API Key of the ZeroSSLTarget account. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
+        :param imap_fqdn: FQDN of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
+        :param imap_password: Password to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
+        :param imap_username: Username to access the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
+        :param name: Target name. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#name TargetZerossl#name}
+        :param description: Description of the object. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#description TargetZerossl#description}
+        :param id: Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#id TargetZerossl#id}. Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+        :param imap_port: Port of the IMAP service. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
+        :param imap_target_email: Email to use when asking ZeroSSL to send a validation email, if empty will use username. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
+        :param key: Key name. The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#key TargetZerossl#key}
+        :param timeout: Timeout waiting for certificate validation. Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
         '''
         if isinstance(lifecycle, dict):
             lifecycle = _cdktf_9a9027ec.TerraformResourceLifecycle(**lifecycle)
@@ -542,7 +542,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def api_key(self) -> builtins.str:
         '''API Key of the ZeroSSLTarget account.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#api_key TargetZerossl#api_key}
         '''
         result = self._values.get("api_key")
         assert result is not None, "Required property 'api_key' is missing"
@@ -552,7 +552,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def imap_fqdn(self) -> builtins.str:
         '''FQDN of the IMAP service.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_fqdn TargetZerossl#imap_fqdn}
         '''
         result = self._values.get("imap_fqdn")
         assert result is not None, "Required property 'imap_fqdn' is missing"
@@ -562,7 +562,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def imap_password(self) -> builtins.str:
         '''Password to access the IMAP service.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_password TargetZerossl#imap_password}
         '''
         result = self._values.get("imap_password")
         assert result is not None, "Required property 'imap_password' is missing"
@@ -572,7 +572,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def imap_username(self) -> builtins.str:
         '''Username to access the IMAP service.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_username TargetZerossl#imap_username}
         '''
         result = self._values.get("imap_username")
         assert result is not None, "Required property 'imap_username' is missing"
@@ -582,7 +582,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def name(self) -> builtins.str:
         '''Target name.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#name TargetZerossl#name}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#name TargetZerossl#name}
         '''
         result = self._values.get("name")
         assert result is not None, "Required property 'name' is missing"
@@ -592,14 +592,14 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def description(self) -> typing.Optional[builtins.str]:
         '''Description of the object.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#description TargetZerossl#description}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#description TargetZerossl#description}
         '''
         result = self._values.get("description")
         return typing.cast(typing.Optional[builtins.str], result)
 
     @builtins.property
     def id(self) -> typing.Optional[builtins.str]:
-        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#id TargetZerossl#id}.
+        '''Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#id TargetZerossl#id}.
 
         Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
         If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +611,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def imap_port(self) -> typing.Optional[builtins.str]:
         '''Port of the IMAP service.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_port TargetZerossl#imap_port}
         '''
         result = self._values.get("imap_port")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -620,7 +620,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def imap_target_email(self) -> typing.Optional[builtins.str]:
         '''Email to use when asking ZeroSSL to send a validation email, if empty will use username.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#imap_target_email TargetZerossl#imap_target_email}
         '''
         result = self._values.get("imap_target_email")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -631,7 +631,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
 
         The key will be used to encrypt the target secret value. If key name is not specified, the account default protection key is used
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#key TargetZerossl#key}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#key TargetZerossl#key}
         '''
         result = self._values.get("key")
         return typing.cast(typing.Optional[builtins.str], result)
@@ -640,7 +640,7 @@ class TargetZerosslConfig(_cdktf_9a9027ec.TerraformMetaArguments):
     def timeout(self) -> typing.Optional[builtins.str]:
         '''Timeout waiting for certificate validation.
 
-        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.4.4/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
+        Docs at Terraform Registry: {@link https://registry.terraform.io/providers/akeyless-community/akeyless/1.5.0/docs/resources/target_zerossl#timeout TargetZerossl#timeout}
         '''
         result = self._values.get("timeout")
         return typing.cast(typing.Optional[builtins.str], result)
